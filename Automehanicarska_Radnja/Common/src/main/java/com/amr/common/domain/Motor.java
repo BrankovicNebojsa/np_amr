@@ -6,25 +6,56 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja motor automobila
  *
  * @author Nebojsa Brankovic
  */
 public class Motor implements GenericObject {
 
+    /**
+     * primarni kljuc motora
+     */
     private int motorId;
+    /**
+     * broj cilindara motora
+     */
     private int brojCilindara;
+    /**
+     * kubikaza motora u kubnim metrima
+     */
     private double kubikaza;
+    /**
+     * konjska snaga motora
+     */
     private int konjskaSnaga;
 
+    /**
+     * Konstruktor bez parametra
+     */
     public Motor() {
     }
 
+    /**
+     * Konstruktor sa vise ulaznih parametara
+     *
+     * @param brojCilindara Broj cilindara motora
+     * @param kubikaza Kubikaza motora
+     * @param konjskaSnaga Konjska snaga motora
+     */
     public Motor(int brojCilindara, double kubikaza, int konjskaSnaga) {
         this.brojCilindara = brojCilindara;
         this.kubikaza = kubikaza;
         this.konjskaSnaga = konjskaSnaga;
     }
 
+    /**
+     * Konstruktor sa svim ulaznim parametara
+     *
+     * @param brojCilindara Broj cilindara motora
+     * @param kubikaza Kubikaza motora
+     * @param konjskaSnaga Konjska snaga motora
+     * @param motorId Primarni kljuc motora
+     */
     public Motor(int motorId, int brojCilindara, double kubikaza, int konjskaSnaga) {
         this.motorId = motorId;
         this.brojCilindara = brojCilindara;
@@ -32,34 +63,74 @@ public class Motor implements GenericObject {
         this.konjskaSnaga = konjskaSnaga;
     }
 
+    /**
+     * Metoda koja vraca primarni kljuc motora
+     *
+     * @return Primarni kljuc motora
+     */
     public int getMotorId() {
         return motorId;
     }
 
+    /**
+     * Metoda koja postavlja primarni kljuc motora
+     *
+     * @param motorId Primarni kljuc motora
+     */
     public void setMotorId(int motorId) {
         this.motorId = motorId;
     }
 
+    /**
+     * Metoda koja vraca broj cilindara motora
+     *
+     * @return Broj cilindara motora
+     */
     public int getBrojCilindara() {
         return brojCilindara;
     }
 
+    /**
+     * Metoda koja postavlja broj cilindara motora
+     *
+     * @param brojCilindara Broj cilindara motora
+     */
     public void setBrojCilindara(int brojCilindara) {
         this.brojCilindara = brojCilindara;
     }
 
+    /**
+     * Metoda koja vraca kubikazu motora
+     *
+     * @return Kubikaza motora
+     */
     public double getKubikaza() {
         return kubikaza;
     }
 
+    /**
+     * Metoda koja postavlja kubikazu motora
+     *
+     * @param kubikaza Kubikaza motora
+     */
     public void setKubikaza(double kubikaza) {
         this.kubikaza = kubikaza;
     }
 
+    /**
+     * Metoda koja vraca konjsku snagu motora
+     *
+     * @return Konjska snaga motora
+     */
     public int getKonjskaSnaga() {
         return konjskaSnaga;
     }
 
+    /**
+     * Metoda koja postavlja konjsku snagu motora
+     *
+     * @param konjskaSnaga Konjska snaga motora
+     */
     public void setKonjskaSnaga(int konjskaSnaga) {
         this.konjskaSnaga = konjskaSnaga;
     }

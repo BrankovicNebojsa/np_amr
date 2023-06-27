@@ -6,54 +6,115 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja Marku automobila
  *
  * @author Nebojsa Brankovic
  */
 public class Marka implements GenericObject { //dodati listu modela
 
+    /**
+     * Primarni kljuc ove klase
+     */
     private int markaId;
+    /**
+     * Naziv marke automobila
+     */
     private String nazivMarke;
+    /**
+     * Lista modela koji postoje za datu marku automobila
+     */
     private List<Model> modeli;
 
+    /**
+     * Konsturktor bez parametara
+     */
     public Marka() {
         nazivMarke = "";
     }
 
+    /**
+     * Konstruktor sa parametrom naziv marke
+     *
+     * @param nazivMarke Naziv marke automobila
+     */
     public Marka(String nazivMarke) {
         this.nazivMarke = nazivMarke;
     }
 
+    /**
+     * Konstruktor sa parametrom id marke i naziv marke
+     *
+     * @param nazivMarke Naziv marke automobila
+     * @param markaId Primarni kljuc marke automobila
+     */
     public Marka(int markaId, String nazivMarke) {
         this.markaId = markaId;
         this.nazivMarke = nazivMarke;
     }
 
+    /**
+     * Konstruktor sa parametrom id marke, naziv marke i modeli marke automobila
+     *
+     * @param nazivMarke Naziv marke automobila
+     * @param markaId Primarni kljuc marke automobila
+     * @param modeli Modeli marke automobila
+     */
     public Marka(int markaId, String nazivMarke, List<Model> modeli) {
         this.markaId = markaId;
         this.nazivMarke = nazivMarke;
         this.modeli = modeli;
     }
 
+    /**
+     * Metoda koja vraca primarni kljuc marke
+     * 
+     * @return Primarni kljuc marke
+     */
     public int getMarkaId() {
         return markaId;
     }
 
+    /**
+     * Metoda koja postavlja primarni kljuc marke automobila
+     * 
+     * @param markaId primarni kljuc automobila
+     */
     public void setMarkaId(int markaId) {
         this.markaId = markaId;
     }
 
+    /**
+     * Metoda koja vraca naziv marke automobila
+     * 
+     * @return Naziv marke automobila
+     */
     public String getNazivMarke() {
         return nazivMarke;
     }
 
+    /**
+     * Metoda koja postavlja naziv marke automobila
+     * 
+     * @param nazivMarke Naziv marke automobila
+     */
     public void setNazivMarke(String nazivMarke) {
         this.nazivMarke = nazivMarke;
     }
 
+    /**
+     * Metoda koja vraca listu modela marke
+     * 
+     * @return Lista modela marke
+     */
     public List<Model> getModeli() {
         return modeli;
     }
 
+    /**
+     * Metoda koja postavlja listu modela date marke automobila
+     * 
+     * @param modeli Lista modela marke automobila
+     */
     public void setModeli(List<Model> modeli) {
         this.modeli = modeli;
     }

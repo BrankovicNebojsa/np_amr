@@ -6,49 +6,106 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja Model automobila
  *
  * @author Nebojsa Brankovic
  */
 public class Model implements GenericObject {
 
+    /**
+     * Primarni kljuc modela automobila
+     */
     private int modelId;
+
+    /**
+     * Proizvodjac modela automobila
+     */
     private Marka marka;
+    /**
+     * Naziv modela automobila
+     */
     private String nazivModela;
 
+    /**
+     * Konstruktor bez parametara
+     */
     public Model() {
     }
 
+    /**
+     * Konstruktor sa ulaznim parametrima marka i naziv modela
+     *
+     * @param marka Marka modela automobila
+     * @param nazivModela Naziv modela
+     */
     public Model(Marka marka, String nazivModela) {
         this.marka = marka;
         this.nazivModela = nazivModela;
     }
 
+    /**
+     * Konstruktor sa svim ulaznim parametrima
+     *
+     * @param modelId Primarni kljuc modela automobila
+     * @param marka Marka modela automobila
+     * @param nazivModela Naziv modela automobila
+     */
     public Model(int modelId, Marka marka, String nazivModela) {
         this.modelId = modelId;
         this.marka = marka;
         this.nazivModela = nazivModela;
     }
 
+    /**
+     * Metoda koja vraca primarni kljuc automobila
+     *
+     * @return Primarni kljuc automobila
+     */
     public int getModelId() {
         return modelId;
     }
 
+    /**
+     * Metoda koja postavlja primarni kljuc modela
+     *
+     * @param modelId Primarni kljuc modela
+     */
     public void setModelId(int modelId) {
         this.modelId = modelId;
     }
 
+    /**
+     * Metoda koja vraca marku automobila
+     *
+     * @return Marka automobila
+     */
     public Marka getMarka() {
         return marka;
     }
 
+    /**
+     * Metoda koja postavlja Marku modela
+     *
+     * @param marka  Marka modela
+     */
     public void setMarka(Marka marka) {
         this.marka = marka;
     }
 
+    /**
+     * Metoda koja vraca naziv modela automobila
+     *
+     * @return Naziv modela automobila
+     */
     public String getNazivModela() {
         return nazivModela;
     }
 
+    /**
+     * Metoda koja postavlja naziv modela
+     *
+     * @param nazivModela  Naziv modela
+     */
     public void setNazivModela(String nazivModela) {
         this.nazivModela = nazivModela;
     }
