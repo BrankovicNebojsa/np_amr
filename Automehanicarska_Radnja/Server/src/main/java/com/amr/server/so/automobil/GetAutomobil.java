@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanje automobila
  *
  * @author Nebojsa Brankovic
  */
 public class GetAutomobil extends AbstractSystemOperation {
 
+    /**
+     * automobil koji se vraca iz baze
+     */
     private Automobil automobil;
 
     @Override
@@ -29,6 +33,11 @@ public class GetAutomobil extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca automobil koji je nadjen u bazi
+     *
+     * @return automobil iz baze
+     */
     public Automobil getAutomobil() {
         return this.automobil;
     }

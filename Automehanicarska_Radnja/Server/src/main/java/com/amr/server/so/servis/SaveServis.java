@@ -4,6 +4,7 @@ import com.amr.common.domain.Servis;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija koja cuva servis u bazi
  *
  * @author Nebojsa Brankovic
  */
@@ -11,7 +12,7 @@ public class SaveServis extends AbstractSystemOperation {
 
     @Override
     protected void preconditions(Object ado) throws Exception {
-        
+
     }
 
     @Override

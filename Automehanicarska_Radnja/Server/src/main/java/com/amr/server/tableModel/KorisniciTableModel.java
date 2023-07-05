@@ -7,13 +7,21 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Model tabele koji sluzi da prikaze klijente koji su zakaceni na serverski
+ * soket
  *
  * @author Nebojsa Brankovic
  */
 public class KorisniciTableModel extends AbstractTableModel {
 
+    /**
+     * Lista korisnika na serveru
+     */
     private final List<Korisnik> korisnici;
 
+    /**
+     * Konstuktor koji inicijalizuje korisnike
+     */
     public KorisniciTableModel() {
         korisnici = new ArrayList<>();
     }
@@ -59,11 +67,21 @@ public class KorisniciTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Dodavanje korisnika u tabelu
+     *
+     * @param user korisnik
+     */
     public void addUser(Korisnik user) {
         korisnici.add(user);
         fireTableDataChanged();
     }
 
+    /**
+     * brisanje korisnika iz tabele
+     *
+     * @param user korisnik
+     */
     public void removeUser(Korisnik user) {
         for (Korisnik korisnik : korisnici) {
             if (korisnik.getRadnik().getImeRadnika().equals(user.getRadnik().getImeRadnika())

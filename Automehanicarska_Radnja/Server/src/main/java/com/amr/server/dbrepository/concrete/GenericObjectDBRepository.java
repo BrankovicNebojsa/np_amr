@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Klasa koja je zaduzena za implementaciju manipulacije nad bazom podataka
  *
  * @author Nebojsa Brankovic
  */

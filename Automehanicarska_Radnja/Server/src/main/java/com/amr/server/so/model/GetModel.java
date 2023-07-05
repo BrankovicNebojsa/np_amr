@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca model
  *
  * @author Nebojsa Brankovic
  */
 public class GetModel extends AbstractSystemOperation {
 
+    /**
+     * Model koji vracamo iz baze
+     */
     private Model model;
 
     @Override
@@ -29,6 +33,11 @@ public class GetModel extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca pronadjeni model
+     *
+     * @return pronadjeni model iz baze
+     */
     public Model getModel() {
         return model;
     }

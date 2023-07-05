@@ -6,11 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca modele za konkretnu marku
  *
  * @author Nebojsa Brankovic
  */
 public class GetModeliFromNazivMarke extends AbstractSystemOperation {
 
+    /**
+     * Lista modela neke marke
+     */
     private List<Model> modeli;
 
     @Override
@@ -31,6 +35,11 @@ public class GetModeliFromNazivMarke extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca sve modele jedne marke
+     *
+     * @return lista modela marke
+     */
     public List<Model> getModeli() {
         return this.modeli;
     }

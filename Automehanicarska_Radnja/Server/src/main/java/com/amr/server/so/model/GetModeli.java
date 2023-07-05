@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca sve modele iz baze
  *
  * @author Nebojsa Brankovic
  */
 public class GetModeli extends AbstractSystemOperation {
 
+    /**
+     * Svi modeli iz baze
+     */
     private List<Model> modeli;
 
     @Override
@@ -24,6 +28,11 @@ public class GetModeli extends AbstractSystemOperation {
         modeli = repository.getAll((Model) ado);
     }
 
+    /**
+     * Metoda koja vraca pronadjene modele iz baze
+     *
+     * @return pronadjeni modeli iz baze
+     */
     public List<Model> getModeli() {
         return this.modeli;
     }

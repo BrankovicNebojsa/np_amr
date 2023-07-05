@@ -6,17 +6,32 @@ import java.sql.DriverManager;
 import java.util.Properties;
 
 /**
+ * Klasa koja predstavlja singleton patern za konekciju sa bazom
  *
  * @author Nebojsa Brankovic
  */
 public class DBConnectionFactory {
 
+    /**
+     * Konekcija sa bazom
+     */
     private Connection connection;
+    /**
+     * Objekat klase DBConnectionFactory
+     */
     private static DBConnectionFactory instance;
 
+    /**
+     * Prazan konstuktor
+     */
     private DBConnectionFactory() {
     }
 
+    /**
+     * Metoda koja vraca instancu ove klase
+     *
+     * @return
+     */
     public static DBConnectionFactory getInstance() {
         if (instance == null) {
             instance = new DBConnectionFactory();
@@ -24,6 +39,12 @@ public class DBConnectionFactory {
         return instance;
     }
 
+    /**
+     * Metoda koja vraca konekciju na bazu
+     *
+     * @return konekcija na bazu
+     * @throws Exception baca izuetak ako dodje do greske pri vracanju konekcije
+     */
     public Connection getConnection() throws Exception {
         if (connection == null || connection.isClosed()) {
             Properties properties = new Properties();

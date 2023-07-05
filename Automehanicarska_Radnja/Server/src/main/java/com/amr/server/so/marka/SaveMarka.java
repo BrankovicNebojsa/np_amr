@@ -6,6 +6,7 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Metoda koja cuva marku u bazi
  *
  * @author Nebojsa Brankovic
  */

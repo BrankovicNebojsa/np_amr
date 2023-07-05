@@ -10,7 +10,8 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * Klasa koja je zaduzena za podesavanje konfiguracije servera
+ * 
  * @author Nebojsa Brankovic
  */
 public class ConfigForm extends javax.swing.JFrame {
@@ -209,6 +210,9 @@ public class ConfigForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldUsername;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Priprema podatke za prikaz na formi
+     */
     private void prepareForm() {
         try {
             Properties properties = new Properties();

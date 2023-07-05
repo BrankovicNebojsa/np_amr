@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca naziv modele za primarni kljuc modela
  *
  * @author Nebojsa Brankovic
  */
 public class GetNazivModela extends AbstractSystemOperation {
 
+    /**
+     * Naziv modela za primarni kljuc
+     */
     private String nazivModela;
 
     @Override
@@ -29,6 +33,11 @@ public class GetNazivModela extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca proandjeni naziv modela
+     *
+     * @return proandjeni naziv modela
+     */
     public String getNazivModela() {
         return this.nazivModela;
     }

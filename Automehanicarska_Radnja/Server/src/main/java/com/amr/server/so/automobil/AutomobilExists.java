@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Klasa za proveru postojanja automobila
  *
  * @author Nebojsa Brankovic
  */
 public class AutomobilExists extends AbstractSystemOperation {
 
+    /**
+     * da li postoji automobil
+     */
     private boolean status;
 
     @Override
@@ -31,6 +35,11 @@ public class AutomobilExists extends AbstractSystemOperation {
         this.status = false;
     }
 
+    /**
+     * Metoda koja postavlja status postojanja automobila u bazi
+     *
+     * @return status postojanja automobila u bazi
+     */
     public boolean getStatus() {
         return status;
     }

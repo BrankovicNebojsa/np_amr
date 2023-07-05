@@ -4,6 +4,7 @@ import com.amr.common.domain.Musterija;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija za brisanje musterije
  *
  * @author Nebojsa Brankovic
  */

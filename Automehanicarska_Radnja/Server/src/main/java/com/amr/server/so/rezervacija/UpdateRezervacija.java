@@ -4,6 +4,7 @@ import com.amr.common.domain.Rezervacija;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija za izmenu rezervacije
  *
  * @author Nebojsa Brankovic
  */

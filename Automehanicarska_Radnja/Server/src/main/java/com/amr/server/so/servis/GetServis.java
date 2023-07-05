@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanje servisa
  *
  * @author Nebojsa Brankovic
  */
 public class GetServis extends AbstractSystemOperation {
 
+    /**
+     * servis u bazi
+     */
     private Servis servis = null;
 
     @Override
@@ -29,6 +33,11 @@ public class GetServis extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca servis iz baze
+     *
+     * @return servis iz baze
+     */
     public Servis getServis() {
         return this.servis;
     }

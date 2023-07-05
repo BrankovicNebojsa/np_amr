@@ -4,6 +4,7 @@ import com.amr.common.domain.Automobil;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija za izmenu nad automobilom
  *
  * @author Nebojsa Brankovic
  */

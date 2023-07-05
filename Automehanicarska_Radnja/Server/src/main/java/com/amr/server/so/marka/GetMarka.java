@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanje marke
  *
  * @author Nebojsa Brankovic
  */
 public class GetMarka extends AbstractSystemOperation {
 
+    /**
+     * Marka iz baze
+     */
     private Marka marka;
 
     @Override
@@ -29,6 +33,11 @@ public class GetMarka extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca pronadjenu marku iz baze
+     *
+     * @return marka iz baze
+     */
     public Marka getMarka() {
         return this.marka;
     }

@@ -4,6 +4,7 @@ import com.amr.common.domain.Automobil;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija za brisanje automobila
  *
  * @author Nebojsa Brankovic
  */

@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca sve rezervacije za odgovarajuci filter
  *
  * @author Nebojsa Brankovic
  */
 public class GetRezervacijeFilter extends AbstractSystemOperation {
 
+    /**
+     * Lista rezervacija koje odgovaraju filteru
+     */
     private List<Rezervacija> rezervacije;
 
     @Override
@@ -21,6 +25,11 @@ public class GetRezervacijeFilter extends AbstractSystemOperation {
         this.rezervacije = repository.getAllFilter(new Rezervacija(), (String) ado);
     }
 
+    /**
+     * Metoda koja vraca sve rezervacije
+     *
+     * @return rezervacije iz baze
+     */
     public List<Rezervacija> getRezervacije() {
         return this.rezervacije;
     }

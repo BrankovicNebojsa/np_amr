@@ -5,6 +5,7 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za cuvanje motora
  *
  * @author Nebojsa Brankovic
  */

@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za proveru postojanja korisnickog imena u bazi
  *
  * @author Nebojsa Brankovic
  */
 public class UsernameExists extends AbstractSystemOperation {
 
+    /**
+     * da li postoji korisnicko ime u bazi
+     */
     private boolean status;
 
     @Override
@@ -31,6 +35,11 @@ public class UsernameExists extends AbstractSystemOperation {
         this.status = false;
     }
 
+    /**
+     * Metoda koja vraca da li postoji korisnicko ime u bazi
+     *
+     * @return
+     */
     public boolean getStatus() {
         return this.status;
     }

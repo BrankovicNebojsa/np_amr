@@ -9,18 +9,44 @@ import java.net.Socket;
 import java.util.List;
 
 /**
+ * Klasa za opsluzivanje klijenta
  *
  * @author Nebojsa Brankovic
  */
 public class ProcessClientsRequests extends Thread {
 
+    /**
+     * Serverski soket
+     */
     private Socket socket;
+    /**
+     * Posiljaoc zahteva
+     */
     private Sender sender;
+    /**
+     * Primalac zahteva
+     */
     private Receiver receiver;
+    /**
+     * Glavna forma
+     */
     private MainForm mf;
+    /**
+     * Kontroler serverski
+     */
     private Controller controller;
+    /**
+     * Klijent
+     */
     private Radnik user;
 
+    /**
+     * Konstuktor za inicijalizaciju soketa i glavne forme kao i primalaca i
+     * posiljaoca
+     *
+     * @param socket serverski soket
+     * @param mf g;avna forma
+     */
     public ProcessClientsRequests(Socket socket, MainForm mf) {
         this.mf = mf;
         this.socket = socket;
@@ -29,6 +55,9 @@ public class ProcessClientsRequests extends Thread {
         this.controller = new Controller();
     }
 
+    /**
+     * Metoda za zaustavljanje niti za ovog klijenta
+     */
     public void stopThread() {
         this.interrupt();
         mf.removeUser(user);

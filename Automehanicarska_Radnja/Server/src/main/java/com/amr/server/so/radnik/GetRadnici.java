@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanja svih radnika
  *
  * @author Nebojsa Brankovic
  */
 public class GetRadnici extends AbstractSystemOperation {
 
+    /**
+     * Lista svih radnika
+     */
     private List<Radnik> radnici;
 
     @Override
@@ -24,6 +28,11 @@ public class GetRadnici extends AbstractSystemOperation {
         this.radnici = repository.getAll((Radnik) ado);
     }
 
+    /**
+     * Metoda koja vraca radnike iz baze
+     *
+     * @return radnici iz baze
+     */
     public List<Radnik> getRadnici() {
         return this.radnici;
     }

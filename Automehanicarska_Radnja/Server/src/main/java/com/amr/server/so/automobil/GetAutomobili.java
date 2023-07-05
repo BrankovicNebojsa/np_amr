@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Metoda koja vraca sve automobile
  *
  * @author Nebojsa Brankovic
  */
 public class GetAutomobili extends AbstractSystemOperation {
 
+    /**
+     * Lista svih automobila u bazi
+     */
     private List<Automobil> automobili;
 
     @Override
@@ -24,6 +28,11 @@ public class GetAutomobili extends AbstractSystemOperation {
         this.automobili = repository.getAll((Automobil) ado);
     }
 
+    /**
+     * Metoda koja vraca pronadjene automobile iz baze
+     *
+     * @return pronadjeni automobili
+     */
     public List<Automobil> getAutomobili() {
         return this.automobili;
     }

@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanje musterije
  *
  * @author Nebojsa Brankovic
  */
 public class GetMusterija extends AbstractSystemOperation {
 
+    /**
+     * pronadjena musterije iz baze
+     */
     private Musterija musterija;
 
     @Override
@@ -29,6 +33,11 @@ public class GetMusterija extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca musteriju iz baze
+     *
+     * @return musterija iz baze
+     */
     public Musterija getMusterija() {
         return this.musterija;
     }

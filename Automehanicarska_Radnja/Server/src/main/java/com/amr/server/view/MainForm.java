@@ -9,17 +9,18 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja glavnu formu serverske aplikacije
  *
  * @author Nebojsa Brankovic
  */
 public class MainForm extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MainForm
-     */
     private Server server;
     private int counter;
 
+    /**
+     * Creates new form MainForm
+     */
     public MainForm() {
         initComponents();
         this.server = null;
@@ -257,6 +258,9 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JTable jTableKorisnici;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja je zaduzena da pripremi formu za prikaz
+     */
     private void prepareForm() {
         jLabelStanje.setText("UGASEN");
         jLabelStanje.setForeground(new Color(255, 0, 0));
@@ -265,6 +269,11 @@ public class MainForm extends javax.swing.JFrame {
         jTableKorisnici.setModel(new KorisniciTableModel());
     }
 
+    /**
+     * Metoda koja je zaduzena za dodavanje klijenta u tabelu
+     *
+     * @param radnik klijent u tabeli
+     */
     public void addUser(Radnik radnik) {
         jLabelBrojPokrenutihKlijentskihAplikacija.setText(String.valueOf(++counter));
         Korisnik user = new Korisnik();
@@ -273,6 +282,11 @@ public class MainForm extends javax.swing.JFrame {
         ((KorisniciTableModel) jTableKorisnici.getModel()).addUser(user);
     }
 
+    /**
+     * Metoda koja je zaduzena za uklanjanje klijenta iz tabele
+     *
+     * @param radnik klijent u tabeli
+     */
     public void removeUser(Radnik radnik) {
         jLabelBrojPokrenutihKlijentskihAplikacija.setText(String.valueOf(--counter));
         Korisnik user = new Korisnik();

@@ -4,6 +4,7 @@ import com.amr.common.domain.Radnik;
 import com.amr.server.so.AbstractSystemOperation;
 
 /**
+ * Sistemska operacija za cuvanje radnika
  *
  * @author Nebojsa Brankovic
  */

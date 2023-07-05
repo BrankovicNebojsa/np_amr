@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Metoda za prijavljivanje na aplikaciju
  *
  * @author Nebojsa Brankovic
  */
 public class LogIn extends AbstractSystemOperation {
 
+    /**
+     * da li postoji korisnik
+     */
     private boolean status;
 
     @Override
@@ -32,6 +36,10 @@ public class LogIn extends AbstractSystemOperation {
         this.status = false;
     }
 
+    /**
+     * Metoda koja vraca da li postoji radnik sa tim kredencijalima
+     * @return 
+     */
     public boolean getStatus() {
         return this.status;
     }

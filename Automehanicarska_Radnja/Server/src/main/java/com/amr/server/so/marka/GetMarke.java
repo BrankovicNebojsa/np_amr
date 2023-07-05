@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija koja vraca sve marke
  *
  * @author Nebojsa Brankovic
  */
 public class GetMarke extends AbstractSystemOperation {
 
+    /**
+     * sve marke iz baze
+     */
     private List<Marka> marke;
 
     @Override
@@ -24,6 +28,11 @@ public class GetMarke extends AbstractSystemOperation {
         this.marke = repository.getAll((Marka) ado);
     }
 
+    /**
+     * Metoda koja vraca sve marke
+     *
+     * @return marke iz baze
+     */
     public List<Marka> getMarke() {
         return this.marke;
     }

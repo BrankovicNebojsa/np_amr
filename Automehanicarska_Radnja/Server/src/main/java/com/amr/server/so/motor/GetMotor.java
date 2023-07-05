@@ -5,11 +5,15 @@ import com.amr.server.so.AbstractSystemOperation;
 import java.util.List;
 
 /**
+ * Sistemska operacija za vracanje motora iz baze
  *
  * @author Nebojsa Brankovic
  */
 public class GetMotor extends AbstractSystemOperation {
 
+    /**
+     * Motor iz baze
+     */
     private Motor motor;
 
     @Override
@@ -31,6 +35,11 @@ public class GetMotor extends AbstractSystemOperation {
         }
     }
 
+    /**
+     * Metoda koja vraca motor iz baze
+     *
+     * @return motor iz baze
+     */
     public Motor getMotor() {
         return this.motor;
     }
