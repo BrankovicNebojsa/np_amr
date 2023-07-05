@@ -1,6 +1,7 @@
 package com.amr.common.communication;
 
 /**
+ * Enum klasa za sve sistemske operacije potrebne na klijentskoj strani
  *
  * @author Nebojsa Brankovic
  */
