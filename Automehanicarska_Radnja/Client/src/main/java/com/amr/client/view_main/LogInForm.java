@@ -12,16 +12,20 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za prijavljivanje na klijentsku aplikaciju
  *
  * @author Nebojsa Brankovic
  */
 public class LogInForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainForm
+     * KLijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form MainForm
+     */
     public LogInForm() {
         initComponents();
         c = new Controller();
@@ -247,7 +251,7 @@ public class LogInForm extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
                 new LogInForm().setVisible(true);
             }
         });
@@ -267,6 +271,9 @@ public class LogInForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldKorisnickoIme;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Priprema izgleda forme
+     */
     private void prepareForm() {
         this.getContentPane().setLayout(new BorderLayout());
         jLabelPozadina = new JLabel(new ImageIcon("src/main/java/com/amr/client/images/lambo.jpg"));
@@ -282,12 +289,15 @@ public class LogInForm extends javax.swing.JFrame {
 
             @Override
             public void mouseExited(MouseEvent e) {
-                jLabelOVDE.setForeground(new Color(255,143,41));
+                jLabelOVDE.setForeground(new Color(255, 143, 41));
                 jLabelOVDE.setCursor(Cursor.getDefaultCursor());
             }
         });
     }
 
+    /**
+     * Funkcija za prijavljivanje
+     */
     private void prijaviSe() {
         if (isDataValid()) {
             String korisnickoIme = jTextFieldKorisnickoIme.getText();
@@ -310,6 +320,11 @@ public class LogInForm extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Provera validnosti unosa korisnika
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldKorisnickoIme == null || jTextFieldKorisnickoIme.getText().equals("")) {
             jLabelKorisnickoImeObaveza.setVisible(true);

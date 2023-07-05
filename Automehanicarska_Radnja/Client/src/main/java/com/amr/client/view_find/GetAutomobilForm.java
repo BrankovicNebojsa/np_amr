@@ -8,17 +8,24 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za vracanje automobila
  *
  * @author Nebojsa Brankovic
  */
 public class GetAutomobilForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form NadjiAutomobilForm
+     * Nadklasa
      */
     private AddServisForm asf;
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form NadjiAutomobilForm
+     */
     public GetAutomobilForm(AddServisForm asf) {
         initComponents();
         c = new Controller();
@@ -162,6 +169,9 @@ public class GetAutomobilForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFilter;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za popunjavanje tabele podacima iz baze podataka
+     */
     public void populateTable() {
         jTableAutomobili.setModel(new SearchAutomobilTableModel(c.getAutomobili()));
     }

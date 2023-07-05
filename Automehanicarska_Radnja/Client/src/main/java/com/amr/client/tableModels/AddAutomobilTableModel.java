@@ -8,14 +8,24 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Model tabele za dodavanje automobila
  *
  * @author Nebojsa Brankovic
  */
 public class AddAutomobilTableModel extends AbstractTableModel {
 
+    /**
+     * Lista automobila
+     */
     private List<Automobil> automobili = new ArrayList<>();
+    /**
+     * Kontroler klijentski
+     */
     private Controller c;
 
+    /**
+     * Konstuktor koji inicijalizuje kontroler
+     */
     public AddAutomobilTableModel() {
         c = new Controller();
     }
@@ -82,10 +92,20 @@ public class AddAutomobilTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Metoda za vracanje svih automobila iz tabele
+     *
+     * @return lista automobila
+     */
     public List<Automobil> getAutomobili() {
         return automobili;
     }
 
+    /**
+     * Metoda za dodavanje automobila u tabelu
+     *
+     * @param automobil automobil koji se dodaje u tabelu
+     */
     public void addAutomobil(Automobil automobil) {
         automobili.add(automobil);
         fireTableDataChanged();

@@ -9,17 +9,24 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za trazenje automobi
  *
  * @author Nebojsa Brankovic
  */
 public class FindAutomobilForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form NadjiAutomobilForm
+     * nadklasa
      */
     private AddRezervacijaForm arf;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form NadjiAutomobilForm
+     */
     public FindAutomobilForm(AddRezervacijaForm arf) {
         initComponents();
         c = new Controller();
@@ -182,6 +189,9 @@ public class FindAutomobilForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFilter;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja popunjava tabelu podacima iz baze podataka
+     */
     public void populateTable() {
         jTableAutomobili.setModel(new SearchAutomobilTableModel(c.getAutomobili()));
     }

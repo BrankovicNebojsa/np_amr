@@ -6,18 +6,28 @@ import com.amr.common.domain.Marka;
 import com.amr.common.domain.Model;
 
 /**
+ * Klasa koja predstavlja formu za izmenu automobila
  *
  * @author Nebojsa Brankovic
  */
 public class EditAutomobil2Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAutomobilForm
+     * automobil koji se menja
      */
     private Automobil automobil;
+    /**
+     * nadforma
+     */
     private EditAutomobilForm eaf;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddAutomobilForm
+     */
     public EditAutomobil2Form(EditAutomobilForm eaf, Automobil automobil) {
         initComponents();
         c = new Controller();
@@ -359,6 +369,9 @@ public class EditAutomobil2Form extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldVlasnik;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za postavljanje forme
+     */
     private void prepareForm() {
         jTextFieldBoja.setText(automobil.getBoja().toString());
         jTextFieldGodiste.setText(Integer.toString(automobil.getGodiste()));

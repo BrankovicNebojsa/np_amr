@@ -14,18 +14,28 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
+ * Klasa koja predstavlja formu za unos rezervacije
  *
  * @author Nebojsa Brankovic
  */
 public class AddRezervacijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new AddRezervacijaForm
+     * automobil za koji se pravi rezervacija
      */
     private Automobil automobil;
+    /**
+     * klijentrski kontroler
+     */
     private Controller c;
+    /**
+     * Lista dostupnih radnika
+     */
     private List<Radnik> radnici;
 
+    /**
+     * Creates new AddRezervacijaForm
+     */
     public AddRezervacijaForm() {
         initComponents();
         c = new Controller();
@@ -455,6 +465,9 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldTrajanjeServisa;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja postavlja formu
+     */
     private void prepareForm() {
         jLabelDatumRezervacijaObaveza.setVisible(false);
         jLabelSatLosUnos.setVisible(false);
@@ -473,11 +486,21 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         jTableRezervacije.setModel(new AddRezervacijaTableModel());
     }
 
+    /**
+     * Metoda koja postavlja automobil
+     *
+     * @param automobil automobil za koji se pravi rezervacija
+     */
     public void setAutomobil(Automobil automobil) {
         jTextFieldAutomobil.setText(automobil.getRegistracioniBroj());
         this.automobil = automobil;
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldDatumRezervacije == null || jTextFieldDatumRezervacije.getText().equals("")) {
             jLabelDatumRezervacijaObaveza.setVisible(true);
@@ -543,6 +566,12 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li je korisnik uneo adekvatan niz karaktera
+     *
+     * @param jtf unos korisnika
+     * @return validnost unosa
+     */
     public boolean isOk(JTextField jtf) {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',
@@ -559,6 +588,12 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li je korisnik uneo adekvatan niz karaktera
+     *
+     * @param jtf unos korisnika
+     * @return validnost unosa
+     */
     public boolean isOk2(JTextField jtf) {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',
@@ -575,6 +610,9 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja prazni formu
+     */
     private void emptyForm() {
         jTextFieldDatumRezervacije.setText("");
         jTextFieldSat.setText("");
@@ -584,6 +622,9 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         jComboBoxRadnici.setSelectedItem(null);
     }
 
+    /**
+     * Metoda koja postavlja podatke na pocetne
+     */
     private void resetData() {
         jLabelDatumRezervacijaObaveza.setVisible(false);
         jLabelSatLosUnos.setVisible(false);
@@ -604,6 +645,11 @@ public class AddRezervacijaForm extends javax.swing.JFrame {
         this.automobil = null;
     }
 
+    /**
+     * Metoda za trazenje radnika
+     *
+     * @return radnik
+     */
     private Radnik findRadnik() {
         for (Radnik radnik1 : radnici) {
             String combo = radnik1.getImeRadnika() + " " + radnik1.getPrezimeRadnika();

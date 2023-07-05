@@ -6,16 +6,20 @@ import com.amr.common.domain.Musterija;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja formu za pretrazivanje musterija
  *
  * @author Nebojsa Brankovic
  */
 public class SearchMusterijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMusterijaForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form SearchMusterijaForm
+     */
     public SearchMusterijaForm() {
         initComponents();
         c = new Controller();
@@ -169,6 +173,9 @@ public class SearchMusterijaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFilter;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja popunjava tabelu podacima iz baze podataka
+     */
     private void populateTable() {
         jTableMusterije.setModel(new SearchMusterijaTableModel(c.getMusterije()));
     }

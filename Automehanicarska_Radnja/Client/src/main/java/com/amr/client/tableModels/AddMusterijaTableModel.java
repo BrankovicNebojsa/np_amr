@@ -6,13 +6,20 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za dodavanje musterije
  *
  * @author Nebojsa Brankovic
  */
 public class AddMusterijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista musterija
+     */
     private List<Musterija> musterije = new ArrayList<>();
 
+    /**
+     * Neparametrizovani konstuktor
+     */
     public AddMusterijaTableModel() {
 
     }
@@ -64,10 +71,20 @@ public class AddMusterijaTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Metoda za vracanje svih musterija iz tabele
+     *
+     * @return lista musterija u tabeli
+     */
     public List<Musterija> getMusterije() {
         return musterije;
     }
 
+    /**
+     * Metoda koja dodaje musteriju u tabelu
+     *
+     * @param musterija musterija koju dodajemo u tabelu
+     */
     public void addMusterija(Musterija musterija) {
         musterije.add(musterija);
         fireTableDataChanged();

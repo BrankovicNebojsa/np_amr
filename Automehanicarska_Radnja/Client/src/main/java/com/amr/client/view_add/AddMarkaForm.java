@@ -9,18 +9,28 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za prikaz dodavanja marke
  *
  * @author Nebojsa Brankovic
  */
 public class AddMarkaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddMarkaForm
+     * Marka koja se dodaje
      */
     private Marka marka;
+    /**
+     * Lista modela
+     */
     private List<Model> modeli;
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
-    
+
+    /**
+     * Creates new form AddMarkaForm
+     */
     public AddMarkaForm() {
         initComponents();
         c = new Controller();
@@ -257,13 +267,21 @@ public class AddMarkaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldNazivModela;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za pripremu forme
+     */
     private void prepareForm() {
         jLabelNazivMarkeObaveza.setVisible(false);
         jLabelNazivModelaObaveza.setVisible(false);
-        
+
         jTableModeli.setModel(new AddMarkaTableModel(marka));
     }
-    
+
+    /**
+     * Metoda koja ispituje da li je unos korektan
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldNazivMarke.getText().trim().equals("")) {
             jLabelNazivMarkeObaveza.setVisible(true);
@@ -275,5 +293,5 @@ public class AddMarkaForm extends javax.swing.JFrame {
         }
         return true;
     }
-    
+
 }

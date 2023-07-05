@@ -5,13 +5,22 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za pregled svih modela
  *
  * @author Nebojsa Brankovic
  */
 public class SearchModeliTableModel extends AbstractTableModel {
 
+    /**
+     * lista modela
+     */
     private List<Model> modeli;
 
+    /**
+     * Konstuktor koji inicilizuje modele kroz parametar
+     *
+     * @param modeli modeli koji se unose u tabelu
+     */
     public SearchModeliTableModel(List<Model> modeli) {
         this.modeli = modeli;
     }
@@ -50,10 +59,20 @@ public class SearchModeliTableModel extends AbstractTableModel {
         }
     }
 
+    /**
+     * Metoda koja vraca sve modele iz tabele
+     *
+     * @return lista modela
+     */
     public List<Model> getModeli() {
         return modeli;
     }
 
+    /**
+     * Metoda koja postavlja modele
+     *
+     * @param modeli lista modela
+     */
     public void setModeli(List<Model> modeli) {
         this.modeli = modeli;
         fireTableDataChanged();

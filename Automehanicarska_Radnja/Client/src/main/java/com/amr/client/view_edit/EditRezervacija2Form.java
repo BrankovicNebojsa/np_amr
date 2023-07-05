@@ -9,18 +9,28 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
+ * Klasa koja predstavlja formu za izmenu rezervcije
  *
  * @author Nebojsa Brankovic
  */
 public class EditRezervacija2Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAutomobilForm
+     * rezervacija koja se menja
      */
     private Rezervacija rezervacija;
+    /**
+     * nadforma
+     */
     private EditRezervacijaForm erf;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddAutomobilForm
+     */
     public EditRezervacija2Form(EditRezervacijaForm erf, Rezervacija rezervacija) {
         initComponents();
         c = new Controller();
@@ -291,6 +301,9 @@ public class EditRezervacija2Form extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldTrajanjeServisa;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za postavljanje forme
+     */
     private void prepareForm() {
         jLabelDatumRezervacijaObaveza.setVisible(false);
         jLabelTrajanjeServisaObaveza.setVisible(false);
@@ -306,6 +319,11 @@ public class EditRezervacija2Form extends javax.swing.JFrame {
         jTextFieldRadnik.setText(rezervacija.getRadnik().getImeRadnika() + " " + rezervacija.getRadnik().getPrezimeRadnika());
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldDatumRezervacije == null || jTextFieldDatumRezervacije.getText().equals("")) {
             jLabelDatumRezervacijaObaveza.setVisible(true);
@@ -334,6 +352,12 @@ public class EditRezervacija2Form extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa kroz karaktera
+     *
+     * @param jtf unos
+     * @return validnost unosa
+     */
     public boolean isOk(JTextField jtf) {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',
@@ -350,6 +374,12 @@ public class EditRezervacija2Form extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa kroz karaktera
+     *
+     * @param jtf unos
+     * @return validnost unosa
+     */
     public boolean isOk2(JTextField jtf) {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',

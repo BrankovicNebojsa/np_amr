@@ -6,16 +6,20 @@ import com.amr.common.domain.Rezervacija;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja formu za pretrazivanje rezervacija
  *
  * @author Nebojsa Brankovic
  */
 public class SearchRezervacijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMusterijaForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form SearchMusterijaForm
+     */
     public SearchRezervacijaForm() {
         initComponents();
         c = new Controller();
@@ -181,6 +185,9 @@ public class SearchRezervacijaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldRegistracioniBroj;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za popunjavanje tabele podacima iz baze podataka
+     */
     private void populateTable() {
         jTableRezervacije.setModel(new SearchRezervacijaTableModel(c.getRezervacije()));
     }

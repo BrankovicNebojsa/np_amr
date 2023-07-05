@@ -8,17 +8,24 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za trazenje radnika
  *
  * @author Nebojsa Brankovic
  */
 public class GetRadnikForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMusterijaForm
+     * nadklasa
      */
     private AddServisForm asf;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form SearchMusterijaForm
+     */
     public GetRadnikForm(AddServisForm asf) {
         initComponents();
         c = new Controller();
@@ -200,6 +207,9 @@ public class GetRadnikForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFilter;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za popunjavanje tabele podacima iz baze podataka
+     */
     public void populateTable() {
         jTableRadnici.setModel(new SearchRadnikTableModel(c.getRadnici()));
     }

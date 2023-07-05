@@ -10,14 +10,26 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za izmenu rezervacija
  *
  * @author Nebojsa Brankovic
  */
 public class EditRezervacijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista rezervacija
+     */
     private List<Rezervacija> rezervacije = new ArrayList<>();
+    /**
+     * Kontroler klijentski
+     */
     private Controller c;
 
+    /**
+     * Konstuktor koji inicijalizuje rezervacije i kontroler
+     *
+     * @param rezervacije rezervacije koje se prikazuju u tabeli
+     */
     public EditRezervacijaTableModel(List<Rezervacija> rezervacije) {
         this.rezervacije = rezervacije;
         c = new Controller();
@@ -100,6 +112,11 @@ public class EditRezervacijaTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
+    /**
+     * Metoda koja vraca sve rezervacije iz tabele
+     *
+     * @return lista rezervacija
+     */
     public List<Rezervacija> getRezervacije() {
         return rezervacije;
     }

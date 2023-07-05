@@ -8,14 +8,26 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za izmenu automobila
  *
  * @author Nebojsa Brankovic
  */
 public class EditAutomobilTableModel extends AbstractTableModel {
 
+    /**
+     * lista automobila
+     */
     private List<Automobil> automobili = new ArrayList<>();
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Konstuktor koji inicijalizuje automobile kroz parametar i kontroler
+     *
+     * @param automobili automobili koji se prikazuju u tabeli
+     */
     public EditAutomobilTableModel(List<Automobil> automobili) {
         this.automobili = automobili;
         c = new Controller();
@@ -83,6 +95,11 @@ public class EditAutomobilTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Metoda za vracanje svih automobila u tabeli
+     *
+     * @return lista automobila
+     */
     public List<Automobil> getAutomobili() {
         return automobili;
     }

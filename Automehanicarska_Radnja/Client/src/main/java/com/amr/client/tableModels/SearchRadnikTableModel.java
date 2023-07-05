@@ -6,13 +6,22 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa koja predstavlja tabelu pretrage radnika
  *
  * @author Nebojsa Brankovic
  */
 public class SearchRadnikTableModel extends AbstractTableModel {
 
+    /**
+     * lista radnika
+     */
     private List<Radnik> radnici = new ArrayList<>();
 
+    /**
+     * konstuktor koji inicijalizuje radnike
+     *
+     * @param radnici lista radnika
+     */
     public SearchRadnikTableModel(List<Radnik> radnici) {
         this.radnici = radnici;
     }
@@ -55,6 +64,11 @@ public class SearchRadnikTableModel extends AbstractTableModel {
         }
     }
 
+    /**
+     * Metoda koja vraca sve radnike iz tabele
+     *
+     * @return lista radnika
+     */
     public List<Radnik> getRadnici() {
         return radnici;
     }

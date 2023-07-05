@@ -7,14 +7,26 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za izmenu musterija
  *
  * @author Nebojsa Brankovic
  */
 public class EditMusterijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista musterija
+     */
     private List<Musterija> musterije = new ArrayList<>();
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Konstuktor koji inicijalizuje musterije i kontroler
+     *
+     * @param musterije musterije koje se prikazuju u tabeli
+     */
     public EditMusterijaTableModel(List<Musterija> musterije) {
         this.musterije = musterije;
         c = new Controller();
@@ -87,6 +99,11 @@ public class EditMusterijaTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
+    /**
+     * Metoda koja vraca sve musterije iz tabele
+     *
+     * @return lista musterija
+     */
     public List<Musterija> getMusterije() {
         return musterije;
     }

@@ -7,15 +7,20 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za izmenu musterije
  *
  * @author Nebojsa Brankovic
  */
 public class EditMusterijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form EditMusterijaForm
+     * Klijentski kontroler
      */
     private Controller c;
+
+    /**
+     * Creates new form EditMusterijaForm
+     */
 
     public EditMusterijaForm() {
         initComponents();
@@ -217,6 +222,9 @@ public class EditMusterijaForm extends javax.swing.JFrame {
         });
     }
 
+    /**
+     * Metoda za popunjavanje tabele podacima iz baze
+     */
     private void populateTable() {
         jTableMusterije.setModel(new EditMusterijaTableModel(c.getMusterije()));
 

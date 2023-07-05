@@ -18,17 +18,24 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 /**
+ * Klasa koja predstavlja glavnu formu
  *
  * @author Nebojsa Brankovic
  */
 public class MainMenuForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainMenuForm
+     * Klijentski kontroler
      */
     private Controller c;
+    /**
+     * Klijent koji koristi aplikaciju
+     */
     private Radnik radnik;
 
+    /**
+     * Creates new form MainMenuForm
+     */
     public MainMenuForm(Radnik radnik) {
         initComponents();
         this.radnik = radnik;
@@ -464,6 +471,9 @@ public class MainMenuForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za pripremu forme
+     */
     private void prepareForm() {
         this.getContentPane().setLayout(new BorderLayout());
         jLabelPozadina = new JLabel(new ImageIcon("src/main/java/com/amr/client/images/pozadina.jpeg"));

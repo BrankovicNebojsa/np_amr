@@ -7,13 +7,20 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za dodavanje rezervacije
  *
  * @author Nebojsa Brankovic
  */
 public class AddRezervacijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista rezervacija
+     */
     private List<Rezervacija> rezervacije = new ArrayList<>();
 
+    /**
+     * Neparametrizovani konstuktor
+     */
     public AddRezervacijaTableModel() {
     }
 
@@ -71,10 +78,20 @@ public class AddRezervacijaTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Metoda koja vraca sve rezervacije iz tabele
+     *
+     * @return lista rezervacija
+     */
     public List<Rezervacija> getRezervacije() {
         return rezervacije;
     }
 
+    /**
+     * Metoda koja dodaje rezervaciju u tabelu
+     *
+     * @param rezervacija rezervacija koja se dodaje u tabelu
+     */
     public void addRezervacija(Rezervacija rezervacija) {
         rezervacije.add(rezervacija);
         fireTableDataChanged();

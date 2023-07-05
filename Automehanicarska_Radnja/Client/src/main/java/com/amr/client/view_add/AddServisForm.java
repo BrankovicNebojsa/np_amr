@@ -11,18 +11,28 @@ import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za dodavanje servisa
  *
  * @author Nebojsa Brankovic
  */
 public class AddServisForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAutomobilForm
+     * automobil za koji se pravi servis
      */
     private Automobil automobil;
+    /**
+     * radnik koji servisira
+     */
     private Radnik radnik;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddAutomobilForm
+     */
     public AddServisForm() {
         initComponents();
         c = new Controller();
@@ -301,6 +311,9 @@ public class AddServisForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldRadnik;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za postavljanje forme
+     */
     private void prepareForm() {
         jLabelDatumServisaObavezan.setVisible(false);
         jLabelKilometrazaObavezan.setVisible(false);
@@ -309,16 +322,31 @@ public class AddServisForm extends javax.swing.JFrame {
         jLabelRadnikObaveza.setVisible(false);
     }
 
+    /**
+     * Metoda za postavljanje automobila
+     *
+     * @param a automobil koji se postavlja
+     */
     public void setAutomobil(Automobil a) {
         this.automobil = a;
         jTextFieldAutomobil.setText(a.getRegistracioniBroj());
     }
 
+    /**
+     * Metoda za postavljanje radnika
+     *
+     * @param r radnik koji se postavlja
+     */
     public void setRadnik(Radnik r) {
         this.radnik = r;
         jTextFieldRadnik.setText(r.getImeRadnika() + " " + r.getPrezimeRadnika());
     }
 
+    /**
+     * Metoda koja proverava validnost unosa
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldDatumServisa == null || jTextFieldDatumServisa.getText().equals("")) {
             jLabelDatumServisaObavezan.setVisible(true);

@@ -4,13 +4,22 @@ import com.amr.common.domain.Marka;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa za tabelu za dodavanje marke
  *
  * @author Nebojsa Brankovic
  */
 public class AddMarkaTableModel extends AbstractTableModel {
 
+    /**
+     * Objekat klase marka
+     */
     private Marka marka;
 
+    /**
+     * Konstuktor koji inicijalizuje marku
+     *
+     * @param marka marka koja se dodaje
+     */
     public AddMarkaTableModel(Marka marka) {
         this.marka = marka;
     }
@@ -57,6 +66,11 @@ public class AddMarkaTableModel extends AbstractTableModel {
         return false;
     }
 
+    /**
+     * Metoda koja postavlja marku u tabelu
+     *
+     * @param marka marka koja se postavlja
+     */
     public void setMarka(Marka marka) {
         this.marka = marka;
         fireTableDataChanged();

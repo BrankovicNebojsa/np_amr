@@ -7,16 +7,20 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za izmenu rezervacije
  *
  * @author Nebojsa Brankovic
  */
 public class EditRezervacijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form EditMusterijaForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form EditMusterijaForm
+     */
     public EditRezervacijaForm() {
         initComponents();
         c = new Controller();
@@ -238,6 +242,9 @@ public class EditRezervacijaForm extends javax.swing.JFrame {
         });
     }
 
+    /**
+     * Metoda koja popunjava tabelu podacima iz baze podataka
+     */
     public void populateTable() {
         jTableRezervacije.setModel(new EditRezervacijaTableModel(c.getRezervacije()));
 

@@ -5,17 +5,24 @@ import com.amr.common.domain.Musterija;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za izmenu musterija
  *
  * @author Nebojsa Brankovic
  */
 public class EditMusterija2Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form EditMusterija2Form
+     * Musterija koja se izmenjuje
      */
     private Musterija musterija;
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form EditMusterija2Form
+     */
     public EditMusterija2Form(Musterija musterija) {
         initComponents();
         c = new Controller();
@@ -241,6 +248,9 @@ public class EditMusterija2Form extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPrezime;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja priprema formu
+     */
     private void prepareForm() {
         jLabelImeObaveza.setVisible(false);
         jLabelPrezimeObaveza.setVisible(false);
@@ -252,6 +262,11 @@ public class EditMusterija2Form extends javax.swing.JFrame {
         jTextFieldBrojTelefona.setText(musterija.getTelefonMusterije());
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldIme == null || jTextFieldIme.getText().equals("")) {
             jLabelImeObaveza.setVisible(true);

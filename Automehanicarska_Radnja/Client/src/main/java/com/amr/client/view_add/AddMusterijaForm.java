@@ -7,16 +7,20 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za dodavanje musterije
  *
  * @author Nebojsa Brankovic
  */
 public class AddMusterijaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddMusterijaForm
+     * Klijentrski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form AddMusterijaForm
+     */
     public AddMusterijaForm() {
         initComponents();
         c = new Controller();
@@ -320,12 +324,20 @@ public class AddMusterijaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPrezime;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za pripremu forme
+     */
     private void prepareForm() {
         resetData();
         jTableMusterije.setModel(new AddMusterijaTableModel());
 
     }
 
+    /**
+     * Metoda za proveru validnosti unosa korisnika
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldIme == null || jTextFieldIme.getText().equals("")) {
             jLabelImeObaveza.setVisible(true);
@@ -360,6 +372,11 @@ public class AddMusterijaForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li je korisnik uneo odgovarajuci set karaktera
+     *
+     * @return validnost unosa
+     */
     private boolean isOk() {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',
@@ -376,6 +393,9 @@ public class AddMusterijaForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja vraca formu na pocetni izgled
+     */
     private void resetData() {
         jLabelImeObaveza.setVisible(false);
         jLabelPrezimeObaveza.setVisible(false);

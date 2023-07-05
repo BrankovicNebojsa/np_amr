@@ -6,16 +6,20 @@ import com.amr.common.domain.Model;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja formu za pretrazivanje marki
  *
  * @author Nebojsa Brankovic
  */
 public class SearchMarkaForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMarkaForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form SearchMarkaForm
+     */
     public SearchMarkaForm() {
         initComponents();
         this.c = new Controller();
@@ -167,6 +171,9 @@ public class SearchMarkaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldMarka;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja priprema tabelu podacima iz baze
+     */
     private void prepareForm() {
         jTableMarke.setModel(new SearchModeliTableModel(c.getModeli()));
     }

@@ -6,17 +6,24 @@ import com.amr.common.domain.Musterija;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za dodavanje musterije
  *
  * @author Nebojsa Brankovic
  */
 public class AddMusterija2Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddMusterijaForm
+     * objekat nadforme koja poziva ovu klasu
      */
     private FindVlasnikForm nvf;
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddMusterijaForm
+     */
     public AddMusterija2Form(FindVlasnikForm nvf) {
         initComponents();
         c = new Controller();
@@ -277,6 +284,9 @@ public class AddMusterija2Form extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPrezime;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda koja priprema formu
+     */
     private void prepareForm() {
         jLabelImeObaveza.setVisible(false);
         jLabelPrezimeObaveza.setVisible(false);
@@ -285,6 +295,11 @@ public class AddMusterija2Form extends javax.swing.JFrame {
         jLabelBrojTelefonaZnakovi.setVisible(false);
     }
 
+    /**
+     * Metoda koja proverava validnost unosa podataka korisnika
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldIme == null || jTextFieldIme.getText().equals("")) {
             jLabelImeObaveza.setVisible(true);
@@ -319,6 +334,11 @@ public class AddMusterija2Form extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li je korisnik uneo odgovarajuci set karaktera
+     *
+     * @return validnost unosa
+     */
     private boolean isOk() {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',

@@ -7,15 +7,20 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za izmenu automobila
  *
  * @author Nebojsa Brankovic
  */
 public class EditAutomobilForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form EditMusterijaForm
+     * klijentski kontroler
      */
     private Controller c;
+
+    /**
+     * Creates new form EditMusterijaForm
+     */
 
     public EditAutomobilForm() {
         initComponents();
@@ -233,6 +238,9 @@ public class EditAutomobilForm extends javax.swing.JFrame {
         });
     }
 
+    /**
+     * Metoda koja popunjava tabelu podacima iz baze podataka
+     */
     public void populateTable() {
         jTableAutomobili.setModel(new EditAutomobilTableModel(c.getAutomobili()));
 

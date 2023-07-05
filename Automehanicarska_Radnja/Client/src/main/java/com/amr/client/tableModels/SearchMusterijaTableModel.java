@@ -6,13 +6,22 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa tabele za prikaz musterija
  *
  * @author Nebojsa Brankovic
  */
 public class SearchMusterijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista musterija
+     */
     private List<Musterija> musterije = new ArrayList<>();
 
+    /**
+     * Konstuktor koji inicijalizuje musterije kroz parametar
+     *
+     * @param musterije lista musterija
+     */
     public SearchMusterijaTableModel(List<Musterija> musterije) {
         this.musterije = musterije;
     }
@@ -59,6 +68,11 @@ public class SearchMusterijaTableModel extends AbstractTableModel {
         }
     }
 
+    /**
+     * Metoda koja vraca sve musterije u tabeli
+     *
+     * @return lista musterija
+     */
     public List<Musterija> getMusterije() {
         return musterije;
     }

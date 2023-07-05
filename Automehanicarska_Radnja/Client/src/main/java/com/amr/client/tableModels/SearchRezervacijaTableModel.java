@@ -7,13 +7,22 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Klasa koja predstavlja tabelu za prikaz rezervacija
  *
  * @author Nebojsa Brankovic
  */
 public class SearchRezervacijaTableModel extends AbstractTableModel {
 
+    /**
+     * lista rezervacija
+     */
     private List<Rezervacija> rezervacije = new ArrayList<>();
 
+    /**
+     * Konstuktor koji inicijalizuje rezervacija kroz parametar
+     *
+     * @param rezervacije lista rezervacija
+     */
     public SearchRezervacijaTableModel(List<Rezervacija> rezervacije) {
         this.rezervacije = rezervacije;
     }
@@ -67,6 +76,11 @@ public class SearchRezervacijaTableModel extends AbstractTableModel {
         }
     }
 
+    /**
+     * Metoda koja vraca sve rzervacije iz tabele
+     *
+     * @return lista rezervacija
+     */
     public List<Rezervacija> getRezervacije() {
         return rezervacije;
     }

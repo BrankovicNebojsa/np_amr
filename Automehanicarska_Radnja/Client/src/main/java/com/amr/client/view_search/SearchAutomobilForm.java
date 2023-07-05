@@ -8,16 +8,20 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za pretragu automobila
  *
  * @author Nebojsa Brankovic
  */
 public class SearchAutomobilForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMusterijaForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form SearchMusterijaForm
+     */
     public SearchAutomobilForm() {
         initComponents();
         c = new Controller();
@@ -221,6 +225,9 @@ public class SearchAutomobilForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldServis;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za popunjavanje tabele iz baze podataka
+     */
     private void populateTable() {
         jTableAutomobili.setModel(new SearchAutomobilTableModel(c.getAutomobili()));
     }

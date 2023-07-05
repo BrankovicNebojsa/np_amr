@@ -11,16 +11,20 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za registrovanje na sistem
  *
  * @author Nebojsa Brankovic
  */
 public class RegisterForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form RegisterForm
+     * Klijentski kontroler
      */
     private Controller c;
 
+    /**
+     * Creates new form RegisterForm
+     */
     public RegisterForm() {
         initComponents();
         c = new Controller();
@@ -364,6 +368,9 @@ public class RegisterForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPrezime;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Priprema forme
+     */
     private void prepareForm() {
         this.getContentPane().setLayout(new BorderLayout());
         jLabelPozadina = new JLabel(new ImageIcon("src/main/java/com/amr/client/images/register.jpg"));
@@ -381,6 +388,11 @@ public class RegisterForm extends javax.swing.JFrame {
         jComboBoxStrucneSpreme.setSelectedItem(null);
     }
 
+    /**
+     * Provera validnosti unosa klijenta
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldIme == null || jTextFieldIme.getText().equals("")) {
             jLabelImeObaveza.setVisible(true);
@@ -430,6 +442,11 @@ public class RegisterForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja proverava da li je korisnik ponovio sifru 2 puta
+     *
+     * @return validnost sifre
+     */
     private boolean isPasswordValid() {
         String password1 = String.valueOf(jPasswordFieldPassword1.getPassword());
         String password2 = String.valueOf(jPasswordFieldPasswordConfirmation.getPassword());

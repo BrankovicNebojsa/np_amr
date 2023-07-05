@@ -15,18 +15,28 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja rpedstavlja formu za dodavanje automobila
  *
  * @author Nebojsa Brankovic
  */
 public class AddAutomobil2Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAutomobilForm
+     * Automobil koji se dodaje
      */
     private Automobil automobil;
+    /**
+     * Forma za nalazenje automobila
+     */
     private FindAutomobilForm naf;
+    /**
+     * Kontroler klijentski
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddAutomobilForm
+     */
     public AddAutomobil2Form(FindAutomobilForm naf) {
         initComponents();
         c = new Controller();
@@ -534,6 +544,9 @@ public class AddAutomobil2Form extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldVlasnik;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za pripremu forme
+     */
     private void prepareForm() {
         jLabelBojaObaveza.setVisible(false);
         jLabelBrojMotoraObaveza.setVisible(false);
@@ -561,6 +574,11 @@ public class AddAutomobil2Form extends javax.swing.JFrame {
 
     }
 
+    /**
+     * Metoda za vraca naziva marki
+     *
+     * @return nazivi marki
+     */
     private String[] getNaziviMarka() {
         List<Marka> marke = c.getMarke();
         String[] naziviMarke = new String[marke.size()];
@@ -572,6 +590,12 @@ public class AddAutomobil2Form extends javax.swing.JFrame {
         return naziviMarke;
     }
 
+    /**
+     * Metoda za vracanje naziva modela
+     *
+     * @param nazivMarke naziv marke
+     * @return nazivi modela
+     */
     private String[] getNaziviModela(String nazivMarke) {
         List<Model> modeli = c.getModeli(nazivMarke);
         String[] naziviModela = new String[modeli.size()];
@@ -583,12 +607,22 @@ public class AddAutomobil2Form extends javax.swing.JFrame {
         return naziviModela;
     }
 
+    /**
+     * Metoda za postavljanje vlasnika automobila
+     *
+     * @param musterija vlasnik automobila
+     */
     public void setVlasnik(Musterija musterija) {
         String imeIPrezime = musterija.getImeMusterije() + " " + musterija.getPrezimeMusterije();
         jTextFieldVlasnik.setText(imeIPrezime);
         this.automobil.setMusterija(musterija);
     }
 
+    /**
+     * Metoda koja ispituje da li je unos validan
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldRegistracioniBroj == null || jTextFieldRegistracioniBroj.getText().equals("")) {
             jLabelRegistracioniBrojObaveza.setVisible(true);
@@ -678,6 +712,11 @@ public class AddAutomobil2Form extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li unos ima odgovarajuce karaktere
+     *
+     * @return validnost unosa
+     */
     public boolean isOk() {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',

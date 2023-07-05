@@ -15,17 +15,24 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za dodavanje automobila
  *
  * @author Nebojsa Brankovic
  */
 public class AddAutomobilForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form AddAutomobilForm
+     * Automobil koji se dodaje
      */
     private Automobil automobil;
+    /**
+     * Klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form AddAutomobilForm
+     */
     public AddAutomobilForm() {
         initComponents();
         c = new Controller();
@@ -593,11 +600,19 @@ public class AddAutomobilForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldVlasnik;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za pripremu forme
+     */
     private void prepareForm() {
         resetForm();
         jTableAutomobili.setModel(new AddAutomobilTableModel());
     }
 
+    /**
+     * Metoda za vracanja naziva marki
+     *
+     * @return niz naziva marki
+     */
     private String[] getNaziviMarka() {
         List<Marka> marke = c.getMarke();
         String[] naziviMarke = new String[marke.size()];
@@ -609,6 +624,12 @@ public class AddAutomobilForm extends javax.swing.JFrame {
         return naziviMarke;
     }
 
+    /**
+     * Metoda koja vraca nazive modela
+     *
+     * @param nazivMarke naziv neke marke
+     * @return niz naziva modela
+     */
     private String[] getNaziviModela(String nazivMarke) {
         List<Model> modeli = c.getModeli(nazivMarke);
         String[] naziviModela = new String[modeli.size()];
@@ -620,12 +641,22 @@ public class AddAutomobilForm extends javax.swing.JFrame {
         return naziviModela;
     }
 
+    /**
+     * Metoda koja postavlja vlasnika automobila
+     *
+     * @param musterija vlasnik automobila
+     */
     public void setVlasnik(Musterija musterija) {
         String imeIPrezime = musterija.getImeMusterije() + " " + musterija.getPrezimeMusterije();
         jTextFieldVlasnik.setText(imeIPrezime);
         this.automobil.setMusterija(musterija);
     }
 
+    /**
+     * Metoda koja ispituje validnost unosa korisnika
+     *
+     * @return validnost unosa
+     */
     private boolean isDataValid() {
         if (jTextFieldRegistracioniBroj == null || jTextFieldRegistracioniBroj.getText().equals("")) {
             jLabelRegistracioniBrojObaveza.setVisible(true);
@@ -716,6 +747,12 @@ public class AddAutomobilForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispituje da li je korisnik uneo odgovarajuce karaktera kao
+     * unos
+     *
+     * @return validnost unosa
+     */
     public boolean isOk() {
         char[] znakovi = new char[]{'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'g', 'G',
             'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W',
@@ -732,6 +769,9 @@ public class AddAutomobilForm extends javax.swing.JFrame {
         return true;
     }
 
+    /**
+     * Metoda koja ispraznjava formu
+     */
     private void emptyForm() {
         jTextFieldRegistracioniBroj.setText("");
         jTextFieldVlasnik.setText("");
@@ -743,6 +783,9 @@ public class AddAutomobilForm extends javax.swing.JFrame {
         jComboBoxModeli.removeAllItems();
     }
 
+    /**
+     * Metoda koja vraca formu na pocetni izgled
+     */
     private void resetForm() {
         this.automobil = new Automobil();
 

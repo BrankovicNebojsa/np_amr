@@ -9,17 +9,24 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
+ * Klasa koja predstavlja formu za trazenje vlasnika
  *
  * @author Nebojsa Brankovic
  */
 public class FindVlasnikForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form SearchMusterijaForm
+     * nadklasa
      */
     private AddAutomobilForm aaf;
+    /**
+     * klijentski kontroler
+     */
     private Controller c;
 
+    /**
+     * Creates new form SearchMusterijaForm
+     */
     public FindVlasnikForm(AddAutomobilForm aaf) {
         initComponents();
         c = new Controller();
@@ -224,6 +231,9 @@ public class FindVlasnikForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFilter;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Metoda za popunjavanje tabele podacima iz baze podataka
+     */
     public void populateTable() {
         jTableMusterije.setModel(new SearchMusterijaTableModel(c.getMusterije()));
     }
