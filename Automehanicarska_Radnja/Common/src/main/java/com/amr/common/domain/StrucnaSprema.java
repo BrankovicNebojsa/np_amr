@@ -1,7 +1,8 @@
 package com.amr.common.domain;
 
 /**
- *
+ *  Enum klasa za strucnu spremu zaposlenog
+ * 
  * @author Nebojsa Brankovic
  */
 public enum StrucnaSprema {

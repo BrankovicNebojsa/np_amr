@@ -8,28 +8,64 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja Rezervaciju jednog servisa u radnji
  *
  * @author Nebojsa Brankovic
  */
 public class Rezervacija implements GenericObject {
 
+    /**
+     * primarni kljuc klase Rezervacija
+     */
     private int rezervacijaId;
+    /**
+     * datum kada je predvidjen servis
+     */
     private Date pocetakServisa;
+    /**
+     * trajanje servisa u minutima
+     */
     private int trajanjeServisa;
+    /**
+     * automobil koji se servisira
+     */
     private Automobil automobil;
+    /**
+     * mehanicar koji ce izvrsiti servis
+     */
     private Radnik radnik;
 
+    /**
+     * Neparametrizovani konstruktor
+     */
     public Rezervacija() {
     }
 
-    public Rezervacija(Date pocetakServisa, int trajanjeServisa, Musterija musterija, Automobil automobil, Radnik radnik) {
+    /**
+     * Parametrizovani konstruktor sa 4 parametra
+     *
+     * @param pocetakServisa datum rezervacije
+     * @param trajanjeServisa trajanje servisa u minutima
+     * @param automobil automobil koji treba da se servisira
+     * @param radnik mehanicar koji ce servisirati auto
+     */
+    public Rezervacija(Date pocetakServisa, int trajanjeServisa, Automobil automobil, Radnik radnik) {
         this.pocetakServisa = pocetakServisa;
         this.trajanjeServisa = trajanjeServisa;
         this.automobil = automobil;
         this.radnik = radnik;
     }
 
-    public Rezervacija(int rezervacijaId, Date pocetakServisa, int trajanjeServisa, Musterija musterija, Automobil automobil, Radnik radnik) {
+    /**
+     * Parametrizovani konstruktor sa 5 parametra
+     *
+     * @param rezervacijaId primarni kljuc rezervacije
+     * @param pocetakServisa datum rezervacije
+     * @param trajanjeServisa trajanje servisa u minutima
+     * @param automobil automobil koji treba da se servisira
+     * @param radnik mehanicar koji ce servisirati auto
+     */
+    public Rezervacija(int rezervacijaId, Date pocetakServisa, int trajanjeServisa, Automobil automobil, Radnik radnik) {
         this.rezervacijaId = rezervacijaId;
         this.pocetakServisa = pocetakServisa;
         this.trajanjeServisa = trajanjeServisa;
@@ -37,42 +73,87 @@ public class Rezervacija implements GenericObject {
         this.radnik = radnik;
     }
 
+    /**
+     * Metoda koja vraca primarni kljuc rezervacije
+     *
+     * @return primarni kljuc rezervacije kao integer
+     */
     public int getRezervacijaId() {
         return rezervacijaId;
     }
 
+    /**
+     * Postavlja primarni kljuc za rezervaciju
+     * @param rezervacijaId primarni kljuc rezervacije
+     */
     public void setRezervacijaId(int rezervacijaId) {
         this.rezervacijaId = rezervacijaId;
     }
 
+    /**
+     * Metoda koja vraca datum rezervacije
+     *
+     * @return datum rezervacije kao Date
+     */
     public Date getPocetakServisa() {
         return pocetakServisa;
     }
 
+    /**
+     * Postavlja datum rezervacije
+     * @param pocetakServisa datum rezervacije
+     */
     public void setPocetakServisa(Date pocetakServisa) {
         this.pocetakServisa = pocetakServisa;
     }
 
+    /**
+     * Metoda koja vraca trajanje servisa u minutama
+     *
+     * @return trajanje servisa kao int
+     */
     public int getTrajanjeServisa() {
         return trajanjeServisa;
     }
 
+    /**
+     * Postavlja trajanje servisa u minutama
+     * @param trajanjeServisa trajanje servisa u minutama
+     */
     public void setTrajanjeServisa(int trajanjeServisa) {
         this.trajanjeServisa = trajanjeServisa;
     }
 
+    /**
+     * Metoda koja vraca automobil za koji je napravljena rezervacija
+     *
+     * @return automobil za koji je napravljena rezervacija
+     */
     public Automobil getAutomobil() {
         return automobil;
     }
 
+    /**
+     * Postavlja automobil koji treba da se servisira
+     * @param automobil automobil koji treba da se servisira
+     */
     public void setAutomobil(Automobil automobil) {
         this.automobil = automobil;
     }
 
+    /**
+     * Metoda koja vraca mehanicara koji ce servisirati auto
+     *
+     * @return mehanicar koji ce servisirati auto kao objekat klase Radnik
+     */
     public Radnik getRadnik() {
         return radnik;
     }
 
+    /**
+     * Postavlja radnika koji treba da servisira auto
+     * @param radnik radnik koji treba da servisira
+     */
     public void setRadnik(Radnik radnik) {
         this.radnik = radnik;
     }

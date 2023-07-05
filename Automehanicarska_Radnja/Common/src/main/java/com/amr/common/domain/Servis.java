@@ -7,22 +7,49 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
+ * Klasa koja je zaduzena za beleske poslednjeg servisa automobila
+ * 
  * @author Nebojsa Brankovic
  */
-// poslednji servis
 public class Servis implements GenericObject {
 
+    /**
+     * datum poslednjeg servisa
+     */
     private Date datumServisa;
+    /**
+     * kilometraza koju je imao auto na servisu u km
+     */
     private int kilometraza;
+    /**
+     * posao koji je uradjen na servisu
+     */
     private String opis;
 
+    /**
+     * automobil koji se servisira
+     */
     private Automobil automobil;
+    /**
+     * mehanicar koji servisira auto
+     */
     private Radnik radnik;
 
+    /**
+     * Prazan konstuktor
+     */
     public Servis() {
     }
 
+    /**
+     * Parametrizovani konstuktor
+     * 
+     * @param datumServisa datum poslednjeg servisa
+     * @param kilometraza kilometraza koju je imao auto na servisu u km
+     * @param opis posao koji je uradjen na servisu
+     * @param automobil automobil koji se servisira
+     * @param radnik mehanicar koji servisira auto
+     */
     public Servis(Date datumServisa, int kilometraza, String opis, Automobil automobil, Radnik radnik) {
         this.datumServisa = datumServisa;
         this.kilometraza = kilometraza;
@@ -31,42 +58,82 @@ public class Servis implements GenericObject {
         this.radnik = radnik;
     }
 
+    /**
+     * Metoda koja vraca datum poslednjeg servisa
+     * @return 
+     */
     public Date getDatumServisa() {
         return datumServisa;
     }
 
+    /**
+     * Metoda koja postavlja datum poslednjeg servisa 
+     * @param datumServisa datum poslednjeg servisa
+     */
     public void setDatumServisa(Date datumServisa) {
         this.datumServisa = datumServisa;
     }
 
+    /**
+     * Metoda koja vraca kilometrazu koju je auto imao na servisu
+     * @return  kilometraza automobila na servisu
+     */
     public int getKilometraza() {
         return kilometraza;
     }
 
+    /**
+     * Metoda koja postavlja kilometrazu koju je auto imao na poslednjem servisu
+     * @param kilometraza kilometraza koju je auto imao na poslednjem servisu
+     */
     public void setKilometraza(int kilometraza) {
         this.kilometraza = kilometraza;
     }
 
+    /**
+     * Metoda koja vraca opis uradjenog posla na servisu
+     * @return opis posla na servisu
+     */
     public String getOpis() {
         return opis;
     }
 
+    /**
+     * Metoda koja postavlja opis posla uradjenog na servisu
+     * @param opis kratak opis posla uradjenog na servisu
+     */
     public void setOpis(String opis) {
         this.opis = opis;
     }
 
+    /**
+     * Metoda koja vraca automobil koji je servisiran
+     * @return automobil koji je servisiran
+     */
     public Automobil getAutomobil() {
         return automobil;
     }
 
+    /**
+     * Metoda koja postavlja automobil koji je servisiran
+     * @param automobil automobil koji je servisiran
+     */
     public void setAutomobil(Automobil automobil) {
         this.automobil = automobil;
     }
 
+    /**
+     * Metoda koja vraca radnika koji je servisirao automobil
+     * @return mehanicar koji je servisirao automobil
+     */
     public Radnik getRadnik() {
         return radnik;
     }
 
+    /**
+     * Metoda koja postavlja radnika koji je izvrsio servis
+     * @param radnik radnik koji je uradio poslednji servis
+     */
     public void setRadnik(Radnik radnik) {
         this.radnik = radnik;
     }

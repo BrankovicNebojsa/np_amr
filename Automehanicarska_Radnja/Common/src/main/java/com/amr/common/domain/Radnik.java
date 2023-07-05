@@ -6,34 +6,81 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Klasa koja predstavlja zaposlenog mehanicara u nasoj automehanicarskoj radnji
  *
  * @author Nebojsa Brankovic
  */
 public class Radnik implements GenericObject {
 
+    /**
+     * primarni kljuc za objekat klase Radnik
+     */
     private int radnikId;
+    /**
+     * ime zaposlenog mehanicara
+     */
     private String imeRadnika;
+    /**
+     * prezime zaposlenog mehanicara
+     */
     private String prezimeRadnika;
+    /**
+     * strucna sprema zaposlenog koja predstavlja Enum StrucnaSprema
+     */
     private StrucnaSprema strucnaSprema;
+    /**
+     * korisnicko ime uz pomoc kojeg se zaposleni registruje na aplikaciju
+     */
     private String korisnickoIme;
+    /**
+     * sifra uz pomoc koje se zaposleni registruje na aplikaciju
+     */
     private String sifra;
 
+    /**
+     * Neparametrizovani konstruktor
+     */
     public Radnik() {
     }
 
+    /**
+     * Konstruktor sa jednim parametrom za primarni kljuc
+     *
+     * @param radnikId primarni kljuc radnika
+     */
     public Radnik(int radnikId) {
         this.radnikId = radnikId;
     }
 
+    /**
+     * Konstuktor sa jednim parametrom za korisnicko ime
+     *
+     * @param korisnickoIme korisnicko ime koje se dodeljuje radniku
+     */
     public Radnik(String korisnickoIme) {
         this.korisnickoIme = korisnickoIme;
     }
 
+    /**
+     * Konsturktor sa dva parametra: korisnicko ime i sifra
+     *
+     * @param korisnickoIme korisnicko ime koje se dodeljuje radniku
+     * @param sifra sifra koja se dodeljuje radniku
+     */
     public Radnik(String korisnickoIme, String sifra) {
         this.korisnickoIme = korisnickoIme;
         this.sifra = sifra;
     }
 
+    /**
+     * Parametrizovani konstruktor sa svim parametrima osim primarnog kljuca
+     *
+     * @param imeRadnika ime radnika
+     * @param prezimeRadnika prezime radnika
+     * @param strucnaSprema strucna sprema koja se dodeljuje radniku
+     * @param korisnickoIme korisnicko ime koje se dodeljuje radniku
+     * @param sifra sifra koja se dodeljuje radniku
+     */
     public Radnik(String imeRadnika, String prezimeRadnika, StrucnaSprema strucnaSprema, String korisnickoIme, String sifra) {
         this.imeRadnika = imeRadnika;
         this.prezimeRadnika = prezimeRadnika;
@@ -42,50 +89,110 @@ public class Radnik implements GenericObject {
         this.sifra = sifra;
     }
 
+    /**
+     * Metoda za vracanje primarnog kljuca objekta klase Radnik
+     *
+     * @return id radnika
+     */
     public int getRadnikId() {
         return radnikId;
     }
 
+    /**
+     * Metoda koja postavlja primarni kljuc objekta klase Radnik
+     *
+     * @param radnikId id radnika
+     */
     public void setRadnikId(int radnikId) {
         this.radnikId = radnikId;
     }
 
+    /**
+     * Metoda za vracanje imena radnika
+     *
+     * @return ime radnika
+     */
     public String getImeRadnika() {
         return imeRadnika;
     }
 
+    /**
+     * Metoda koja postavlja ime radnika
+     *
+     * @param imeRadnika ime radnika
+     */
     public void setImeRadnika(String imeRadnika) {
         this.imeRadnika = imeRadnika;
     }
 
+    /**
+     * Metoda za vracanje prezimena radnika
+     *
+     * @return prezime radnika
+     */
     public String getPrezimeRadnika() {
         return prezimeRadnika;
     }
 
+    /**
+     * Metoda koja postavlja prezime radnika
+     *
+     * @param prezimeRadnika prezime radnika
+     */
     public void setPrezimeRadnika(String prezimeRadnika) {
         this.prezimeRadnika = prezimeRadnika;
     }
 
+    /**
+     * Metoda za vracanje strucne spreme radnika
+     *
+     * @return strucna sprema radnika
+     */
     public StrucnaSprema getStrucnaSprema() {
         return strucnaSprema;
     }
 
+    /**
+     * Metoda koja postavlja strucnu spremu radnika
+     *
+     * @param strucnaSprema strucna sprema radnika
+     */
     public void setStrucnaSprema(StrucnaSprema strucnaSprema) {
         this.strucnaSprema = strucnaSprema;
     }
 
+    /**
+     * Metoda za vracanje korisnickog imena radnika
+     *
+     * @return korisnicko ime radnika
+     */
     public String getKorisnickoIme() {
         return korisnickoIme;
     }
 
+    /**
+     * Metoda koja postavlja korisnicko ime radnika
+     *
+     * @param korisnickoIme korisnicko ime radniak
+     */
     public void setKorisnickoIme(String korisnickoIme) {
         this.korisnickoIme = korisnickoIme;
     }
 
+    /**
+     * Metoda za vracanje sifre radnika
+     *
+     * @return sifra radnika
+     */
     public String getSifra() {
         return sifra;
     }
 
+    /**
+     * Metoda koja postavlja sifru radnik
+     *
+     * @param sifra sifra radnika
+     */
     public void setSifra(String sifra) {
         this.sifra = sifra;
     }
