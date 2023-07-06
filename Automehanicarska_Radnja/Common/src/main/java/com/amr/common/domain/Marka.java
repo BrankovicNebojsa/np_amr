@@ -67,7 +67,7 @@ public class Marka implements GenericObject { //dodati listu modela
 
     /**
      * Metoda koja vraca primarni kljuc marke
-     * 
+     *
      * @return Primarni kljuc marke
      */
     public int getMarkaId() {
@@ -76,16 +76,20 @@ public class Marka implements GenericObject { //dodati listu modela
 
     /**
      * Metoda koja postavlja primarni kljuc marke automobila
-     * 
+     *
      * @param markaId primarni kljuc automobila
+     * @throws IllegalArgumentException za unet id manji od 0
      */
-    public void setMarkaId(int markaId) {
+    public void setMarkaId(int markaId) throws IllegalArgumentException {
+        if (markaId < 0) {
+            throw new IllegalArgumentException("Id ne moze biti manji od 0");
+        }
         this.markaId = markaId;
     }
 
     /**
      * Metoda koja vraca naziv marke automobila
-     * 
+     *
      * @return Naziv marke automobila
      */
     public String getNazivMarke() {
@@ -94,16 +98,25 @@ public class Marka implements GenericObject { //dodati listu modela
 
     /**
      * Metoda koja postavlja naziv marke automobila
-     * 
+     *
      * @param nazivMarke Naziv marke automobila
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
+     * 
      */
-    public void setNazivMarke(String nazivMarke) {
+    public void setNazivMarke(String nazivMarke) throws NullPointerException, IllegalArgumentException {
+        if (nazivMarke == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (nazivMarke.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.nazivMarke = nazivMarke;
     }
 
     /**
      * Metoda koja vraca listu modela marke
-     * 
+     *
      * @return Lista modela marke
      */
     public List<Model> getModeli() {
@@ -112,10 +125,14 @@ public class Marka implements GenericObject { //dodati listu modela
 
     /**
      * Metoda koja postavlja listu modela date marke automobila
-     * 
+     *
      * @param modeli Lista modela marke automobila
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setModeli(List<Model> modeli) {
+    public void setModeli(List<Model> modeli) throws NullPointerException {
+        if (modeli == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.modeli = modeli;
     }
 

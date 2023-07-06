@@ -76,8 +76,12 @@ public class Motor implements GenericObject {
      * Metoda koja postavlja primarni kljuc motora
      *
      * @param motorId Primarni kljuc motora
+     * @throws IllegalArgumentException ukoliko je unet id manji od 0
      */
-    public void setMotorId(int motorId) {
+    public void setMotorId(int motorId) throws IllegalArgumentException {
+        if (motorId < 0) {
+            throw new IllegalArgumentException("Unet id manji od 0");
+        }
         this.motorId = motorId;
     }
 
@@ -94,8 +98,13 @@ public class Motor implements GenericObject {
      * Metoda koja postavlja broj cilindara motora
      *
      * @param brojCilindara Broj cilindara motora
+     * @throws IllegalArgumentException ukoliko je unet broj cilindara manji od
+     * 0
      */
-    public void setBrojCilindara(int brojCilindara) {
+    public void setBrojCilindara(int brojCilindara) throws IllegalArgumentException {
+        if (brojCilindara < 0) {
+            throw new IllegalArgumentException("Unet broj cilindara manji od 0");
+        }
         this.brojCilindara = brojCilindara;
     }
 
@@ -112,8 +121,12 @@ public class Motor implements GenericObject {
      * Metoda koja postavlja kubikazu motora
      *
      * @param kubikaza Kubikaza motora
+     * @throws IllegalArgumentException ukoliko je uneta kubikaza manja od 0
      */
-    public void setKubikaza(double kubikaza) {
+    public void setKubikaza(double kubikaza) throws IllegalArgumentException {
+        if (kubikaza < 0) {
+            throw new IllegalArgumentException("Uneta kubikaza manja od 0");
+        }
         this.kubikaza = kubikaza;
     }
 
@@ -130,8 +143,13 @@ public class Motor implements GenericObject {
      * Metoda koja postavlja konjsku snagu motora
      *
      * @param konjskaSnaga Konjska snaga motora
+     * @throws IllegalArgumentException ukoliko je uneta konjska snaga manja od
+     * 0
      */
-    public void setKonjskaSnaga(int konjskaSnaga) {
+    public void setKonjskaSnaga(int konjskaSnaga) throws IllegalArgumentException {
+        if (konjskaSnaga < 0) {
+            throw new IllegalArgumentException("Uneta konjska snaga manja od 0");
+        }
         this.konjskaSnaga = konjskaSnaga;
     }
 

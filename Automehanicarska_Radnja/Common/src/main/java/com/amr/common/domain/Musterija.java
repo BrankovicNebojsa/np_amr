@@ -94,8 +94,12 @@ public class Musterija implements GenericObject {
      * Metoda koja postavlja primarni kljuc musterije
      *
      * @param musterijaId Primarni kljuc musterije
+     * @throws IllegalArgumentException ukoliko je unet id manji od 0
      */
-    public void setMusterijaId(int musterijaId) {
+    public void setMusterijaId(int musterijaId) throws IllegalArgumentException {
+        if (musterijaId < 0) {
+            throw new IllegalArgumentException("Unet id manji od 0");
+        }
         this.musterijaId = musterijaId;
     }
 
@@ -111,9 +115,17 @@ public class Musterija implements GenericObject {
     /**
      * Metoda koja postavlja ime musterije
      *
-     * @param imeMusterije  Ime musterije
+     * @param imeMusterije Ime musterije
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setImeMusterije(String imeMusterije) {
+    public void setImeMusterije(String imeMusterije) throws IllegalArgumentException, NullPointerException {
+        if (imeMusterije == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (imeMusterije.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.imeMusterije = imeMusterije;
     }
 
@@ -130,8 +142,16 @@ public class Musterija implements GenericObject {
      * Metoda koja postavlja prezime musterije
      *
      * @param prezimeMusterije Prezime musterije
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setPrezimeMusterije(String prezimeMusterije) {
+    public void setPrezimeMusterije(String prezimeMusterije) throws IllegalArgumentException, NullPointerException {
+        if (prezimeMusterije == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (prezimeMusterije.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.prezimeMusterije = prezimeMusterije;
     }
 
@@ -148,8 +168,16 @@ public class Musterija implements GenericObject {
      * Metoda koja postavlja mail musterije
      *
      * @param mailMusterije Mail musterije
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setMailMusterije(String mailMusterije) {
+    public void setMailMusterije(String mailMusterije) throws IllegalArgumentException, NullPointerException {
+        if (mailMusterije == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (mailMusterije.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.mailMusterije = mailMusterije;
     }
 
@@ -166,8 +194,16 @@ public class Musterija implements GenericObject {
      * Metoda koja postavlja telefon musterije
      *
      * @param telefonMusterije Telefon musterije
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setTelefonMusterije(String telefonMusterije) {
+    public void setTelefonMusterije(String telefonMusterije) throws IllegalArgumentException, NullPointerException {
+        if (telefonMusterije == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (telefonMusterije.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.telefonMusterije = telefonMusterije;
     }
 

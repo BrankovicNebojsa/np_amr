@@ -102,8 +102,12 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja primarni kljuc objekta klase Radnik
      *
      * @param radnikId id radnika
+     * @throws IllegalArgumentException ukoliko je unet id manji od 0
      */
-    public void setRadnikId(int radnikId) {
+    public void setRadnikId(int radnikId) throws IllegalArgumentException {
+        if (radnikId < 0) {
+            throw new IllegalArgumentException("Unet id manji od 0");
+        }
         this.radnikId = radnikId;
     }
 
@@ -120,8 +124,16 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja ime radnika
      *
      * @param imeRadnika ime radnika
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setImeRadnika(String imeRadnika) {
+    public void setImeRadnika(String imeRadnika) throws IllegalArgumentException, NullPointerException {
+        if (imeRadnika == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (imeRadnika.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.imeRadnika = imeRadnika;
     }
 
@@ -138,8 +150,16 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja prezime radnika
      *
      * @param prezimeRadnika prezime radnika
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setPrezimeRadnika(String prezimeRadnika) {
+    public void setPrezimeRadnika(String prezimeRadnika) throws IllegalArgumentException, NullPointerException {
+        if (prezimeRadnika == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (prezimeRadnika.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.prezimeRadnika = prezimeRadnika;
     }
 
@@ -156,8 +176,12 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja strucnu spremu radnika
      *
      * @param strucnaSprema strucna sprema radnika
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setStrucnaSprema(StrucnaSprema strucnaSprema) {
+    public void setStrucnaSprema(StrucnaSprema strucnaSprema) throws NullPointerException {
+        if (strucnaSprema == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.strucnaSprema = strucnaSprema;
     }
 
@@ -174,8 +198,16 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja korisnicko ime radnika
      *
      * @param korisnickoIme korisnicko ime radniak
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setKorisnickoIme(String korisnickoIme) {
+    public void setKorisnickoIme(String korisnickoIme) throws IllegalArgumentException, NullPointerException {
+        if (korisnickoIme == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (korisnickoIme.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.korisnickoIme = korisnickoIme;
     }
 
@@ -192,8 +224,16 @@ public class Radnik implements GenericObject {
      * Metoda koja postavlja sifru radnik
      *
      * @param sifra sifra radnika
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setSifra(String sifra) {
+    public void setSifra(String sifra) throws IllegalArgumentException, NullPointerException {
+        if (sifra == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (sifra.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.sifra = sifra;
     }
 
