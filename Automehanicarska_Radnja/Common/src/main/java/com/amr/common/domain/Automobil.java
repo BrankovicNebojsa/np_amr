@@ -107,8 +107,16 @@ public class Automobil implements GenericObject {
      * Automobil
      *
      * @param registracioniBroj Registracioni broj koji se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setRegistracioniBroj(String registracioniBroj) {
+    public void setRegistracioniBroj(String registracioniBroj) throws NullPointerException, IllegalArgumentException {
+        if (registracioniBroj == null) {
+            throw new NullPointerException();
+        }
+        if (registracioniBroj.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.registracioniBroj = registracioniBroj;
     }
 
@@ -126,8 +134,13 @@ public class Automobil implements GenericObject {
      * Automobil
      *
      * @param godiste Godina proizvodnje koja se postavlja Automobilu
+     * @throws IllegalArgumentException u slucaju da je uneto godiste manje od
+     * 1900
      */
-    public void setGodiste(int godiste) {
+    public void setGodiste(int godiste) throws IllegalArgumentException {
+        if (godiste < 1900) {
+            throw new IllegalArgumentException("Auto ne moze biti stariji od 1900.");
+        }
         this.godiste = godiste;
     }
 
@@ -144,8 +157,16 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja broj motora za instancu objekta klase Automobil
      *
      * @param brojMotora Broj motora koji se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setBrojMotora(String brojMotora) {
+    public void setBrojMotora(String brojMotora) throws NullPointerException, IllegalArgumentException {
+        if (brojMotora == null) {
+            throw new NullPointerException();
+        }
+        if (brojMotora.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.brojMotora = brojMotora;
     }
 
@@ -162,8 +183,16 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja broj sasije za instancu objekta klase Automobil
      *
      * @param brojSasije Broj sasije koji se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setBrojSasije(String brojSasije) {
+    public void setBrojSasije(String brojSasije) throws NullPointerException, IllegalArgumentException {
+        if (brojMotora == null) {
+            throw new NullPointerException();
+        }
+        if (brojMotora.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.brojSasije = brojSasije;
     }
 
@@ -180,8 +209,12 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja boju za instancu objekta klase Automobil
      *
      * @param boja Boja koja se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setBoja(Boja boja) {
+    public void setBoja(Boja boja) throws NullPointerException {
+        if (boja == null) {
+            throw new NullPointerException();
+        }
         this.boja = boja;
     }
 
@@ -198,8 +231,12 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja vrstu menjaca za instancu objekta klase Automobil
      *
      * @param menjac Vrsta menjaca koja se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setMenjac(TipMenjaca menjac) {
+    public void setMenjac(TipMenjaca menjac) throws NullPointerException {
+        if (menjac == null) {
+            throw new NullPointerException();
+        }
         this.menjac = menjac;
     }
 
@@ -216,8 +253,12 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja motor za instancu objekta klase Automobil
      *
      * @param motor Instanca klase Motor koja se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setMotor(Motor motor) {
+    public void setMotor(Motor motor) throws NullPointerException {
+        if (motor == null) {
+            throw new NullPointerException();
+        }
         this.motor = motor;
     }
 
@@ -234,8 +275,12 @@ public class Automobil implements GenericObject {
      * Metoda koja postavlja Model za instancu objekta klase Automobil
      *
      * @param model Instanca klase Model koji se postavlja Automobilu
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setModel(Model model) {
+    public void setModel(Model model) throws NullPointerException {
+        if (model == null) {
+            throw new NullPointerException();
+        }
         this.model = model;
     }
 
@@ -251,10 +296,13 @@ public class Automobil implements GenericObject {
     /**
      * Metoda koja postavlja Musteriju za instancu objekta klase Automobil
      *
-     * @param musterija Instanca klase Musterija koja predstavlja vlasnika
-     * automobila.
+     * @param musterija Instanca klase Musterija koja predstavlja vlasnika automobila
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setMusterija(Musterija musterija) {
+    public void setMusterija(Musterija musterija) throws NullPointerException {
+        if (musterija == null) {
+            throw new NullPointerException();
+        }
         this.musterija = musterija;
     }
 
