@@ -6,6 +6,7 @@ import java.util.List;
  * Interfejs za upravljanje nad bazom podataka
  *
  * @author Nebojsa Brankovic
+ * @param <T> opsti domenski objekat
  */
 public interface Repository<T> {
 

@@ -16,6 +16,12 @@ public class GetAutomobil extends AbstractSystemOperation {
      */
     private Automobil automobil;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetAutomobil() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Automobil)) {

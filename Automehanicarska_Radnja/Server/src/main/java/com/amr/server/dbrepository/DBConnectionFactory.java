@@ -30,7 +30,7 @@ public class DBConnectionFactory {
     /**
      * Metoda koja vraca instancu ove klase
      *
-     * @return
+     * @return instanca klase DBConnectionFactory
      */
     public static DBConnectionFactory getInstance() {
         if (instance == null) {

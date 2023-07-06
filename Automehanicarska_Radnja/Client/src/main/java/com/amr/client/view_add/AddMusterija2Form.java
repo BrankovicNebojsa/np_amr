@@ -23,6 +23,8 @@ public class AddMusterija2Form extends javax.swing.JFrame {
 
     /**
      * Creates new form AddMusterijaForm
+     *
+     * @param nvf nadklasa/forma
      */
     public AddMusterija2Form(FindVlasnikForm nvf) {
         initComponents();
@@ -224,6 +226,8 @@ public class AddMusterija2Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonZapamtiActionPerformed
 
     /**
+     * Glavna metoda
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

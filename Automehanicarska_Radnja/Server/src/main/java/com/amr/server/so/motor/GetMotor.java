@@ -16,6 +16,12 @@ public class GetMotor extends AbstractSystemOperation {
      */
     private Motor motor;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetMotor() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Motor)) {

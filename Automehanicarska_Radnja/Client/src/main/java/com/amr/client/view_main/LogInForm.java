@@ -215,6 +215,8 @@ public class LogInForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabelOVDEMouseClicked
 
     /**
+     * Glavna metoda
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {

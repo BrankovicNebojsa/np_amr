@@ -35,6 +35,8 @@ public class MainMenuForm extends javax.swing.JFrame {
 
     /**
      * Creates new form MainMenuForm
+     *
+     * @param radnik klijent koji koristi aplikaciju
      */
     public MainMenuForm(Radnik radnik) {
         initComponents();

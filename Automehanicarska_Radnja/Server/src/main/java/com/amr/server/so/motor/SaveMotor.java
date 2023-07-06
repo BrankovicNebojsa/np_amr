@@ -11,6 +11,12 @@ import java.util.List;
  */
 public class SaveMotor extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveMotor() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Motor)) {

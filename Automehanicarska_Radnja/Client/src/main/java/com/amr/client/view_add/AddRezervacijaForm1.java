@@ -390,6 +390,8 @@ public class AddRezervacijaForm1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonDodajActionPerformed
 
     /**
+     * Glavna metoda
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

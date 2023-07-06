@@ -16,6 +16,12 @@ public class GetMarka extends AbstractSystemOperation {
      */
     private Marka marka;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetMarka() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Marka)) {

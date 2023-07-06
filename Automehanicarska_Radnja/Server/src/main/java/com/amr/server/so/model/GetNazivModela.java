@@ -16,6 +16,12 @@ public class GetNazivModela extends AbstractSystemOperation {
      */
     private String nazivModela;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetNazivModela() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Model)) {

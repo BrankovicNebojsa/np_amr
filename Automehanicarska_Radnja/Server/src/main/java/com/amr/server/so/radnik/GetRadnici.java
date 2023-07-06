@@ -16,6 +16,12 @@ public class GetRadnici extends AbstractSystemOperation {
      */
     private List<Radnik> radnici;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetRadnici() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Radnik)) {

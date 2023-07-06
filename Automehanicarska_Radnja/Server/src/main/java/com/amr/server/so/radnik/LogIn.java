@@ -16,6 +16,12 @@ public class LogIn extends AbstractSystemOperation {
      */
     private boolean status;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public LogIn() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Radnik)) {
@@ -38,7 +44,8 @@ public class LogIn extends AbstractSystemOperation {
 
     /**
      * Metoda koja vraca da li postoji radnik sa tim kredencijalima
-     * @return 
+     *
+     * @return da li postoji takav radnik
      */
     public boolean getStatus() {
         return this.status;

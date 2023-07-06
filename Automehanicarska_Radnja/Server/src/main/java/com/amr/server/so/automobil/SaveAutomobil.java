@@ -11,6 +11,12 @@ import java.util.List;
  */
 public class SaveAutomobil extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveAutomobil() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Automobil)) {

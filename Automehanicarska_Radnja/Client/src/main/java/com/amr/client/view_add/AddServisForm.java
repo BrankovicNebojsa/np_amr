@@ -284,10 +284,6 @@ public class AddServisForm extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButtonIzaberiRadnikaActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonIzaberiAutomobil;
     private javax.swing.JButton jButtonIzaberiRadnika;

@@ -10,6 +10,12 @@ import com.amr.server.so.AbstractSystemOperation;
  */
 public class UpdateAutomobil extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public UpdateAutomobil() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Automobil)) {

@@ -16,6 +16,12 @@ public class UsernameExists extends AbstractSystemOperation {
      */
     private boolean status;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public UsernameExists() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Radnik)) {
@@ -38,7 +44,7 @@ public class UsernameExists extends AbstractSystemOperation {
     /**
      * Metoda koja vraca da li postoji korisnicko ime u bazi
      *
-     * @return
+     * @return da li postoji korisnicko ime u bazi
      */
     public boolean getStatus() {
         return this.status;

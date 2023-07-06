@@ -10,6 +10,12 @@ import com.amr.server.so.AbstractSystemOperation;
  */
 public class UpdateRezervacija extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public UpdateRezervacija() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Rezervacija)) {

@@ -60,7 +60,7 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja vraca datum poslednjeg servisa
-     * @return 
+     * @return Datum poslednjeg servisa
      */
     public Date getDatumServisa() {
         return datumServisa;

@@ -16,6 +16,12 @@ public class GetRadnikFromRadnikId extends AbstractSystemOperation {
      */
     private Radnik radnik;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetRadnikFromRadnikId() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Radnik)) {

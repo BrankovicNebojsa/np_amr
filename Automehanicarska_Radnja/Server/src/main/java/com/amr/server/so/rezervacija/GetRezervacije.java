@@ -16,6 +16,12 @@ public class GetRezervacije extends AbstractSystemOperation {
      */
     private List<Rezervacija> rezervacije;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetRezervacije() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Rezervacija)) {

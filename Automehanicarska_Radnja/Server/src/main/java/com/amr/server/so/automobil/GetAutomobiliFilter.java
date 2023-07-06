@@ -16,6 +16,12 @@ public class GetAutomobiliFilter extends AbstractSystemOperation {
      */
     private List<Automobil> automobili;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetAutomobiliFilter() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
     }

@@ -10,6 +10,12 @@ import com.amr.server.so.AbstractSystemOperation;
  */
 public class SaveServis extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveServis() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
 

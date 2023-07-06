@@ -16,6 +16,12 @@ public class GetRadniciFilter extends AbstractSystemOperation {
      */
     private List<Radnik> radnici;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetRadniciFilter() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
     }

@@ -16,6 +16,12 @@ public class GetMusterijeFilter extends AbstractSystemOperation {
      */
     private List<Musterija> musterije;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetMusterijeFilter() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
     }

@@ -26,6 +26,8 @@ public class FindVlasnikForm extends javax.swing.JFrame {
 
     /**
      * Creates new form SearchMusterijaForm
+     *
+     * @param aaf nadklasa/forma
      */
     public FindVlasnikForm(AddAutomobilForm aaf) {
         initComponents();
@@ -180,6 +182,8 @@ public class FindVlasnikForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonNapraviNovuMusterijuActionPerformed
 
     /**
+     * Glavna metoda
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {

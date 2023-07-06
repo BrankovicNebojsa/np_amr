@@ -10,6 +10,12 @@ import com.amr.server.so.AbstractSystemOperation;
  */
 public class DeleteAutomobil extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public DeleteAutomobil() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Automobil)) {

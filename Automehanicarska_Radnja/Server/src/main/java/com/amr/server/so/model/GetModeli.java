@@ -16,6 +16,12 @@ public class GetModeli extends AbstractSystemOperation {
      */
     private List<Model> modeli;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetModeli() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Model)) {

@@ -16,6 +16,12 @@ public class GetModeliFromNazivMarke2 extends AbstractSystemOperation {
      */
     private List<Model> modeli;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetModeliFromNazivMarke2() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Model)) {

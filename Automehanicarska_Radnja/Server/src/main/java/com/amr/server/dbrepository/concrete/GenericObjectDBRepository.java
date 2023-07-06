@@ -16,6 +16,12 @@ import java.util.List;
  */
 public class GenericObjectDBRepository implements DBRepository<GenericObject> {
 
+    /**
+     * Prazan konstuktor
+     */
+    public GenericObjectDBRepository() {
+    }
+
     @Override
     public List<GenericObject> getAllFilter(GenericObject ado, String filter) throws Exception {
         List<GenericObject> objects = new ArrayList<>();

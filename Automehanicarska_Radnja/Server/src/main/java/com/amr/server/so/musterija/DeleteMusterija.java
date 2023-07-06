@@ -10,6 +10,12 @@ import com.amr.server.so.AbstractSystemOperation;
  */
 public class DeleteMusterija extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public DeleteMusterija() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Musterija)) {

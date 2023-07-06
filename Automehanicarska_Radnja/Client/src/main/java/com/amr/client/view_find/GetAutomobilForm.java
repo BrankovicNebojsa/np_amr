@@ -25,6 +25,8 @@ public class GetAutomobilForm extends javax.swing.JFrame {
 
     /**
      * Creates new form NadjiAutomobilForm
+     * 
+     * @param asf nadklasa/forma
      */
     public GetAutomobilForm(AddServisForm asf) {
         initComponents();

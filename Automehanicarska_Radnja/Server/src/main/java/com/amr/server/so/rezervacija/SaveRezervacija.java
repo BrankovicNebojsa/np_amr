@@ -11,6 +11,12 @@ import java.util.List;
  */
 public class SaveRezervacija extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveRezervacija() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Rezervacija)) {

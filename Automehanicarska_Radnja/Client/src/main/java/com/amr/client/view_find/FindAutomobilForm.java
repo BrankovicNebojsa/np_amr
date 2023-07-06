@@ -26,6 +26,8 @@ public class FindAutomobilForm extends javax.swing.JFrame {
 
     /**
      * Creates new form NadjiAutomobilForm
+     *
+     * @param arf nadklasa/forma
      */
     public FindAutomobilForm(AddRezervacijaForm arf) {
         initComponents();

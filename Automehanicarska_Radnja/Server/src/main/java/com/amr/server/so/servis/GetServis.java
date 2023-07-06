@@ -16,6 +16,12 @@ public class GetServis extends AbstractSystemOperation {
      */
     private Servis servis = null;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetServis() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Servis)) {

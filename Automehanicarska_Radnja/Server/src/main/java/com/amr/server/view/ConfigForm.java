@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  * Klasa koja je zaduzena za podesavanje konfiguracije servera
- * 
+ *
  * @author Nebojsa Brankovic
  */
 public class ConfigForm extends javax.swing.JFrame {
@@ -125,11 +125,21 @@ public class ConfigForm extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Metoda koja se desava kada se pritisne dugme nazad
+     *
+     * @param evt pritisnuto dugme nazad
+     */
     private void jButtonNazadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNazadActionPerformed
         this.setVisible(false);
         this.dispose();
     }//GEN-LAST:event_jButtonNazadActionPerformed
 
+    /**
+     * Metoda koja se desava kada se pritisne dugme zapamti
+     *
+     * @param evt pritisnuto dugme zapamti
+     */
     private void jButtonZapamtiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonZapamtiActionPerformed
         if (jTextFieldURL.getText().startsWith("jdbc:mysql://localhost:3306/")) {
             FileInputStream in = null;
@@ -164,6 +174,8 @@ public class ConfigForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonZapamtiActionPerformed
 
     /**
+     * Glavna funkcija
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

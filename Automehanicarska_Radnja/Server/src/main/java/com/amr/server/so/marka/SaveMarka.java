@@ -12,6 +12,12 @@ import java.util.List;
  */
 public class SaveMarka extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveMarka() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Marka)) {

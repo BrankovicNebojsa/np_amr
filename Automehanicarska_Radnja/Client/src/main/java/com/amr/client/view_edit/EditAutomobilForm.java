@@ -189,6 +189,8 @@ public class EditAutomobilForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonObrisiActionPerformed
 
     /**
+     * Glavna metoda
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {

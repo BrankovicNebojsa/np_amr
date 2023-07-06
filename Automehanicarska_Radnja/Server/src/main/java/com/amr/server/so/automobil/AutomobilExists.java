@@ -16,6 +16,12 @@ public class AutomobilExists extends AbstractSystemOperation {
      */
     private boolean status;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public AutomobilExists() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Automobil)) {

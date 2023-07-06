@@ -27,11 +27,18 @@ import java.util.List;
 public class Controller {
 
     /**
+     * Prazan konstruktor
+     */
+    public Controller() {
+    }
+
+    /**
      * Metoda koja vraca radnika
      *
      * @param radnikId id radnika
      * @return odgovarajuci radnik
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Radnik getRadnikFromRadnikId(int radnikId) throws Exception {
         AbstractSystemOperation getRadnikFromRadnikId = new GetRadnikFromRadnikId();
@@ -44,7 +51,8 @@ public class Controller {
      *
      * @param musterijaId id musterije
      * @return musterija za taj id
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Musterija getMusterija(int musterijaId) throws Exception {
         AbstractSystemOperation getMusterija = new GetMusterija();
@@ -57,7 +65,8 @@ public class Controller {
      *
      * @param registracioniBroj registracioni broj automobila
      * @return automobil koji ima tu registraciju
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Automobil getAutomobil(String registracioniBroj) throws Exception {
         AbstractSystemOperation getAutomobil = new GetAutomobil();
@@ -71,7 +80,8 @@ public class Controller {
      * @param korisnickoIme korisnicko ime radnika
      * @param sifra sifra radnika
      * @return da li postoji takav radnik u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public boolean login(String korisnickoIme, String sifra) throws Exception {
         AbstractSystemOperation login = new LogIn();
@@ -84,7 +94,8 @@ public class Controller {
      *
      * @param korisnickoIme korisnicko ime
      * @return da li postoji korisnicko ime u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public boolean usernameExists(String korisnickoIme) throws Exception {
         AbstractSystemOperation usernameExists = new UsernameExists();
@@ -97,7 +108,8 @@ public class Controller {
      *
      * @param registracioniBroj Registracioni broj unetog automobila
      * @return da li postoji takva registracija
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public boolean automobilExists(String registracioniBroj) throws Exception {
         AbstractSystemOperation automobilExists = new AutomobilExists();
@@ -109,7 +121,8 @@ public class Controller {
      * Metoda koja cuva radnika
      *
      * @param radnik radnik kojeg cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveRadnik(Radnik radnik) throws Exception {
         AbstractSystemOperation saveRadnik = new SaveRadnik();
@@ -120,7 +133,8 @@ public class Controller {
      * Metoda koja cuva musteriju u bazi
      *
      * @param musterija musterija kojeg cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveMusterija(Musterija musterija) throws Exception {
         AbstractSystemOperation saveMusterija = new SaveMusterija();
@@ -131,7 +145,8 @@ public class Controller {
      * Metoda koja cuva vise musterija u bazi
      *
      * @param musterije musterije koje cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveMusterije(List<Musterija> musterije) throws Exception {
         AbstractSystemOperation saveMusterije = new SaveMusterije();
@@ -142,7 +157,8 @@ public class Controller {
      * Metoda koja cuva marku u bazi
      *
      * @param marka marka koju cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveMarka(Marka marka) throws Exception {
         AbstractSystemOperation saveMarka = new SaveMarka();
@@ -153,7 +169,8 @@ public class Controller {
      * Metoda koja cuva automobil u bazi
      *
      * @param automobil automobil koji cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveAutomobil(Automobil automobil) throws Exception {
         AbstractSystemOperation saveAutomobil = new SaveAutomobil();
@@ -164,7 +181,8 @@ public class Controller {
      * Metoda koja cuva vise automobila u bazi
      *
      * @param automobili automobili koje cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveAutomobili(List<Automobil> automobili) throws Exception {
         AbstractSystemOperation saveAutomobili = new SaveAutomobili();
@@ -175,7 +193,8 @@ public class Controller {
      * Metoda koja cuva rezervaciju u bazi
      *
      * @param rezervacija rezervacija koju cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveRezervacija(Rezervacija rezervacija) throws Exception {
         AbstractSystemOperation saveRezervacija = new SaveRezervacija();
@@ -186,7 +205,8 @@ public class Controller {
      * Metoda koja cuva vise rezervacija u bazi
      *
      * @param rezervacije rezervacije koje treba da sacuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveRezervacije(List<Rezervacija> rezervacije) throws Exception {
         AbstractSystemOperation saveRezervacije = new SaveRezervacije();
@@ -198,7 +218,8 @@ public class Controller {
      *
      * @param korisnickoIme korisnicko ime radnika
      * @return odgovarajuci Radnik za to korisnicko ime
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Radnik getRadnik(String korisnickoIme) throws Exception {
         AbstractSystemOperation getRadnik = new GetRadnik();
@@ -211,7 +232,8 @@ public class Controller {
      *
      * @param nazivModela naziv nekog modela
      * @return Objekat klase Model koji ima taj naziv modela
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Model getModel(String nazivModela) throws Exception {
         AbstractSystemOperation getModel = new GetModel();
@@ -224,7 +246,8 @@ public class Controller {
      *
      * @param nazivMarke naziv nek marke
      * @return objekat koji ima uneti naziv marke
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Marka getMarka(String nazivMarke) throws Exception {
         AbstractSystemOperation getMarka = new GetMarka();
@@ -237,7 +260,8 @@ public class Controller {
      *
      * @param model model u kojem se nalazi primarni kljuc modela
      * @return naziv modela
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public String getNazivModela(Model model) throws Exception {
         AbstractSystemOperation getNazivModela = new GetNazivModela();
@@ -250,7 +274,8 @@ public class Controller {
      *
      * @param marka objekat klase marka koji ima primarni kljuc
      * @return naziv marke
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public String getNazivMarke(Marka marka) throws Exception {
         AbstractSystemOperation getNazivMarke = new GetNazivMarke();
@@ -262,7 +287,8 @@ public class Controller {
      * Metoda koja vraca sve marke
      *
      * @return sve marke iz baze
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Marka> getMarke() throws Exception {
         AbstractSystemOperation getMarke = new GetMarke();
@@ -274,7 +300,8 @@ public class Controller {
      * Metoda koja vraca sve modele iz baze
      *
      * @return svi modeli iz baze
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Model> getModeli() throws Exception {
         AbstractSystemOperation getModeli = new GetModeli();
@@ -287,7 +314,8 @@ public class Controller {
      *
      * @param nazivMarke naziv marke
      * @return lista modela
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Model> getModeliFromNazivMarke(String nazivMarke) throws Exception {
         AbstractSystemOperation getModeliFromNazivMarke = new GetModeliFromNazivMarke();
@@ -299,8 +327,9 @@ public class Controller {
      * Metoda koja vraca model za naziv marke
      *
      * @param nazivMarke2 naziv marke
-     * @return model
-     * @throws Exception
+     * @return model vraca se model koji ima taj naziv marke
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Object getModeliFromNazivMarke2(String nazivMarke2) throws Exception {
         AbstractSystemOperation getModeliFromNazivMarke2 = new GetModeliFromNazivMarke2();
@@ -313,7 +342,8 @@ public class Controller {
      *
      * @param filter filter koji se koristi u bazi
      * @return lista musterija
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Musterija> getMusterijeFilter(String filter) throws Exception {
         AbstractSystemOperation getMusterijeFilter = new GetMusterijeFilter();
@@ -325,7 +355,8 @@ public class Controller {
      * Metoda koja vraca sve musterije iz baze
      *
      * @return lista musterija u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Musterija> getMusterije() throws Exception {
         AbstractSystemOperation getMusterije = new GetMusterije();
@@ -339,7 +370,8 @@ public class Controller {
      *
      * @param filter filter koji se koristi u bazi
      * @return lista radnika
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Radnik> getRadniciFilter(String filter) throws Exception {
         AbstractSystemOperation getRadniciFilter = new GetRadniciFilter();
@@ -351,7 +383,8 @@ public class Controller {
      * Metoda koja vraca sve radnike
      *
      * @return lista radnika u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Radnik> getRadnici() throws Exception {
         AbstractSystemOperation getRadnici = new GetRadnici();
@@ -364,7 +397,8 @@ public class Controller {
      *
      * @param filter korisnicki unos
      * @return lista automobila
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Automobil> getAutomobiliFilter(String filter) throws Exception {
         AbstractSystemOperation getAutomobiliFilter = new GetAutomobiliFilter();
@@ -376,7 +410,8 @@ public class Controller {
      * Metoda koja vraca sve automobile
      *
      * @return lista automobila
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Automobil> getAutomobili() throws Exception {
         AbstractSystemOperation getAutomobili = new GetAutomobili();
@@ -389,7 +424,8 @@ public class Controller {
      *
      * @param filter filter koji je klijent uneo
      * @return lista rezervacija
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Rezervacija> getRezervacijeFilter(String filter) throws Exception {
         AbstractSystemOperation getRezervacijeFilter = new GetRezervacijeFilter();
@@ -401,7 +437,8 @@ public class Controller {
      * Metoda koja vraca sve rezervacije
      *
      * @return lista rezervacija
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public List<Rezervacija> getRezervacije() throws Exception {
         AbstractSystemOperation getRezervacije = new GetRezervacije();
@@ -413,7 +450,8 @@ public class Controller {
      * Metoda koja brise musteriju
      *
      * @param musterija musterija kojeg brisemo
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void deleteMusterija(Musterija musterija) throws Exception {
         AbstractSystemOperation deleteMusterija = new DeleteMusterija();
@@ -424,7 +462,8 @@ public class Controller {
      * Metoda koja brise autombil
      *
      * @param automobil automobil koji brisemo
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void deleteAutomobil(Automobil automobil) throws Exception {
         AbstractSystemOperation deleteAutomobil = new DeleteAutomobil();
@@ -435,7 +474,8 @@ public class Controller {
      * Metoda koja brise rezervaciju
      *
      * @param rezervacija rezervacija koju brisemo
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void deleteRezervacija(Rezervacija rezervacija) throws Exception {
         AbstractSystemOperation deleteRezervacija = new DeleteRezervacija();
@@ -446,7 +486,8 @@ public class Controller {
      * Metoda koja menja musteriju
      *
      * @param musterija musterija kojeg menjamo
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void updateMusterija(Musterija musterija) throws Exception {
         AbstractSystemOperation updateMusterija = new UpdateMusterija();
@@ -457,7 +498,8 @@ public class Controller {
      * Metoda koja menja automobil u bazi
      *
      * @param automobil automobil koji menjamo
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void updateAutomobil(Automobil automobil) throws Exception {
         AbstractSystemOperation updateAutomobil = new UpdateAutomobil();
@@ -468,7 +510,8 @@ public class Controller {
      * Metoda koja menja rezervaciju u bazi
      *
      * @param rezervacija rezervacija koju menjamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void updateRezervacija(Rezervacija rezervacija) throws Exception {
         AbstractSystemOperation updateRezervacija = new UpdateRezervacija();
@@ -480,7 +523,8 @@ public class Controller {
      * Metoda koja cuva motor
      *
      * @param motor motor koji cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveMotor(Motor motor) throws Exception {
         AbstractSystemOperation saveMotor = new SaveMotor();
@@ -491,8 +535,9 @@ public class Controller {
      * Metoda koja vraca motor
      *
      * @param motor motor iz baze
-     * @return
-     * @throws Exception
+     * @return vraca trazeni motor
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Motor getMotor(Motor motor) throws Exception {
         AbstractSystemOperation getMotor = new GetMotor();
@@ -504,7 +549,8 @@ public class Controller {
      * Metoda koja cuva servis u bazu
      *
      * @param servis servis koji cuvamo u bazi
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public void saveServis(Servis servis) throws Exception {
         AbstractSystemOperation saveServis = new SaveServis();
@@ -516,7 +562,8 @@ public class Controller {
      *
      * @param servis servis koji trazimo
      * @return servis iz baze
-     * @throws Exception
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
      */
     public Servis getServis(Servis servis) throws Exception {
         AbstractSystemOperation getServis = new GetServis();

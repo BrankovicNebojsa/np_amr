@@ -15,7 +15,13 @@ import javax.swing.JOptionPane;
  */
 public class MainForm extends javax.swing.JFrame {
 
+    /**
+     * Server
+     */
     private Server server;
+    /**
+     * Pomocni brojac
+     */
     private int counter;
 
     /**
@@ -180,6 +186,11 @@ public class MainForm extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Metoda koja se desava kada se pritisne dugme start
+     *
+     * @param evt pritisnuto dugme start
+     */
     private void jButtonStartServerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStartServerActionPerformed
         if (server == null) {
             server = new Server(this);
@@ -192,6 +203,11 @@ public class MainForm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonStartServerActionPerformed
 
+    /**
+     * Metoda koja se desava kada se pritisne dugme stop
+     *
+     * @param evt pritisnuto dugme stop
+     */
     private void jButtonStopServerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStopServerActionPerformed
         if (server != null) {
             server.stopServer();
@@ -208,6 +224,8 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemConfigActionPerformed
 
     /**
+     * Glavna funkcija
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

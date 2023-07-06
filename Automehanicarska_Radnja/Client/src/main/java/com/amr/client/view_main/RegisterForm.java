@@ -306,6 +306,8 @@ public class RegisterForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonNazadActionPerformed
 
     /**
+     * Glavna metoda
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {

@@ -16,6 +16,12 @@ public class GetRezervacijeFilter extends AbstractSystemOperation {
      */
     private List<Rezervacija> rezervacije;
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public GetRezervacijeFilter() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
     }

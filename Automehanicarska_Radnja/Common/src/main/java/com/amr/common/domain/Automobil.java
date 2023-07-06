@@ -59,6 +59,8 @@ public class Automobil implements GenericObject {
 
     /**
      * Konstruktor sa ulaznim parametarom registracioni broj
+     *
+     * @param registracioniBroj broj registracije
      */
     public Automobil(String registracioniBroj) {
         this.registracioniBroj = registracioniBroj;
@@ -66,8 +68,20 @@ public class Automobil implements GenericObject {
 
     /**
      * Konstruktor sa svim ulaznim parametrima
+     *
+     * @param registracioniBroj broj registracije
+     * @param godiste godiste automobila
+     * @param brojMotora broj motora automobila
+     * @param brojSasije broj sasije motora
+     * @param boja boja kojom je obojen automobil
+     * @param menjac tip menjaca u automobilu
+     * @param motor motor koji se nalazi u automobilu
+     * @param model naziv marke i modela automobila
+     * @param musterija vlasnik automobila
+     *
      */
-    public Automobil(String registracioniBroj, int godiste, String brojMotora, String brojSasije, Boja boja, TipMenjaca menjac, Motor motor, Model model, Musterija musterija) {
+    public Automobil(String registracioniBroj, int godiste, String brojMotora, String brojSasije, Boja boja, TipMenjaca menjac,
+            Motor motor, Model model, Musterija musterija) {
         this.registracioniBroj = registracioniBroj;
         this.godiste = godiste;
         this.brojMotora = brojMotora;

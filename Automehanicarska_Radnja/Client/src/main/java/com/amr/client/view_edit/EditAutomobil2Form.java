@@ -27,6 +27,9 @@ public class EditAutomobil2Form extends javax.swing.JFrame {
 
     /**
      * Creates new form AddAutomobilForm
+     *
+     * @param eaf nadklasa/forma
+     * @param automobil automobil koji je potrebno promeniti
      */
     public EditAutomobil2Form(EditAutomobilForm eaf, Automobil automobil) {
         initComponents();
@@ -332,10 +335,6 @@ public class EditAutomobil2Form extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButtonZapamtiActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonNazad;

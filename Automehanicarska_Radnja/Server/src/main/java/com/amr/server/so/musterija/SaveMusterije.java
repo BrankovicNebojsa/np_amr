@@ -11,6 +11,12 @@ import java.util.List;
  */
 public class SaveMusterije extends AbstractSystemOperation {
 
+    /**
+     * Neparametrizovani konstuktor
+     */
+    public SaveMusterije() {
+    }
+
     @Override
     protected void preconditions(Object ado) throws Exception {
 

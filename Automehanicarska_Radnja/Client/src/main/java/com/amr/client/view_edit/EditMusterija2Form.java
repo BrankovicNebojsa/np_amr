@@ -22,6 +22,8 @@ public class EditMusterija2Form extends javax.swing.JFrame {
 
     /**
      * Creates new form EditMusterija2Form
+     *
+     * @param musterija vlasnik kojeg je potrebno dodeliti
      */
     public EditMusterija2Form(Musterija musterija) {
         initComponents();
@@ -194,6 +196,8 @@ public class EditMusterija2Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonZapamtiActionPerformed
 
     /**
+     * Glavna metoda
+     * 
      * @param args the command line arguments
      */
     public static void main(String args[]) {
