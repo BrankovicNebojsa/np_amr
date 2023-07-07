@@ -138,8 +138,8 @@ public class Automobil implements GenericObject {
      * 1900
      */
     public void setGodiste(int godiste) throws IllegalArgumentException {
-        if (godiste < 1900) {
-            throw new IllegalArgumentException("Auto ne moze biti stariji od 1900.");
+        if (godiste < 1900 || godiste > 2023) {
+            throw new IllegalArgumentException("Godiste auto ne moze biti manje od 1900 ili vece od 2023.");
         }
         this.godiste = godiste;
     }

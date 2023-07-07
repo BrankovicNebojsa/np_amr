@@ -19,6 +19,9 @@ public class SaveRezervacije extends AbstractSystemOperation {
 
     @Override
     protected void preconditions(Object ado) throws Exception {
+        if (ado == null) {
+            throw new Exception("Null vrednost");
+        }
         List<Rezervacija> rezervacije = (List<Rezervacija>) ado;
         List<Rezervacija> rezervacijeIzBaze = repository.getAll(new Rezervacija());
 

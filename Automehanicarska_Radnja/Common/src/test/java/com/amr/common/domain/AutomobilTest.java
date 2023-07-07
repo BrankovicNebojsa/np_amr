@@ -64,11 +64,17 @@ public class AutomobilTest {
     }
 
     @Test
-    public void testSetGodisteNull() {
+    public void testSetGodisteManjiUnos() {
         Exception e = assertThrows(IllegalArgumentException.class,
                 () -> a.setGodiste(1754));
+        assertTrue("Godiste auto ne moze biti manje od 1900 ili vece od 2023.".equals(e.getMessage()));
+    }
 
-        assertEquals("Auto ne moze biti stariji od 1900.", e.getMessage());
+    @Test
+    public void testSetGodisteVeciUnos() {
+        Exception e = assertThrows(IllegalArgumentException.class,
+                () -> a.setGodiste(2024));
+        assertTrue("Godiste auto ne moze biti manje od 1900 ili vece od 2023.".equals(e.getMessage()));
     }
 
     @Test

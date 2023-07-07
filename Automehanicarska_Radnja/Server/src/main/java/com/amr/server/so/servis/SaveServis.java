@@ -18,7 +18,9 @@ public class SaveServis extends AbstractSystemOperation {
 
     @Override
     protected void preconditions(Object ado) throws Exception {
-
+        if (!(ado instanceof Servis)) {
+            throw new Exception("Objekat nije instanca klase Servis!");
+        }
     }
 
     @Override

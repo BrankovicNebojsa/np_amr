@@ -10,7 +10,7 @@ import com.amr.server.dbrepository.concrete.GenericObjectDBRepository;
 /**
  * Apstraktna klasa koja predstavlja opstu sistemku operaciju i sve njene metode
  *
- * @author student2
+ * @author Nebojsa Brankovic
  */
 public abstract class AbstractSystemOperation {
 

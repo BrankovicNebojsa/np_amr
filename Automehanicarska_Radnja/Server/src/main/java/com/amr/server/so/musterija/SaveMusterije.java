@@ -19,6 +19,9 @@ public class SaveMusterije extends AbstractSystemOperation {
 
     @Override
     protected void preconditions(Object ado) throws Exception {
+        if (ado == null) {
+            throw new Exception("Null vrednost");
+        }
 
         List<Musterija> musterije = (List<Musterija>) ado;
         List<Musterija> musterijeIzBaze = repository.getAll(new Musterija());
