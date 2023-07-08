@@ -1,0 +1,2226 @@
+[
+  {
+    "modelId": 1,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "Giulia"
+  },
+  {
+    "modelId": 2,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "Stelvio"
+  },
+  {
+    "modelId": 3,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "Giulietta"
+  },
+  {
+    "modelId": 4,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "4C"
+  },
+  {
+    "modelId": 5,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "Tonale"
+  },
+  {
+    "modelId": 6,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "147"
+  },
+  {
+    "modelId": 7,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "156"
+  },
+  {
+    "modelId": 8,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "159"
+  },
+  {
+    "modelId": 9,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "166"
+  },
+  {
+    "modelId": 10,
+    "marka": {
+      "markaId": 1,
+      "nazivMarke": "Alfa Romeo"
+    },
+    "nazivModela": "8c"
+  },
+  {
+    "modelId": 11,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Valhalla"
+  },
+  {
+    "modelId": 12,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "DBX"
+  },
+  {
+    "modelId": 13,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Vantage"
+  },
+  {
+    "modelId": 14,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Speedster"
+  },
+  {
+    "modelId": 15,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "DBS"
+  },
+  {
+    "modelId": 16,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "DB11"
+  },
+  {
+    "modelId": 17,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Rapide"
+  },
+  {
+    "modelId": 18,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Vanquish"
+  },
+  {
+    "modelId": 19,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "Vulcan"
+  },
+  {
+    "modelId": 20,
+    "marka": {
+      "markaId": 2,
+      "nazivMarke": "Aston Martin"
+    },
+    "nazivModela": "DB9"
+  },
+  {
+    "modelId": 21,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A1"
+  },
+  {
+    "modelId": 22,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A3"
+  },
+  {
+    "modelId": 23,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A4"
+  },
+  {
+    "modelId": 24,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A5"
+  },
+  {
+    "modelId": 25,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A6"
+  },
+  {
+    "modelId": 26,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A7"
+  },
+  {
+    "modelId": 27,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "A8"
+  },
+  {
+    "modelId": 28,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "Q3"
+  },
+  {
+    "modelId": 29,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "Q5"
+  },
+  {
+    "modelId": 30,
+    "marka": {
+      "markaId": 3,
+      "nazivMarke": "Audi"
+    },
+    "nazivModela": "Q7"
+  },
+  {
+    "modelId": 31,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Batur"
+  },
+  {
+    "modelId": 32,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Continental GT"
+  },
+  {
+    "modelId": 33,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Bentayga"
+  },
+  {
+    "modelId": 34,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Mulliner"
+  },
+  {
+    "modelId": 35,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Flying Spur"
+  },
+  {
+    "modelId": 36,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Mulsanne"
+  },
+  {
+    "modelId": 37,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Continental GTC"
+  },
+  {
+    "modelId": 38,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Azure"
+  },
+  {
+    "modelId": 39,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Brooklands"
+  },
+  {
+    "modelId": 40,
+    "marka": {
+      "markaId": 4,
+      "nazivMarke": "Bentley"
+    },
+    "nazivModela": "Arnage"
+  },
+  {
+    "modelId": 41,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "1 serija"
+  },
+  {
+    "modelId": 42,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "3 serija"
+  },
+  {
+    "modelId": 43,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "5 serija"
+  },
+  {
+    "modelId": 44,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "7 serija"
+  },
+  {
+    "modelId": 45,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "X3"
+  },
+  {
+    "modelId": 46,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "X5"
+  },
+  {
+    "modelId": 47,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "X6"
+  },
+  {
+    "modelId": 48,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "X4"
+  },
+  {
+    "modelId": 49,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "4 serija"
+  },
+  {
+    "modelId": 50,
+    "marka": {
+      "markaId": 5,
+      "nazivMarke": "BMW"
+    },
+    "nazivModela": "6 serija"
+  },
+  {
+    "modelId": 51,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "Escalade"
+  },
+  {
+    "modelId": 52,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "Lyriq"
+  },
+  {
+    "modelId": 53,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "CT4"
+  },
+  {
+    "modelId": 54,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "CT5"
+  },
+  {
+    "modelId": 55,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "XT6"
+  },
+  {
+    "modelId": 56,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "XT5"
+  },
+  {
+    "modelId": 57,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "XT4"
+  },
+  {
+    "modelId": 58,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "CT6"
+  },
+  {
+    "modelId": 59,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "ATS"
+  },
+  {
+    "modelId": 60,
+    "marka": {
+      "markaId": 6,
+      "nazivMarke": "Cadillac"
+    },
+    "nazivModela": "ELR"
+  },
+  {
+    "modelId": 61,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Blazer"
+  },
+  {
+    "modelId": 62,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Trax"
+  },
+  {
+    "modelId": 63,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Bolt"
+  },
+  {
+    "modelId": 64,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Corvette"
+  },
+  {
+    "modelId": 65,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Tahoe"
+  },
+  {
+    "modelId": 66,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Trailblazer"
+  },
+  {
+    "modelId": 67,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Suburban"
+  },
+  {
+    "modelId": 68,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Traverse"
+  },
+  {
+    "modelId": 69,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Camaro"
+  },
+  {
+    "modelId": 70,
+    "marka": {
+      "markaId": 7,
+      "nazivMarke": "Chevrolet"
+    },
+    "nazivModela": "Cruze"
+  },
+  {
+    "modelId": 71,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "C3"
+  },
+  {
+    "modelId": 72,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "C4"
+  },
+  {
+    "modelId": 73,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "C5"
+  },
+  {
+    "modelId": 74,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "AMI"
+  },
+  {
+    "modelId": 75,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "Berlingo"
+  },
+  {
+    "modelId": 76,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "C1"
+  },
+  {
+    "modelId": 77,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "DS5"
+  },
+  {
+    "modelId": 78,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "DS4"
+  },
+  {
+    "modelId": 79,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "DS3"
+  },
+  {
+    "modelId": 80,
+    "marka": {
+      "markaId": 8,
+      "nazivMarke": "Citroen"
+    },
+    "nazivModela": "C2"
+  },
+  {
+    "modelId": 81,
+    "marka": {
+      "markaId": 9,
+      "nazivMarke": "Dacia"
+    },
+    "nazivModela": "Duster"
+  },
+  {
+    "modelId": 82,
+    "marka": {
+      "markaId": 9,
+      "nazivMarke": "Dacia"
+    },
+    "nazivModela": "Jogger"
+  },
+  {
+    "modelId": 83,
+    "marka": {
+      "markaId": 9,
+      "nazivMarke": "Dacia"
+    },
+    "nazivModela": "Logan"
+  },
+  {
+    "modelId": 84,
+    "marka": {
+      "markaId": 9,
+      "nazivMarke": "Dacia"
+    },
+    "nazivModela": "Sandero"
+  },
+  {
+    "modelId": 85,
+    "marka": {
+      "markaId": 9,
+      "nazivMarke": "Dacia"
+    },
+    "nazivModela": "Dokker"
+  },
+  {
+    "modelId": 86,
+    "marka": {
+      "markaId": 10,
+      "nazivMarke": "Dodge"
+    },
+    "nazivModela": "Viper"
+  },
+  {
+    "modelId": 87,
+    "marka": {
+      "markaId": 10,
+      "nazivMarke": "Dodge"
+    },
+    "nazivModela": "Hornet"
+  },
+  {
+    "modelId": 88,
+    "marka": {
+      "markaId": 10,
+      "nazivMarke": "Dodge"
+    },
+    "nazivModela": "Durango"
+  },
+  {
+    "modelId": 89,
+    "marka": {
+      "markaId": 10,
+      "nazivMarke": "Dodge"
+    },
+    "nazivModela": "Challenger"
+  },
+  {
+    "modelId": 90,
+    "marka": {
+      "markaId": 10,
+      "nazivMarke": "Dodge"
+    },
+    "nazivModela": "Charger"
+  },
+  {
+    "modelId": 91,
+    "marka": {
+      "markaId": 11,
+      "nazivMarke": "Ferrari"
+    },
+    "nazivModela": "488"
+  },
+  {
+    "modelId": 92,
+    "marka": {
+      "markaId": 11,
+      "nazivMarke": "Ferrari"
+    },
+    "nazivModela": "LaFerrari"
+  },
+  {
+    "modelId": 93,
+    "marka": {
+      "markaId": 11,
+      "nazivMarke": "Ferrari"
+    },
+    "nazivModela": "Enzo"
+  },
+  {
+    "modelId": 94,
+    "marka": {
+      "markaId": 11,
+      "nazivMarke": "Ferrari"
+    },
+    "nazivModela": "360"
+  },
+  {
+    "modelId": 95,
+    "marka": {
+      "markaId": 11,
+      "nazivMarke": "Ferrari"
+    },
+    "nazivModela": "458"
+  },
+  {
+    "modelId": 96,
+    "marka": {
+      "markaId": 12,
+      "nazivMarke": "Fiat"
+    },
+    "nazivModela": "Bravo"
+  },
+  {
+    "modelId": 97,
+    "marka": {
+      "markaId": 12,
+      "nazivMarke": "Fiat"
+    },
+    "nazivModela": "Stilo"
+  },
+  {
+    "modelId": 98,
+    "marka": {
+      "markaId": 12,
+      "nazivMarke": "Fiat"
+    },
+    "nazivModela": "Panda"
+  },
+  {
+    "modelId": 99,
+    "marka": {
+      "markaId": 12,
+      "nazivMarke": "Fiat"
+    },
+    "nazivModela": "Tipo"
+  },
+  {
+    "modelId": 100,
+    "marka": {
+      "markaId": 12,
+      "nazivMarke": "Fiat"
+    },
+    "nazivModela": "Punto"
+  },
+  {
+    "modelId": 101,
+    "marka": {
+      "markaId": 13,
+      "nazivMarke": "Ford"
+    },
+    "nazivModela": "Focus"
+  },
+  {
+    "modelId": 102,
+    "marka": {
+      "markaId": 13,
+      "nazivMarke": "Ford"
+    },
+    "nazivModela": "Fiesta"
+  },
+  {
+    "modelId": 103,
+    "marka": {
+      "markaId": 13,
+      "nazivMarke": "Ford"
+    },
+    "nazivModela": "Mondeo"
+  },
+  {
+    "modelId": 104,
+    "marka": {
+      "markaId": 13,
+      "nazivMarke": "Ford"
+    },
+    "nazivModela": "Kuga"
+  },
+  {
+    "modelId": 105,
+    "marka": {
+      "markaId": 13,
+      "nazivMarke": "Ford"
+    },
+    "nazivModela": "F-150"
+  },
+  {
+    "modelId": 106,
+    "marka": {
+      "markaId": 14,
+      "nazivMarke": "GMC"
+    },
+    "nazivModela": "Hummer EV"
+  },
+  {
+    "modelId": 107,
+    "marka": {
+      "markaId": 14,
+      "nazivMarke": "GMC"
+    },
+    "nazivModela": "Terrain"
+  },
+  {
+    "modelId": 108,
+    "marka": {
+      "markaId": 14,
+      "nazivMarke": "GMC"
+    },
+    "nazivModela": "Yukon"
+  },
+  {
+    "modelId": 109,
+    "marka": {
+      "markaId": 14,
+      "nazivMarke": "GMC"
+    },
+    "nazivModela": "Sierra"
+  },
+  {
+    "modelId": 110,
+    "marka": {
+      "markaId": 14,
+      "nazivMarke": "GMC"
+    },
+    "nazivModela": "Acadia"
+  },
+  {
+    "modelId": 111,
+    "marka": {
+      "markaId": 15,
+      "nazivMarke": "Honda"
+    },
+    "nazivModela": "Accord"
+  },
+  {
+    "modelId": 112,
+    "marka": {
+      "markaId": 15,
+      "nazivMarke": "Honda"
+    },
+    "nazivModela": "CR-V"
+  },
+  {
+    "modelId": 113,
+    "marka": {
+      "markaId": 15,
+      "nazivMarke": "Honda"
+    },
+    "nazivModela": "HR-V"
+  },
+  {
+    "modelId": 114,
+    "marka": {
+      "markaId": 15,
+      "nazivMarke": "Honda"
+    },
+    "nazivModela": "Civic"
+  },
+  {
+    "modelId": 115,
+    "marka": {
+      "markaId": 15,
+      "nazivMarke": "Honda"
+    },
+    "nazivModela": "Jazz"
+  },
+  {
+    "modelId": 116,
+    "marka": {
+      "markaId": 16,
+      "nazivMarke": "Hummer"
+    },
+    "nazivModela": "H1"
+  },
+  {
+    "modelId": 117,
+    "marka": {
+      "markaId": 16,
+      "nazivMarke": "Hummer"
+    },
+    "nazivModela": "H2"
+  },
+  {
+    "modelId": 118,
+    "marka": {
+      "markaId": 16,
+      "nazivMarke": "Hummer"
+    },
+    "nazivModela": "H3"
+  },
+  {
+    "modelId": 119,
+    "marka": {
+      "markaId": 17,
+      "nazivMarke": "Hyundai"
+    },
+    "nazivModela": "i10"
+  },
+  {
+    "modelId": 120,
+    "marka": {
+      "markaId": 17,
+      "nazivMarke": "Hyundai"
+    },
+    "nazivModela": "i20"
+  },
+  {
+    "modelId": 121,
+    "marka": {
+      "markaId": 17,
+      "nazivMarke": "Hyundai"
+    },
+    "nazivModela": "i30"
+  },
+  {
+    "modelId": 122,
+    "marka": {
+      "markaId": 17,
+      "nazivMarke": "Hyundai"
+    },
+    "nazivModela": "Ioniq 5"
+  },
+  {
+    "modelId": 123,
+    "marka": {
+      "markaId": 17,
+      "nazivMarke": "Hyundai"
+    },
+    "nazivModela": "Tucson"
+  },
+  {
+    "modelId": 124,
+    "marka": {
+      "markaId": 18,
+      "nazivMarke": "Infinity"
+    },
+    "nazivModela": "QX50"
+  },
+  {
+    "modelId": 125,
+    "marka": {
+      "markaId": 18,
+      "nazivMarke": "Infinity"
+    },
+    "nazivModela": "QX60"
+  },
+  {
+    "modelId": 126,
+    "marka": {
+      "markaId": 18,
+      "nazivMarke": "Infinity"
+    },
+    "nazivModela": "QX80"
+  },
+  {
+    "modelId": 127,
+    "marka": {
+      "markaId": 18,
+      "nazivMarke": "Infinity"
+    },
+    "nazivModela": "Q50"
+  },
+  {
+    "modelId": 128,
+    "marka": {
+      "markaId": 18,
+      "nazivMarke": "Infinity"
+    },
+    "nazivModela": "Q70"
+  },
+  {
+    "modelId": 129,
+    "marka": {
+      "markaId": 19,
+      "nazivMarke": "Jaguar"
+    },
+    "nazivModela": "XE"
+  },
+  {
+    "modelId": 130,
+    "marka": {
+      "markaId": 19,
+      "nazivMarke": "Jaguar"
+    },
+    "nazivModela": "XF"
+  },
+  {
+    "modelId": 131,
+    "marka": {
+      "markaId": 19,
+      "nazivMarke": "Jaguar"
+    },
+    "nazivModela": "XJ"
+  },
+  {
+    "modelId": 132,
+    "marka": {
+      "markaId": 19,
+      "nazivMarke": "Jaguar"
+    },
+    "nazivModela": "F-type"
+  },
+  {
+    "modelId": 133,
+    "marka": {
+      "markaId": 19,
+      "nazivMarke": "Jaguar"
+    },
+    "nazivModela": "E-pace"
+  },
+  {
+    "modelId": 134,
+    "marka": {
+      "markaId": 20,
+      "nazivMarke": "Jeep"
+    },
+    "nazivModela": "Cherokee"
+  },
+  {
+    "modelId": 135,
+    "marka": {
+      "markaId": 20,
+      "nazivMarke": "Jeep"
+    },
+    "nazivModela": "Grand Cherokee"
+  },
+  {
+    "modelId": 136,
+    "marka": {
+      "markaId": 20,
+      "nazivMarke": "Jeep"
+    },
+    "nazivModela": "Compass"
+  },
+  {
+    "modelId": 137,
+    "marka": {
+      "markaId": 20,
+      "nazivMarke": "Jeep"
+    },
+    "nazivModela": "Wrangler"
+  },
+  {
+    "modelId": 138,
+    "marka": {
+      "markaId": 20,
+      "nazivMarke": "Jeep"
+    },
+    "nazivModela": "Renegade"
+  },
+  {
+    "modelId": 139,
+    "marka": {
+      "markaId": 21,
+      "nazivMarke": "Kia"
+    },
+    "nazivModela": "Ceed"
+  },
+  {
+    "modelId": 140,
+    "marka": {
+      "markaId": 21,
+      "nazivMarke": "Kia"
+    },
+    "nazivModela": "Proceed"
+  },
+  {
+    "modelId": 141,
+    "marka": {
+      "markaId": 21,
+      "nazivMarke": "Kia"
+    },
+    "nazivModela": "Xceed"
+  },
+  {
+    "modelId": 142,
+    "marka": {
+      "markaId": 21,
+      "nazivMarke": "Kia"
+    },
+    "nazivModela": "Sportage"
+  },
+  {
+    "modelId": 143,
+    "marka": {
+      "markaId": 21,
+      "nazivMarke": "Kia"
+    },
+    "nazivModela": "Stinger"
+  },
+  {
+    "modelId": 144,
+    "marka": {
+      "markaId": 22,
+      "nazivMarke": "Lamborghini"
+    },
+    "nazivModela": "Aventador"
+  },
+  {
+    "modelId": 145,
+    "marka": {
+      "markaId": 22,
+      "nazivMarke": "Lamborghini"
+    },
+    "nazivModela": "Huracan"
+  },
+  {
+    "modelId": 146,
+    "marka": {
+      "markaId": 22,
+      "nazivMarke": "Lamborghini"
+    },
+    "nazivModela": "Urus"
+  },
+  {
+    "modelId": 147,
+    "marka": {
+      "markaId": 22,
+      "nazivMarke": "Lamborghini"
+    },
+    "nazivModela": "Sian"
+  },
+  {
+    "modelId": 148,
+    "marka": {
+      "markaId": 22,
+      "nazivMarke": "Lamborghini"
+    },
+    "nazivModela": "Centenario"
+  },
+  {
+    "modelId": 149,
+    "marka": {
+      "markaId": 23,
+      "nazivMarke": "Land Rover"
+    },
+    "nazivModela": "Discovery"
+  },
+  {
+    "modelId": 150,
+    "marka": {
+      "markaId": 23,
+      "nazivMarke": "Land Rover"
+    },
+    "nazivModela": "Range Rover Sport"
+  },
+  {
+    "modelId": 151,
+    "marka": {
+      "markaId": 23,
+      "nazivMarke": "Land Rover"
+    },
+    "nazivModela": "Defender"
+  },
+  {
+    "modelId": 152,
+    "marka": {
+      "markaId": 23,
+      "nazivMarke": "Land Rover"
+    },
+    "nazivModela": "SV"
+  },
+  {
+    "modelId": 153,
+    "marka": {
+      "markaId": 23,
+      "nazivMarke": "Land Rover"
+    },
+    "nazivModela": "Range Rover Velar"
+  },
+  {
+    "modelId": 154,
+    "marka": {
+      "markaId": 24,
+      "nazivMarke": "Lexus"
+    },
+    "nazivModela": "LFA"
+  },
+  {
+    "modelId": 155,
+    "marka": {
+      "markaId": 24,
+      "nazivMarke": "Lexus"
+    },
+    "nazivModela": "RX"
+  },
+  {
+    "modelId": 156,
+    "marka": {
+      "markaId": 24,
+      "nazivMarke": "Lexus"
+    },
+    "nazivModela": "ES"
+  },
+  {
+    "modelId": 157,
+    "marka": {
+      "markaId": 24,
+      "nazivMarke": "Lexus"
+    },
+    "nazivModela": "LX"
+  },
+  {
+    "modelId": 158,
+    "marka": {
+      "markaId": 24,
+      "nazivMarke": "Lexus"
+    },
+    "nazivModela": "IS"
+  },
+  {
+    "modelId": 159,
+    "marka": {
+      "markaId": 25,
+      "nazivMarke": "Maserati"
+    },
+    "nazivModela": "Ghibli"
+  },
+  {
+    "modelId": 160,
+    "marka": {
+      "markaId": 25,
+      "nazivMarke": "Maserati"
+    },
+    "nazivModela": "Levante"
+  },
+  {
+    "modelId": 161,
+    "marka": {
+      "markaId": 25,
+      "nazivMarke": "Maserati"
+    },
+    "nazivModela": "MC20"
+  },
+  {
+    "modelId": 162,
+    "marka": {
+      "markaId": 25,
+      "nazivMarke": "Maserati"
+    },
+    "nazivModela": "Quattroporte"
+  },
+  {
+    "modelId": 163,
+    "marka": {
+      "markaId": 25,
+      "nazivMarke": "Maserati"
+    },
+    "nazivModela": "GranTurismo"
+  },
+  {
+    "modelId": 164,
+    "marka": {
+      "markaId": 26,
+      "nazivMarke": "Mazda"
+    },
+    "nazivModela": "CX-30"
+  },
+  {
+    "modelId": 165,
+    "marka": {
+      "markaId": 26,
+      "nazivMarke": "Mazda"
+    },
+    "nazivModela": "CX-50"
+  },
+  {
+    "modelId": 166,
+    "marka": {
+      "markaId": 26,
+      "nazivMarke": "Mazda"
+    },
+    "nazivModela": "MX-30"
+  },
+  {
+    "modelId": 167,
+    "marka": {
+      "markaId": 26,
+      "nazivMarke": "Mazda"
+    },
+    "nazivModela": "6"
+  },
+  {
+    "modelId": 168,
+    "marka": {
+      "markaId": 26,
+      "nazivMarke": "Mazda"
+    },
+    "nazivModela": "3"
+  },
+  {
+    "modelId": 169,
+    "marka": {
+      "markaId": 27,
+      "nazivMarke": "Mercedes-Benz"
+    },
+    "nazivModela": "A class"
+  },
+  {
+    "modelId": 170,
+    "marka": {
+      "markaId": 27,
+      "nazivMarke": "Mercedes-Benz"
+    },
+    "nazivModela": "C class"
+  },
+  {
+    "modelId": 171,
+    "marka": {
+      "markaId": 27,
+      "nazivMarke": "Mercedes-Benz"
+    },
+    "nazivModela": "E class"
+  },
+  {
+    "modelId": 172,
+    "marka": {
+      "markaId": 27,
+      "nazivMarke": "Mercedes-Benz"
+    },
+    "nazivModela": "GLC"
+  },
+  {
+    "modelId": 173,
+    "marka": {
+      "markaId": 27,
+      "nazivMarke": "Mercedes-Benz"
+    },
+    "nazivModela": "GLE"
+  },
+  {
+    "modelId": 174,
+    "marka": {
+      "markaId": 28,
+      "nazivMarke": "Mini"
+    },
+    "nazivModela": "Countryman"
+  },
+  {
+    "modelId": 175,
+    "marka": {
+      "markaId": 28,
+      "nazivMarke": "Mini"
+    },
+    "nazivModela": "Cooper S"
+  },
+  {
+    "modelId": 176,
+    "marka": {
+      "markaId": 28,
+      "nazivMarke": "Mini"
+    },
+    "nazivModela": "Cooper"
+  },
+  {
+    "modelId": 177,
+    "marka": {
+      "markaId": 28,
+      "nazivMarke": "Mini"
+    },
+    "nazivModela": "Clubman"
+  },
+  {
+    "modelId": 178,
+    "marka": {
+      "markaId": 28,
+      "nazivMarke": "Mini"
+    },
+    "nazivModela": "Paceman"
+  },
+  {
+    "modelId": 179,
+    "marka": {
+      "markaId": 29,
+      "nazivMarke": "Mitsubishi"
+    },
+    "nazivModela": "Mirage"
+  },
+  {
+    "modelId": 180,
+    "marka": {
+      "markaId": 29,
+      "nazivMarke": "Mitsubishi"
+    },
+    "nazivModela": "ASX"
+  },
+  {
+    "modelId": 181,
+    "marka": {
+      "markaId": 29,
+      "nazivMarke": "Mitsubishi"
+    },
+    "nazivModela": "Eclipse"
+  },
+  {
+    "modelId": 182,
+    "marka": {
+      "markaId": 29,
+      "nazivMarke": "Mitsubishi"
+    },
+    "nazivModela": "Outlander"
+  },
+  {
+    "modelId": 183,
+    "marka": {
+      "markaId": 29,
+      "nazivMarke": "Mitsubishi"
+    },
+    "nazivModela": "Lancer"
+  },
+  {
+    "modelId": 184,
+    "marka": {
+      "markaId": 30,
+      "nazivMarke": "Nissan"
+    },
+    "nazivModela": "Leaf"
+  },
+  {
+    "modelId": 185,
+    "marka": {
+      "markaId": 30,
+      "nazivMarke": "Nissan"
+    },
+    "nazivModela": "Altima"
+  },
+  {
+    "modelId": 186,
+    "marka": {
+      "markaId": 30,
+      "nazivMarke": "Nissan"
+    },
+    "nazivModela": "X-Trail"
+  },
+  {
+    "modelId": 187,
+    "marka": {
+      "markaId": 30,
+      "nazivMarke": "Nissan"
+    },
+    "nazivModela": "Sakura"
+  },
+  {
+    "modelId": 188,
+    "marka": {
+      "markaId": 30,
+      "nazivMarke": "Nissan"
+    },
+    "nazivModela": "GTR"
+  },
+  {
+    "modelId": 189,
+    "marka": {
+      "markaId": 31,
+      "nazivMarke": "Opel"
+    },
+    "nazivModela": "Astra"
+  },
+  {
+    "modelId": 190,
+    "marka": {
+      "markaId": 31,
+      "nazivMarke": "Opel"
+    },
+    "nazivModela": "Corsa"
+  },
+  {
+    "modelId": 191,
+    "marka": {
+      "markaId": 31,
+      "nazivMarke": "Opel"
+    },
+    "nazivModela": "Mokka"
+  },
+  {
+    "modelId": 192,
+    "marka": {
+      "markaId": 31,
+      "nazivMarke": "Opel"
+    },
+    "nazivModela": "Grandland"
+  },
+  {
+    "modelId": 193,
+    "marka": {
+      "markaId": 31,
+      "nazivMarke": "Opel"
+    },
+    "nazivModela": "Zafira"
+  },
+  {
+    "modelId": 194,
+    "marka": {
+      "markaId": 32,
+      "nazivMarke": "Peugeot"
+    },
+    "nazivModela": "307"
+  },
+  {
+    "modelId": 195,
+    "marka": {
+      "markaId": 32,
+      "nazivMarke": "Peugeot"
+    },
+    "nazivModela": "308"
+  },
+  {
+    "modelId": 196,
+    "marka": {
+      "markaId": 32,
+      "nazivMarke": "Peugeot"
+    },
+    "nazivModela": "407"
+  },
+  {
+    "modelId": 197,
+    "marka": {
+      "markaId": 32,
+      "nazivMarke": "Peugeot"
+    },
+    "nazivModela": "3008"
+  },
+  {
+    "modelId": 198,
+    "marka": {
+      "markaId": 32,
+      "nazivMarke": "Peugeot"
+    },
+    "nazivModela": "5008"
+  },
+  {
+    "modelId": 199,
+    "marka": {
+      "markaId": 33,
+      "nazivMarke": "Pontiac"
+    },
+    "nazivModela": "G5"
+  },
+  {
+    "modelId": 200,
+    "marka": {
+      "markaId": 33,
+      "nazivMarke": "Pontiac"
+    },
+    "nazivModela": "G6"
+  },
+  {
+    "modelId": 201,
+    "marka": {
+      "markaId": 33,
+      "nazivMarke": "Pontiac"
+    },
+    "nazivModela": "Montana"
+  },
+  {
+    "modelId": 202,
+    "marka": {
+      "markaId": 33,
+      "nazivMarke": "Pontiac"
+    },
+    "nazivModela": "Torrent"
+  },
+  {
+    "modelId": 203,
+    "marka": {
+      "markaId": 33,
+      "nazivMarke": "Pontiac"
+    },
+    "nazivModela": "Solstice"
+  },
+  {
+    "modelId": 204,
+    "marka": {
+      "markaId": 34,
+      "nazivMarke": "Porsche"
+    },
+    "nazivModela": "Panamera"
+  },
+  {
+    "modelId": 205,
+    "marka": {
+      "markaId": 34,
+      "nazivMarke": "Porsche"
+    },
+    "nazivModela": "911"
+  },
+  {
+    "modelId": 206,
+    "marka": {
+      "markaId": 34,
+      "nazivMarke": "Porsche"
+    },
+    "nazivModela": "718"
+  },
+  {
+    "modelId": 207,
+    "marka": {
+      "markaId": 34,
+      "nazivMarke": "Porsche"
+    },
+    "nazivModela": "Cayenne"
+  },
+  {
+    "modelId": 208,
+    "marka": {
+      "markaId": 34,
+      "nazivMarke": "Porsche"
+    },
+    "nazivModela": "Macan"
+  },
+  {
+    "modelId": 209,
+    "marka": {
+      "markaId": 35,
+      "nazivMarke": "Ram"
+    },
+    "nazivModela": "Trucks 1500"
+  },
+  {
+    "modelId": 210,
+    "marka": {
+      "markaId": 35,
+      "nazivMarke": "Ram"
+    },
+    "nazivModela": "Trucks 2500"
+  },
+  {
+    "modelId": 211,
+    "marka": {
+      "markaId": 35,
+      "nazivMarke": "Ram"
+    },
+    "nazivModela": "Trucks 3500"
+  },
+  {
+    "modelId": 212,
+    "marka": {
+      "markaId": 36,
+      "nazivMarke": "Renault"
+    },
+    "nazivModela": "Megane"
+  },
+  {
+    "modelId": 213,
+    "marka": {
+      "markaId": 36,
+      "nazivMarke": "Renault"
+    },
+    "nazivModela": "Clio"
+  },
+  {
+    "modelId": 214,
+    "marka": {
+      "markaId": 36,
+      "nazivMarke": "Renault"
+    },
+    "nazivModela": "Twingo"
+  },
+  {
+    "modelId": 215,
+    "marka": {
+      "markaId": 36,
+      "nazivMarke": "Renault"
+    },
+    "nazivModela": "Kangoo"
+  },
+  {
+    "modelId": 216,
+    "marka": {
+      "markaId": 36,
+      "nazivMarke": "Renault"
+    },
+    "nazivModela": "Captur"
+  },
+  {
+    "modelId": 217,
+    "marka": {
+      "markaId": 37,
+      "nazivMarke": "Saab"
+    },
+    "nazivModela": "9-5"
+  },
+  {
+    "modelId": 218,
+    "marka": {
+      "markaId": 37,
+      "nazivMarke": "Saab"
+    },
+    "nazivModela": "9-3"
+  },
+  {
+    "modelId": 219,
+    "marka": {
+      "markaId": 37,
+      "nazivMarke": "Saab"
+    },
+    "nazivModela": "9-7"
+  },
+  {
+    "modelId": 220,
+    "marka": {
+      "markaId": 37,
+      "nazivMarke": "Saab"
+    },
+    "nazivModela": "Turbo X"
+  },
+  {
+    "modelId": 221,
+    "marka": {
+      "markaId": 37,
+      "nazivMarke": "Saab"
+    },
+    "nazivModela": "9-2"
+  },
+  {
+    "modelId": 222,
+    "marka": {
+      "markaId": 38,
+      "nazivMarke": "Seat"
+    },
+    "nazivModela": "Leon"
+  },
+  {
+    "modelId": 223,
+    "marka": {
+      "markaId": 38,
+      "nazivMarke": "Seat"
+    },
+    "nazivModela": "Ibiza"
+  },
+  {
+    "modelId": 224,
+    "marka": {
+      "markaId": 38,
+      "nazivMarke": "Seat"
+    },
+    "nazivModela": "Arona"
+  },
+  {
+    "modelId": 225,
+    "marka": {
+      "markaId": 38,
+      "nazivMarke": "Seat"
+    },
+    "nazivModela": "Ateca"
+  },
+  {
+    "modelId": 226,
+    "marka": {
+      "markaId": 38,
+      "nazivMarke": "Seat"
+    },
+    "nazivModela": "Toledo"
+  },
+  {
+    "modelId": 227,
+    "marka": {
+      "markaId": 39,
+      "nazivMarke": "Skoda"
+    },
+    "nazivModela": "Octavia"
+  },
+  {
+    "modelId": 228,
+    "marka": {
+      "markaId": 39,
+      "nazivMarke": "Skoda"
+    },
+    "nazivModela": "Fabia"
+  },
+  {
+    "modelId": 229,
+    "marka": {
+      "markaId": 39,
+      "nazivMarke": "Skoda"
+    },
+    "nazivModela": "Rapid"
+  },
+  {
+    "modelId": 230,
+    "marka": {
+      "markaId": 39,
+      "nazivMarke": "Skoda"
+    },
+    "nazivModela": "Superb"
+  },
+  {
+    "modelId": 231,
+    "marka": {
+      "markaId": 39,
+      "nazivMarke": "Skoda"
+    },
+    "nazivModela": "Enyaq"
+  },
+  {
+    "modelId": 232,
+    "marka": {
+      "markaId": 40,
+      "nazivMarke": "Smart"
+    },
+    "nazivModela": "EQ fortwo"
+  },
+  {
+    "modelId": 233,
+    "marka": {
+      "markaId": 40,
+      "nazivMarke": "Smart"
+    },
+    "nazivModela": "EQ forfour"
+  },
+  {
+    "modelId": 234,
+    "marka": {
+      "markaId": 40,
+      "nazivMarke": "Smart"
+    },
+    "nazivModela": "fortwo"
+  },
+  {
+    "modelId": 235,
+    "marka": {
+      "markaId": 40,
+      "nazivMarke": "Smart"
+    },
+    "nazivModela": "forfour"
+  },
+  {
+    "modelId": 236,
+    "marka": {
+      "markaId": 41,
+      "nazivMarke": "Subaru"
+    },
+    "nazivModela": "Impreza"
+  },
+  {
+    "modelId": 237,
+    "marka": {
+      "markaId": 41,
+      "nazivMarke": "Subaru"
+    },
+    "nazivModela": "Outback"
+  },
+  {
+    "modelId": 238,
+    "marka": {
+      "markaId": 41,
+      "nazivMarke": "Subaru"
+    },
+    "nazivModela": "Legacy"
+  },
+  {
+    "modelId": 239,
+    "marka": {
+      "markaId": 41,
+      "nazivMarke": "Subaru"
+    },
+    "nazivModela": "Ascent"
+  },
+  {
+    "modelId": 240,
+    "marka": {
+      "markaId": 42,
+      "nazivMarke": "Suzuki"
+    },
+    "nazivModela": "S-Cross"
+  },
+  {
+    "modelId": 241,
+    "marka": {
+      "markaId": 42,
+      "nazivMarke": "Suzuki"
+    },
+    "nazivModela": "Swift"
+  },
+  {
+    "modelId": 242,
+    "marka": {
+      "markaId": 42,
+      "nazivMarke": "Suzuki"
+    },
+    "nazivModela": "Swace"
+  },
+  {
+    "modelId": 243,
+    "marka": {
+      "markaId": 42,
+      "nazivMarke": "Suzuki"
+    },
+    "nazivModela": "Across"
+  },
+  {
+    "modelId": 244,
+    "marka": {
+      "markaId": 43,
+      "nazivMarke": "Tesla"
+    },
+    "nazivModela": "Model 3"
+  },
+  {
+    "modelId": 245,
+    "marka": {
+      "markaId": 43,
+      "nazivMarke": "Tesla"
+    },
+    "nazivModela": "Model S"
+  },
+  {
+    "modelId": 246,
+    "marka": {
+      "markaId": 43,
+      "nazivMarke": "Tesla"
+    },
+    "nazivModela": "Model X"
+  },
+  {
+    "modelId": 247,
+    "marka": {
+      "markaId": 43,
+      "nazivMarke": "Tesla"
+    },
+    "nazivModela": "Model Y"
+  },
+  {
+    "modelId": 248,
+    "marka": {
+      "markaId": 44,
+      "nazivMarke": "Toyota"
+    },
+    "nazivModela": "RAV4"
+  },
+  {
+    "modelId": 249,
+    "marka": {
+      "markaId": 44,
+      "nazivMarke": "Toyota"
+    },
+    "nazivModela": "Corolla"
+  },
+  {
+    "modelId": 250,
+    "marka": {
+      "markaId": 44,
+      "nazivMarke": "Toyota"
+    },
+    "nazivModela": "Camry"
+  },
+  {
+    "modelId": 251,
+    "marka": {
+      "markaId": 44,
+      "nazivMarke": "Toyota"
+    },
+    "nazivModela": "Crown"
+  },
+  {
+    "modelId": 252,
+    "marka": {
+      "markaId": 45,
+      "nazivMarke": "Volvo"
+    },
+    "nazivModela": "XC60"
+  },
+  {
+    "modelId": 253,
+    "marka": {
+      "markaId": 45,
+      "nazivMarke": "Volvo"
+    },
+    "nazivModela": "XC90"
+  },
+  {
+    "modelId": 254,
+    "marka": {
+      "markaId": 45,
+      "nazivMarke": "Volvo"
+    },
+    "nazivModela": "S60"
+  },
+  {
+    "modelId": 255,
+    "marka": {
+      "markaId": 45,
+      "nazivMarke": "Volvo"
+    },
+    "nazivModela": "S90"
+  },
+  {
+    "modelId": 256,
+    "marka": {
+      "markaId": 46,
+      "nazivMarke": "SsangYong"
+    },
+    "nazivModela": "Rexton"
+  },
+  {
+    "modelId": 257,
+    "marka": {
+      "markaId": 46,
+      "nazivMarke": "SsangYong"
+    },
+    "nazivModela": "Korando"
+  },
+  {
+    "modelId": 258,
+    "marka": {
+      "markaId": 46,
+      "nazivMarke": "SsangYong"
+    },
+    "nazivModela": "Tivoli"
+  },
+  {
+    "modelId": 259,
+    "marka": {
+      "markaId": 46,
+      "nazivMarke": "SsangYong"
+    },
+    "nazivModela": "Musso"
+  },
+  {
+    "modelId": 260,
+    "marka": {
+      "markaId": 47,
+      "nazivMarke": "Lotus"
+    },
+    "nazivModela": "Eletre"
+  },
+  {
+    "modelId": 261,
+    "marka": {
+      "markaId": 47,
+      "nazivMarke": "Lotus"
+    },
+    "nazivModela": "Sport 420"
+  },
+  {
+    "modelId": 262,
+    "marka": {
+      "markaId": 47,
+      "nazivMarke": "Lotus"
+    },
+    "nazivModela": "Sport 390"
+  },
+  {
+    "modelId": 263,
+    "marka": {
+      "markaId": 47,
+      "nazivMarke": "Lotus"
+    },
+    "nazivModela": "Elise"
+  },
+  {
+    "modelId": 264,
+    "marka": {
+      "markaId": 48,
+      "nazivMarke": "Lincoln"
+    },
+    "nazivModela": "Navigator"
+  },
+  {
+    "modelId": 265,
+    "marka": {
+      "markaId": 48,
+      "nazivMarke": "Lincoln"
+    },
+    "nazivModela": "Nautilus"
+  },
+  {
+    "modelId": 266,
+    "marka": {
+      "markaId": 48,
+      "nazivMarke": "Lincoln"
+    },
+    "nazivModela": "Zephyr"
+  },
+  {
+    "modelId": 267,
+    "marka": {
+      "markaId": 48,
+      "nazivMarke": "Lincoln"
+    },
+    "nazivModela": "Corsair"
+  },
+  {
+    "modelId": 268,
+    "marka": {
+      "markaId": 49,
+      "nazivMarke": "Isuzu"
+    },
+    "nazivModela": "Ascender"
+  },
+  {
+    "modelId": 269,
+    "marka": {
+      "markaId": 49,
+      "nazivMarke": "Isuzu"
+    },
+    "nazivModela": "Axiom"
+  },
+  {
+    "modelId": 270,
+    "marka": {
+      "markaId": 49,
+      "nazivMarke": "Isuzu"
+    },
+    "nazivModela": "Rodeo"
+  },
+  {
+    "modelId": 271,
+    "marka": {
+      "markaId": 50,
+      "nazivMarke": "Acura"
+    },
+    "nazivModela": "NSX"
+  },
+  {
+    "modelId": 272,
+    "marka": {
+      "markaId": 50,
+      "nazivMarke": "Acura"
+    },
+    "nazivModela": "Integra"
+  },
+  {
+    "modelId": 273,
+    "marka": {
+      "markaId": 50,
+      "nazivMarke": "Acura"
+    },
+    "nazivModela": "MDX"
+  },
+  {
+    "modelId": 274,
+    "marka": {
+      "markaId": 51,
+      "nazivMarke": "Volkswagen"
+    },
+    "nazivModela": "Polo"
+  },
+  {
+    "modelId": 275,
+    "marka": {
+      "markaId": 51,
+      "nazivMarke": "Volkswagen"
+    },
+    "nazivModela": "Golf"
+  },
+  {
+    "modelId": 276,
+    "marka": {
+      "markaId": 51,
+      "nazivMarke": "Volkswagen"
+    },
+    "nazivModela": "Passat"
+  },
+  {
+    "modelId": 277,
+    "marka": {
+      "markaId": 51,
+      "nazivMarke": "Volkswagen"
+    },
+    "nazivModela": "Touareg"
+  },
+  {
+    "modelId": 278,
+    "marka": {
+      "markaId": 51,
+      "nazivMarke": "Volkswagen"
+    },
+    "nazivModela": "Caddy"
+  }
+]

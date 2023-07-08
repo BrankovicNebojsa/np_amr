@@ -1,0 +1,31 @@
+[
+  {
+    "registracioniBroj": "BG1468OI",
+    "godiste": 2007,
+    "brojMotora": "1fr1342f1",
+    "brojSasije": "d31f41",
+    "boja": "PLAVA",
+    "menjac": "RUCNI",
+    "motor": {
+      "motorId": 1,
+      "brojCilindara": 3,
+      "kubikaza": 1422.0,
+      "konjskaSnaga": 69
+    },
+    "model": {
+      "modelId": 274,
+      "marka": {
+        "markaId": 51,
+        "nazivMarke": "Volkswagen"
+      },
+      "nazivModela": "Polo"
+    },
+    "musterija": {
+      "musterijaId": 28,
+      "imeMusterije": "Nebojsa",
+      "prezimeMusterije": "Brankovic",
+      "mailMusterije": "nebojsab@gmail.com",
+      "telefonMusterije": "+381643211872"
+    }
+  }
+]

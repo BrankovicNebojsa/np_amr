@@ -1,0 +1,206 @@
+[
+  {
+    "markaId": 50,
+    "nazivMarke": "Acura"
+  },
+  {
+    "markaId": 1,
+    "nazivMarke": "Alfa Romeo"
+  },
+  {
+    "markaId": 2,
+    "nazivMarke": "Aston Martin"
+  },
+  {
+    "markaId": 3,
+    "nazivMarke": "Audi"
+  },
+  {
+    "markaId": 4,
+    "nazivMarke": "Bentley"
+  },
+  {
+    "markaId": 5,
+    "nazivMarke": "BMW"
+  },
+  {
+    "markaId": 6,
+    "nazivMarke": "Cadillac"
+  },
+  {
+    "markaId": 7,
+    "nazivMarke": "Chevrolet"
+  },
+  {
+    "markaId": 8,
+    "nazivMarke": "Citroen"
+  },
+  {
+    "markaId": 9,
+    "nazivMarke": "Dacia"
+  },
+  {
+    "markaId": 10,
+    "nazivMarke": "Dodge"
+  },
+  {
+    "markaId": 11,
+    "nazivMarke": "Ferrari"
+  },
+  {
+    "markaId": 12,
+    "nazivMarke": "Fiat"
+  },
+  {
+    "markaId": 13,
+    "nazivMarke": "Ford"
+  },
+  {
+    "markaId": 14,
+    "nazivMarke": "GMC"
+  },
+  {
+    "markaId": 15,
+    "nazivMarke": "Honda"
+  },
+  {
+    "markaId": 16,
+    "nazivMarke": "Hummer"
+  },
+  {
+    "markaId": 17,
+    "nazivMarke": "Hyundai"
+  },
+  {
+    "markaId": 18,
+    "nazivMarke": "Infinity"
+  },
+  {
+    "markaId": 49,
+    "nazivMarke": "Isuzu"
+  },
+  {
+    "markaId": 19,
+    "nazivMarke": "Jaguar"
+  },
+  {
+    "markaId": 20,
+    "nazivMarke": "Jeep"
+  },
+  {
+    "markaId": 21,
+    "nazivMarke": "Kia"
+  },
+  {
+    "markaId": 22,
+    "nazivMarke": "Lamborghini"
+  },
+  {
+    "markaId": 23,
+    "nazivMarke": "Land Rover"
+  },
+  {
+    "markaId": 24,
+    "nazivMarke": "Lexus"
+  },
+  {
+    "markaId": 48,
+    "nazivMarke": "Lincoln"
+  },
+  {
+    "markaId": 47,
+    "nazivMarke": "Lotus"
+  },
+  {
+    "markaId": 25,
+    "nazivMarke": "Maserati"
+  },
+  {
+    "markaId": 26,
+    "nazivMarke": "Mazda"
+  },
+  {
+    "markaId": 27,
+    "nazivMarke": "Mercedes-Benz"
+  },
+  {
+    "markaId": 28,
+    "nazivMarke": "Mini"
+  },
+  {
+    "markaId": 29,
+    "nazivMarke": "Mitsubishi"
+  },
+  {
+    "markaId": 30,
+    "nazivMarke": "Nissan"
+  },
+  {
+    "markaId": 31,
+    "nazivMarke": "Opel"
+  },
+  {
+    "markaId": 32,
+    "nazivMarke": "Peugeot"
+  },
+  {
+    "markaId": 33,
+    "nazivMarke": "Pontiac"
+  },
+  {
+    "markaId": 34,
+    "nazivMarke": "Porsche"
+  },
+  {
+    "markaId": 35,
+    "nazivMarke": "Ram"
+  },
+  {
+    "markaId": 36,
+    "nazivMarke": "Renault"
+  },
+  {
+    "markaId": 37,
+    "nazivMarke": "Saab"
+  },
+  {
+    "markaId": 38,
+    "nazivMarke": "Seat"
+  },
+  {
+    "markaId": 39,
+    "nazivMarke": "Skoda"
+  },
+  {
+    "markaId": 40,
+    "nazivMarke": "Smart"
+  },
+  {
+    "markaId": 46,
+    "nazivMarke": "SsangYong"
+  },
+  {
+    "markaId": 41,
+    "nazivMarke": "Subaru"
+  },
+  {
+    "markaId": 42,
+    "nazivMarke": "Suzuki"
+  },
+  {
+    "markaId": 43,
+    "nazivMarke": "Tesla"
+  },
+  {
+    "markaId": 44,
+    "nazivMarke": "Toyota"
+  },
+  {
+    "markaId": 51,
+    "nazivMarke": "Volkswagen"
+  },
+  {
+    "markaId": 45,
+    "nazivMarke": "Volvo"
+  }
+]

@@ -45,7 +45,7 @@ public class SaveRezervacijeTest {
     public void testPreconditionsPogresnaKlasa() {
         Servis servis = new Servis();
         Exception e = assertThrows(Exception.class,
-                () -> so.preconditions(servis));
+                () -> so.preconditions(null));
         assertEquals("Null vrednost", e.getMessage());
     }
 

@@ -1,0 +1,90 @@
+[
+  {
+    "radnikId": 15,
+    "imeRadnika": "Dragan",
+    "prezimeRadnika": "Mrkela",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "dragan",
+    "sifra": "dragan"
+  },
+  {
+    "radnikId": 23,
+    "imeRadnika": "Ilija",
+    "prezimeRadnika": "Teofilovic",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "ilija",
+    "sifra": "123"
+  },
+  {
+    "radnikId": 19,
+    "imeRadnika": "melani",
+    "prezimeRadnika": "mrkela",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "melani",
+    "sifra": "nesinadevojka"
+  },
+  {
+    "radnikId": 21,
+    "imeRadnika": "Milan",
+    "prezimeRadnika": "Ivancic",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "milan",
+    "sifra": "milan"
+  },
+  {
+    "radnikId": 20,
+    "imeRadnika": "Miroslav",
+    "prezimeRadnika": "Milic",
+    "strucnaSprema": "DOKTOR_NAUKA",
+    "korisnickoIme": "mili",
+    "sifra": "mili"
+  },
+  {
+    "radnikId": 13,
+    "imeRadnika": "Nebojsa",
+    "prezimeRadnika": "Brankovic",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "admin",
+    "sifra": "admin"
+  },
+  {
+    "radnikId": 9,
+    "imeRadnika": "Nikola",
+    "prezimeRadnika": "Brankovic",
+    "strucnaSprema": "MASTER",
+    "korisnickoIme": "nikola",
+    "sifra": "123"
+  },
+  {
+    "radnikId": 16,
+    "imeRadnika": "Sinisa",
+    "prezimeRadnika": "Vukasinovic",
+    "strucnaSprema": "OSNOVNA_SKOLA",
+    "korisnickoIme": "sinisa",
+    "sifra": "sinisa"
+  },
+  {
+    "radnikId": 18,
+    "imeRadnika": "Snezana",
+    "prezimeRadnika": "Brankovic",
+    "strucnaSprema": "SPECIJALISTICKE_STRUKOVNE_STUDIJE",
+    "korisnickoIme": "C15056",
+    "sifra": "Privremeni.5"
+  },
+  {
+    "radnikId": 17,
+    "imeRadnika": "Stefan",
+    "prezimeRadnika": "Petrovic",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "stefan",
+    "sifra": "stefan"
+  },
+  {
+    "radnikId": 22,
+    "imeRadnika": "Zoran",
+    "prezimeRadnika": "Maljkovic",
+    "strucnaSprema": "SREDNJA_SKOLA",
+    "korisnickoIme": "maljko",
+    "sifra": "123"
+  }
+]

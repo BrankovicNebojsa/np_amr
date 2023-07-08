@@ -546,6 +546,19 @@ public class Controller {
     }
 
     /**
+     * Metoda koja vraca listu motora
+     *
+     * @return lista motora
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
+     */
+    public List<Motor> getMotori() throws Exception {
+        AbstractSystemOperation getMotori = new GetMotori();
+        getMotori.execute(new Motor());
+        return ((GetMotori) getMotori).getMotori();
+    }
+
+    /**
      * Metoda koja cuva servis u bazu
      *
      * @param servis servis koji cuvamo u bazi
@@ -570,4 +583,18 @@ public class Controller {
         getServis.execute(servis);
         return ((GetServis) getServis).getServis();
     }
+
+    /**
+     * Metoda koja vraca listu servisa
+     *
+     * @return lista servisa
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
+     */
+    public List<Servis> getServisi() throws Exception {
+        AbstractSystemOperation getServisi = new GetServisi();
+        getServisi.execute(new Servis());
+        return ((GetServisi) getServisi).getServisi();
+    }
+
 }

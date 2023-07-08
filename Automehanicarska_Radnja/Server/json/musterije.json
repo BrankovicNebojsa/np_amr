@@ -1,0 +1,191 @@
+[
+  {
+    "musterijaId": 25,
+    "imeMusterije": "Aleksandar",
+    "prezimeMusterije": "Petrovic",
+    "mailMusterije": "aleksandar@gmail.com",
+    "telefonMusterije": "+381634590132"
+  },
+  {
+    "musterijaId": 56,
+    "imeMusterije": "Aleksej",
+    "prezimeMusterije": "Glavonjic",
+    "mailMusterije": "aleksa@gmail.com",
+    "telefonMusterije": "+381639321832"
+  },
+  {
+    "musterijaId": 26,
+    "imeMusterije": "Bogdan",
+    "prezimeMusterije": "Jovanovic",
+    "mailMusterije": "bogdan@gmail.com",
+    "telefonMusterije": "+381623826912"
+  },
+  {
+    "musterijaId": 48,
+    "imeMusterije": "Dragan",
+    "prezimeMusterije": "Mitrovic",
+    "mailMusterije": "dragce@gmail.com",
+    "telefonMusterije": "+381631234567"
+  },
+  {
+    "musterijaId": 21,
+    "imeMusterije": "Dusan",
+    "prezimeMusterije": "Savic",
+    "mailMusterije": "dusan@gmail.com",
+    "telefonMusterije": "+381614325801"
+  },
+  {
+    "musterijaId": 51,
+    "imeMusterije": "Ilija",
+    "prezimeMusterije": "Teofilovic",
+    "mailMusterije": "ilija3@gmail.com",
+    "telefonMusterije": "+381641234321"
+  },
+  {
+    "musterijaId": 57,
+    "imeMusterije": "Isaac",
+    "prezimeMusterije": "Newton",
+    "mailMusterije": "sd@gmail.com",
+    "telefonMusterije": "+381651236212"
+  },
+  {
+    "musterijaId": 59,
+    "imeMusterije": "Ivan",
+    "prezimeMusterije": "Ivanic",
+    "mailMusterije": "ivan@gmail.com",
+    "telefonMusterije": "+381645426183"
+  },
+  {
+    "musterijaId": 54,
+    "imeMusterije": "Jadranka",
+    "prezimeMusterije": "Teofilovic",
+    "mailMusterije": "jadranka@gmail.com",
+    "telefonMusterije": "+381653821293"
+  },
+  {
+    "musterijaId": 50,
+    "imeMusterije": "John",
+    "prezimeMusterije": "Walker",
+    "mailMusterije": "john@gmail.com",
+    "telefonMusterije": "+381632341233"
+  },
+  {
+    "musterijaId": 52,
+    "imeMusterije": "Kristina",
+    "prezimeMusterije": "Petrovic",
+    "mailMusterije": "kristina@gmail.com",
+    "telefonMusterije": "+381643513212"
+  },
+  {
+    "musterijaId": 23,
+    "imeMusterije": "Magdalena",
+    "prezimeMusterije": "Bursac",
+    "mailMusterije": "magdalena@gmail.com",
+    "telefonMusterije": "+381654389046"
+  },
+  {
+    "musterijaId": 55,
+    "imeMusterije": "Maksim",
+    "prezimeMusterije": "Mehmedovic",
+    "mailMusterije": "maksim@gmail.com",
+    "telefonMusterije": "+381653215212"
+  },
+  {
+    "musterijaId": 30,
+    "imeMusterije": "Margareta",
+    "prezimeMusterije": "Jovanovic",
+    "mailMusterije": "marga@gmail.com",
+    "telefonMusterije": "+381635216852"
+  },
+  {
+    "musterijaId": 45,
+    "imeMusterije": "Milan",
+    "prezimeMusterije": "Ivancevic",
+    "mailMusterije": "milan@gmail.com",
+    "telefonMusterije": "+381632112332"
+  },
+  {
+    "musterijaId": 44,
+    "imeMusterije": "Milan",
+    "prezimeMusterije": "Ivanisevic",
+    "mailMusterije": "milan@gmail.com",
+    "telefonMusterije": "+381632112332"
+  },
+  {
+    "musterijaId": 43,
+    "imeMusterije": "Milan",
+    "prezimeMusterije": "Stefanovic",
+    "mailMusterije": "milance@gmail.com",
+    "telefonMusterije": "+381632134123"
+  },
+  {
+    "musterijaId": 28,
+    "imeMusterije": "Nebojsa",
+    "prezimeMusterije": "Brankovic",
+    "mailMusterije": "nebojsab@gmail.com",
+    "telefonMusterije": "+381643211872"
+  },
+  {
+    "musterijaId": 29,
+    "imeMusterije": "Nebojsa",
+    "prezimeMusterije": "Stefanovic",
+    "mailMusterije": "nebojsastefa@gmail.com",
+    "telefonMusterije": "+381643213215"
+  },
+  {
+    "musterijaId": 31,
+    "imeMusterije": "Nenad",
+    "prezimeMusterije": "Momcilovic",
+    "mailMusterije": "nenadm@gmail.com",
+    "telefonMusterije": "+381636123623"
+  },
+  {
+    "musterijaId": 27,
+    "imeMusterije": "Snezana",
+    "prezimeMusterije": "Brankovic",
+    "mailMusterije": "snezana.brankovic68@gmail.com",
+    "telefonMusterije": "+381648960278"
+  },
+  {
+    "musterijaId": 24,
+    "imeMusterije": "Stefan",
+    "prezimeMusterije": "Lazarev",
+    "mailMusterije": "stefan@gmail.com",
+    "telefonMusterije": "+381604590154"
+  },
+  {
+    "musterijaId": 58,
+    "imeMusterije": "Stefan",
+    "prezimeMusterije": "Lajic",
+    "mailMusterije": "stefa@gmail.com",
+    "telefonMusterije": "+381632123216"
+  },
+  {
+    "musterijaId": 22,
+    "imeMusterije": "Tatjana",
+    "prezimeMusterije": "Stojanovic",
+    "mailMusterije": "tatjana@gmail.com",
+    "telefonMusterije": "+381634329801"
+  },
+  {
+    "musterijaId": 53,
+    "imeMusterije": "Tomica",
+    "prezimeMusterije": "Teofilovic",
+    "mailMusterije": "tomica@gmail.com",
+    "telefonMusterije": "+381643215722"
+  },
+  {
+    "musterijaId": 47,
+    "imeMusterije": "Vladimir",
+    "prezimeMusterije": "Petrovic",
+    "mailMusterije": "vlada@gmail.com",
+    "telefonMusterije": "+381631235213"
+  },
+  {
+    "musterijaId": 18,
+    "imeMusterije": "Zoran",
+    "prezimeMusterije": "Brankovic",
+    "mailMusterije": "zoran2@gmail.com",
+    "telefonMusterije": "+381645246791"
+  }
+]
