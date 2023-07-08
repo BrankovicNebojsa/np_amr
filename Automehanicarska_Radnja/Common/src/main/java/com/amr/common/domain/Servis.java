@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Klasa koja je zaduzena za beleske poslednjeg servisa automobila
- * 
+ *
  * @author Nebojsa Brankovic
  */
 public class Servis implements GenericObject {
@@ -43,7 +43,7 @@ public class Servis implements GenericObject {
 
     /**
      * Parametrizovani konstuktor
-     * 
+     *
      * @param datumServisa datum poslednjeg servisa
      * @param kilometraza kilometraza koju je imao auto na servisu u km
      * @param opis posao koji je uradjen na servisu
@@ -60,6 +60,7 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja vraca datum poslednjeg servisa
+     *
      * @return Datum poslednjeg servisa
      */
     public Date getDatumServisa() {
@@ -67,16 +68,22 @@ public class Servis implements GenericObject {
     }
 
     /**
-     * Metoda koja postavlja datum poslednjeg servisa 
+     * Metoda koja postavlja datum poslednjeg servisa
+     *
      * @param datumServisa datum poslednjeg servisa
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setDatumServisa(Date datumServisa) {
+    public void setDatumServisa(Date datumServisa) throws NullPointerException {
+        if (datumServisa == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.datumServisa = datumServisa;
     }
 
     /**
      * Metoda koja vraca kilometrazu koju je auto imao na servisu
-     * @return  kilometraza automobila na servisu
+     *
+     * @return kilometraza automobila na servisu
      */
     public int getKilometraza() {
         return kilometraza;
@@ -84,14 +91,21 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja postavlja kilometrazu koju je auto imao na poslednjem servisu
+     *
      * @param kilometraza kilometraza koju je auto imao na poslednjem servisu
+     * @throws IllegalArgumentException u slucaju da je uneta kilometraza manja
+     * od 0
      */
-    public void setKilometraza(int kilometraza) {
+    public void setKilometraza(int kilometraza) throws IllegalArgumentException {
+        if (kilometraza < 0) {
+            throw new IllegalArgumentException("Kilometraza ne moze biti manja od 0");
+        }
         this.kilometraza = kilometraza;
     }
 
     /**
      * Metoda koja vraca opis uradjenog posla na servisu
+     *
      * @return opis posla na servisu
      */
     public String getOpis() {
@@ -100,14 +114,24 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja postavlja opis posla uradjenog na servisu
+     *
      * @param opis kratak opis posla uradjenog na servisu
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setOpis(String opis) {
+    public void setOpis(String opis) throws NullPointerException, IllegalArgumentException {
+        if (opis == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (opis.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.opis = opis;
     }
 
     /**
      * Metoda koja vraca automobil koji je servisiran
+     *
      * @return automobil koji je servisiran
      */
     public Automobil getAutomobil() {
@@ -116,14 +140,20 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja postavlja automobil koji je servisiran
+     *
      * @param automobil automobil koji je servisiran
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setAutomobil(Automobil automobil) {
+    public void setAutomobil(Automobil automobil) throws NullPointerException {
+        if (automobil == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.automobil = automobil;
     }
 
     /**
      * Metoda koja vraca radnika koji je servisirao automobil
+     *
      * @return mehanicar koji je servisirao automobil
      */
     public Radnik getRadnik() {
@@ -132,9 +162,14 @@ public class Servis implements GenericObject {
 
     /**
      * Metoda koja postavlja radnika koji je izvrsio servis
+     *
      * @param radnik radnik koji je uradio poslednji servis
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setRadnik(Radnik radnik) {
+    public void setRadnik(Radnik radnik) throws NullPointerException {
+        if (radnik == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.radnik = radnik;
     }
 

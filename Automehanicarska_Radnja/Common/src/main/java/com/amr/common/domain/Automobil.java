@@ -112,10 +112,10 @@ public class Automobil implements GenericObject {
      */
     public void setRegistracioniBroj(String registracioniBroj) throws NullPointerException, IllegalArgumentException {
         if (registracioniBroj == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         if (registracioniBroj.equals("")) {
-            throw new IllegalArgumentException("Prazan string");
+            throw new IllegalArgumentException("Prazan string.");
         }
         this.registracioniBroj = registracioniBroj;
     }
@@ -138,8 +138,8 @@ public class Automobil implements GenericObject {
      * 1900
      */
     public void setGodiste(int godiste) throws IllegalArgumentException {
-        if (godiste < 1900) {
-            throw new IllegalArgumentException("Auto ne moze biti stariji od 1900.");
+        if (godiste < 1900 || godiste > 2023) {
+            throw new IllegalArgumentException("Godiste auto ne moze biti manje od 1900 ili vece od 2023.");
         }
         this.godiste = godiste;
     }
@@ -162,7 +162,7 @@ public class Automobil implements GenericObject {
      */
     public void setBrojMotora(String brojMotora) throws NullPointerException, IllegalArgumentException {
         if (brojMotora == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         if (brojMotora.equals("")) {
             throw new IllegalArgumentException("Prazan string");
@@ -187,10 +187,10 @@ public class Automobil implements GenericObject {
      * @throws IllegalArgumentException u slucaju da je unos prazan
      */
     public void setBrojSasije(String brojSasije) throws NullPointerException, IllegalArgumentException {
-        if (brojMotora == null) {
-            throw new NullPointerException();
+        if (brojSasije == null) {
+            throw new NullPointerException("Null vrednost");
         }
-        if (brojMotora.equals("")) {
+        if (brojSasije.equals("")) {
             throw new IllegalArgumentException("Prazan string");
         }
         this.brojSasije = brojSasije;
@@ -213,7 +213,7 @@ public class Automobil implements GenericObject {
      */
     public void setBoja(Boja boja) throws NullPointerException {
         if (boja == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         this.boja = boja;
     }
@@ -235,7 +235,7 @@ public class Automobil implements GenericObject {
      */
     public void setMenjac(TipMenjaca menjac) throws NullPointerException {
         if (menjac == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         this.menjac = menjac;
     }
@@ -257,7 +257,7 @@ public class Automobil implements GenericObject {
      */
     public void setMotor(Motor motor) throws NullPointerException {
         if (motor == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         this.motor = motor;
     }
@@ -279,7 +279,7 @@ public class Automobil implements GenericObject {
      */
     public void setModel(Model model) throws NullPointerException {
         if (model == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         this.model = model;
     }
@@ -301,7 +301,7 @@ public class Automobil implements GenericObject {
      */
     public void setMusterija(Musterija musterija) throws NullPointerException {
         if (musterija == null) {
-            throw new NullPointerException();
+            throw new NullPointerException("Null vrednost");
         }
         this.musterija = musterija;
     }

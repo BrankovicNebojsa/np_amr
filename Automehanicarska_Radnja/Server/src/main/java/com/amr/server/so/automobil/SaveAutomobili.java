@@ -19,6 +19,9 @@ public class SaveAutomobili extends AbstractSystemOperation {
 
     @Override
     protected void preconditions(Object ado) throws Exception {
+        if (ado == null) {
+            throw new Exception("Null vrednost.");
+        }
         List<Automobil> automobili = (List<Automobil>) ado;
         List<Automobil> automobiliIzBaze = repository.getAll(new Automobil());
 

@@ -84,9 +84,14 @@ public class Rezervacija implements GenericObject {
 
     /**
      * Postavlja primarni kljuc za rezervaciju
+     *
      * @param rezervacijaId primarni kljuc rezervacije
+     * @throws IllegalArgumentException ukoliko je unet id manji od 0
      */
-    public void setRezervacijaId(int rezervacijaId) {
+    public void setRezervacijaId(int rezervacijaId) throws IllegalArgumentException {
+        if (rezervacijaId < 0) {
+            throw new IllegalArgumentException("Unet id manji od 0");
+        }
         this.rezervacijaId = rezervacijaId;
     }
 
@@ -101,9 +106,14 @@ public class Rezervacija implements GenericObject {
 
     /**
      * Postavlja datum rezervacije
+     *
      * @param pocetakServisa datum rezervacije
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setPocetakServisa(Date pocetakServisa) {
+    public void setPocetakServisa(Date pocetakServisa) throws NullPointerException {
+        if (pocetakServisa == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.pocetakServisa = pocetakServisa;
     }
 
@@ -118,9 +128,15 @@ public class Rezervacija implements GenericObject {
 
     /**
      * Postavlja trajanje servisa u minutama
+     *
      * @param trajanjeServisa trajanje servisa u minutama
+     * @throws IllegalArgumentException u slucaju da je uneto trajanje manje od
+     * 0
      */
-    public void setTrajanjeServisa(int trajanjeServisa) {
+    public void setTrajanjeServisa(int trajanjeServisa) throws IllegalArgumentException {
+        if (trajanjeServisa < 0) {
+            throw new IllegalArgumentException("Trajanje servisa ne moze biti manje od 0");
+        }
         this.trajanjeServisa = trajanjeServisa;
     }
 
@@ -135,9 +151,14 @@ public class Rezervacija implements GenericObject {
 
     /**
      * Postavlja automobil koji treba da se servisira
+     *
      * @param automobil automobil koji treba da se servisira
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setAutomobil(Automobil automobil) {
+    public void setAutomobil(Automobil automobil) throws NullPointerException {
+        if (automobil == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.automobil = automobil;
     }
 
@@ -152,9 +173,14 @@ public class Rezervacija implements GenericObject {
 
     /**
      * Postavlja radnika koji treba da servisira auto
+     *
      * @param radnik radnik koji treba da servisira
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setRadnik(Radnik radnik) {
+    public void setRadnik(Radnik radnik) throws NullPointerException {
+        if (radnik == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.radnik = radnik;
     }
 

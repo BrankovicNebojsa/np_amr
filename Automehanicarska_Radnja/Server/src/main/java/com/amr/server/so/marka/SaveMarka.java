@@ -21,7 +21,7 @@ public class SaveMarka extends AbstractSystemOperation {
     @Override
     protected void preconditions(Object ado) throws Exception {
         if (!(ado instanceof Marka)) {
-            System.out.println("Objekat nije instanca klase Marka!");
+            throw new Exception("Objekat nije instanca klase Marka!");
         }
 
         List<Marka> marke = repository.getAll(ado);

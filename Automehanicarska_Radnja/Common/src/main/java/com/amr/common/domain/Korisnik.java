@@ -38,8 +38,12 @@ public class Korisnik implements Serializable {
      * Metoda koja postavlja klijenta koji koristi aplikaciju
      *
      * @param radnik Radnik koji predstavlja korisnika aplikacije
+     * @throws NullPointerException za null vrednosti
      */
-    public void setRadnik(Radnik radnik) {
+    public void setRadnik(Radnik radnik) throws NullPointerException {
+        if (radnik == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.radnik = radnik;
     }
 
@@ -56,8 +60,12 @@ public class Korisnik implements Serializable {
      * Metoda koja postavlja datum povezivanja klijenta.
      *
      * @param datumPovezivanja Datum povezivanja klijenta kao Date
+     * @throws NullPointerException za null vrednosti
      */
-    public void setDatumPovezivanja(Date datumPovezivanja) {
+    public void setDatumPovezivanja(Date datumPovezivanja) throws NullPointerException {
+        if (datumPovezivanja == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.datumPovezivanja = datumPovezivanja;
     }
 

@@ -69,8 +69,12 @@ public class Model implements GenericObject {
      * Metoda koja postavlja primarni kljuc modela
      *
      * @param modelId Primarni kljuc modela
+     * @throws IllegalArgumentException unet primarni kljuc koji je manji od 0
      */
-    public void setModelId(int modelId) {
+    public void setModelId(int modelId) throws IllegalArgumentException {
+        if (modelId < 0) {
+            throw new IllegalArgumentException("Id ne moze biti manji od 0");
+        }
         this.modelId = modelId;
     }
 
@@ -86,9 +90,13 @@ public class Model implements GenericObject {
     /**
      * Metoda koja postavlja Marku modela
      *
-     * @param marka  Marka modela
+     * @param marka Marka modela
+     * @throws NullPointerException u slucaju da je unos null
      */
-    public void setMarka(Marka marka) {
+    public void setMarka(Marka marka) throws NullPointerException {
+        if (marka == null) {
+            throw new NullPointerException("Null vrednost");
+        }
         this.marka = marka;
     }
 
@@ -104,9 +112,17 @@ public class Model implements GenericObject {
     /**
      * Metoda koja postavlja naziv modela
      *
-     * @param nazivModela  Naziv modela
+     * @param nazivModela Naziv modela
+     * @throws NullPointerException u slucaju da je unos null
+     * @throws IllegalArgumentException u slucaju da je unos prazan
      */
-    public void setNazivModela(String nazivModela) {
+    public void setNazivModela(String nazivModela) throws IllegalArgumentException, NullPointerException {
+        if (nazivModela == null) {
+            throw new NullPointerException("Null vrednost");
+        }
+        if (nazivModela.equals("")) {
+            throw new IllegalArgumentException("Prazan string");
+        }
         this.nazivModela = nazivModela;
     }
 
