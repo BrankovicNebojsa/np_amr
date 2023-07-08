@@ -24,7 +24,7 @@ public class LogInForm extends javax.swing.JFrame {
     private Controller c;
 
     /**
-     * Creates new form MainForm
+     * Kreirana nova forma MainForm
      */
     public LogInForm() {
         initComponents();
