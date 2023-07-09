@@ -4,7 +4,6 @@
  */
 package com.amr.common.domain;
 
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.AfterEach;
@@ -13,6 +12,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -88,5 +89,25 @@ public class MarkaTest {
         List<Model> modeli = new ArrayList<>();
         m.setModeli(modeli);
         assertTrue(modeli.equals(m.getModeli()));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "BMW, BMW, true",
+        "BMW, Audi, false",
+        "VW, BMW, false"
+    })
+    void testEquals(String nazivMarke1, String nazivMarke2, boolean isti) {
+        m.setNazivMarke(nazivMarke1);
+
+        Marka m2 = new Marka();
+        m2.setNazivMarke(nazivMarke2);
+
+        assertEquals(isti, m.equals(m2));
+    }
+
+    @Test
+    void testEqualsNull() {
+        assertFalse(m.equals(null));
     }
 }

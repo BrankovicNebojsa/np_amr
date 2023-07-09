@@ -4,14 +4,14 @@
  */
 package com.amr.common.domain;
 
-import java.sql.ResultSet;
-import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -94,4 +94,30 @@ public class MotorTest {
         assertEquals(165, m.getKonjskaSnaga());
     }
 
+    @ParameterizedTest
+    @CsvSource({
+        "4, 2000.00, 140, 4, 2000.00, 140, true",
+        "3, 2000.00, 140, 4, 2000.00, 140, false",
+        "4, 1990.00, 140, 4, 2000.00, 140, false",
+        "4, 2000.00, 130, 4, 2000.00, 140, false",
+        "4, 2000.00, 140, 3, 1900.00, 140, false",
+        "4, 2000.00, 140, 4, 2000.00, 130, false",})
+    void testEquals(int brojCilindara1, double kubikaza1, int konjskaSnaga1,
+            int brojCilindara2, double kubikaza2, int konjskaSnaga2, boolean isti) {
+        m.setBrojCilindara(brojCilindara1);
+        m.setKubikaza(kubikaza1);
+        m.setKonjskaSnaga(konjskaSnaga1);
+
+        Motor m2 = new Motor();
+        m2.setBrojCilindara(brojCilindara2);
+        m2.setKubikaza(kubikaza2);
+        m2.setKonjskaSnaga(konjskaSnaga2);
+
+        assertEquals(isti, m.equals(m2));
+    }
+
+    @Test
+    void testEqualsNull() {
+        assertFalse(m.equals(null));
+    }
 }

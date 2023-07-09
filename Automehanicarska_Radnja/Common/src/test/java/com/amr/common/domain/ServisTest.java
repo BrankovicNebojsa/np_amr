@@ -11,6 +11,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -123,5 +125,38 @@ public class ServisTest {
         assertTrue(r.getPrezimeRadnika().equals(s.getRadnik().getPrezimeRadnika()));
         assertTrue(r.getKorisnickoIme().equals(s.getRadnik().getKorisnickoIme()));
         assertTrue(r.getSifra().equals(s.getRadnik().getSifra()));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "130000, mali servis, 130000, mali servis, true",
+        "115000, mali servis, 130000, mali servis, false",
+        "130000, mali servis, 115003, mali servis, false",
+        "130000, mali servis, 130000, veliki servis, false"
+    })
+    public void testEquals(int kilometraza1, String opis1, int kilometraza2, String opis2, boolean isti) {
+
+        Automobil a = new Automobil("BE3215KS");
+        Radnik radnik = new Radnik("Milan", "Milanic", StrucnaSprema.SREDNJA_SKOLA, "milance", "milance123");
+        s.setKilometraza(kilometraza1);
+        s.setOpis(opis1);
+        s.setAutomobil(a);
+        s.setRadnik(radnik);
+        Date d = new Date();
+        s.setDatumServisa(d);
+
+        Servis s2 = new Servis();
+        s2.setKilometraza(kilometraza2);
+        s2.setOpis(opis2);
+        s2.setAutomobil(a);
+        s2.setRadnik(radnik);
+        s2.setDatumServisa(d);
+
+        assertEquals(isti, s.equals(s2));
+    }
+
+    @Test
+    public void testEqualsNull() {
+        assertFalse(s.equals(null));
     }
 }

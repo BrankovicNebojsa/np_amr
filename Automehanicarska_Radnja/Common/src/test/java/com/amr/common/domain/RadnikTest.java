@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -150,4 +152,37 @@ public class RadnikTest {
         assertEquals("nikola123", r.getSifra());
     }
 
+    @ParameterizedTest
+    @CsvSource({
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, true",
+        "Milos, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan123@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 065121234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan2, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovi6c, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovi6c, milan3@gmail.com, 0645921234, false"
+    })
+    void testEquals(String imeMusterije1, String prezimeMusterije1, String korisnickoIme1, String sifra1,
+            String imeMusterije2, String prezimeMusterije2, String korisnickoIme2, String sifra2, boolean isti) {
+        r.setImeRadnika(imeMusterije1);
+        r.setPrezimeRadnika(prezimeMusterije1);
+        r.setKorisnickoIme(korisnickoIme1);
+        r.setSifra(sifra1);
+        r.setStrucnaSprema(StrucnaSprema.SREDNJA_SKOLA);
+
+        Radnik r2 = new Radnik();
+        r2.setImeRadnika(imeMusterije2);
+        r2.setPrezimeRadnika(prezimeMusterije2);
+        r2.setKorisnickoIme(korisnickoIme2);
+        r2.setSifra(sifra2);
+        r2.setStrucnaSprema(StrucnaSprema.SREDNJA_SKOLA);
+
+        assertEquals(isti, r.equals(r2));
+    }
+
+    @Test
+    void testEqualsNull() {
+        assertFalse(r.equals(null));
+    }
 }

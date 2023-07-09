@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -135,5 +137,37 @@ public class MusterijaTest {
     public void testSetTelefonMusterijeSveOk() {
         m.setTelefonMusterije("0653216812");
         assertTrue("0653216812".equals(m.getTelefonMusterije()));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, true",
+        "Milos, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanic, milan@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan123@gmail.com, 0645321234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 065121234, Milan, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan2, Milanovic, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovi6c, milan@gmail.com, 0645321234, false",
+        "Milan, Milanovic, milan@gmail.com, 0645321234, Milan, Milanovi6c, milan3@gmail.com, 0645921234, false"
+    })
+    void testEquals(String imeMusterije1, String prezimeMusterije1, String mailMusterije1, String telefonMusterije1,
+            String imeMusterije2, String prezimeMusterije2, String mailMusterije2, String telefonMusterije2, boolean isti) {
+        m.setImeMusterije(imeMusterije1);
+        m.setPrezimeMusterije(prezimeMusterije1);
+        m.setMailMusterije(mailMusterije1);
+        m.setTelefonMusterije(telefonMusterije1);
+
+        Musterija m2 = new Musterija();
+        m2.setImeMusterije(imeMusterije2);
+        m2.setPrezimeMusterije(prezimeMusterije2);
+        m2.setMailMusterije(mailMusterije2);
+        m2.setTelefonMusterije(telefonMusterije2);
+
+        assertEquals(isti, m.equals(m2));
+    }
+
+    @Test
+    void testEqualsNull() {
+        assertFalse(m.equals(null));
     }
 }

@@ -4,14 +4,14 @@
  */
 package com.amr.common.domain;
 
-import java.sql.ResultSet;
-import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -201,4 +201,44 @@ public class AutomobilTest {
         assertEquals(m, a.getMusterija());
     }
 
+    @ParameterizedTest
+    @CsvSource({
+        "BG1468OI, dj3109d, jf48910f, 2010, BG1468OI, dj3109d, jf48910f, 2010, true",
+        "BG1468OI, j981gf, jf48910f, 2010, BG1468OI, dj3109d, jf48910f, 2010, false",
+        "BG148OI, dj3109d, jf48910f, 2010, BG1468OI, dj3109d, jf48910f, 2010, false",
+        "BG1468OI, dj3109d, jd92, 2010, BG1468OI, dj3109d, jf48910f, 2010, false",
+        "BG1468OI, dj3109d, jd92, 2016, BG1468OI, dj3109d, jf48910f, 2010, false",})
+    void testEquals(String registracioniBroj1, String brojMotora1, String brojSasije1, int godiste1,
+            String registracioniBroj2, String brojMotora2, String brojSasije2, int godiste2, boolean isti) {
+        a.setRegistracioniBroj(registracioniBroj1);
+        a.setBrojMotora(brojMotora1);
+        a.setBrojSasije(brojSasije1);
+        a.setGodiste(godiste1);
+        a.setBoja(Boja.BELA);
+        a.setMenjac(TipMenjaca.RUCNI);
+        Musterija m = new Musterija("Milos", "Milic", "milos@gmail.com", "0642125612");
+        a.setMusterija(m);
+        Motor motor = new Motor(8, 4000.00, 652);
+        a.setMotor(motor);
+        Model model = new Model(new Marka("jd3198"), "dijo2");
+        a.setModel(model);
+
+        Automobil a2 = new Automobil();
+        a2.setRegistracioniBroj(registracioniBroj2);
+        a2.setBrojMotora(brojMotora2);
+        a2.setBrojSasije(brojSasije2);
+        a2.setGodiste(godiste2);
+        a2.setBoja(Boja.BELA);
+        a2.setMenjac(TipMenjaca.RUCNI);
+        a2.setMusterija(m);
+        a2.setMotor(motor);
+        a2.setModel(model);
+
+        assertEquals(isti, a.equals(a2));
+    }
+
+    @Test
+    void testEqualsNull() {
+        assertFalse(a.equals(null));
+    }
 }

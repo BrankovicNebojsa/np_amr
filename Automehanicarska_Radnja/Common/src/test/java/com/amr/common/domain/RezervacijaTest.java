@@ -11,6 +11,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
@@ -111,5 +113,30 @@ public class RezervacijaTest {
         assertTrue(r2.getKorisnickoIme().equals(r.getRadnik().getKorisnickoIme()));
         assertTrue(r2.getSifra().equals(r.getRadnik().getSifra()));
         assertTrue(r2.getStrucnaSprema().equals(r.getRadnik().getStrucnaSprema()));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "60, 60, true",
+        "60, 32, false",
+        "30, 60, false",})
+    public void testEquals(int trajanjeServisa1, int trajanjeServisa2, boolean isti) {
+
+        Automobil a = new Automobil("BE3215KS");
+        Radnik radnik = new Radnik("Milan", "Milanic", StrucnaSprema.SREDNJA_SKOLA, "milance", "milance123");
+        r.setTrajanjeServisa(trajanjeServisa1);
+        r.setAutomobil(a);
+        r.setRadnik(radnik);
+
+        Rezervacija r2 = new Rezervacija();
+        r2.setTrajanjeServisa(trajanjeServisa2);
+        r2.setAutomobil(a);
+        r2.setRadnik(radnik);
+        assertEquals(isti, r.equals(r2));
+    }
+
+    @Test
+    public void testEqualsNull() {
+        assertFalse(r.equals(null));
     }
 }
