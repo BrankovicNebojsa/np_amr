@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja Model automobila
@@ -198,6 +199,31 @@ public class Model implements GenericObject {
             objects.add(model);
         }
         return objects;
+    }
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Model i
+     * imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Model other = (Model) obj;
+        if (!Objects.equals(this.nazivModela, other.nazivModela)) {
+            return false;
+        }
+        return Objects.equals(this.marka, other.marka);
     }
 
 }

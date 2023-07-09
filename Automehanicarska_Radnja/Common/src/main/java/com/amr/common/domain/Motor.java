@@ -228,4 +228,32 @@ public class Motor implements GenericObject {
         return objects;
     }
 
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Motor i
+     * imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Motor other = (Motor) obj;
+        if (this.brojCilindara != other.brojCilindara) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.kubikaza) != Double.doubleToLongBits(other.kubikaza)) {
+            return false;
+        }
+        return this.konjskaSnaga == other.konjskaSnaga;
+    }
+
 }

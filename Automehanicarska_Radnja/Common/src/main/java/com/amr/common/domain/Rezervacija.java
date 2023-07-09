@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja Rezervaciju jednog servisa u radnji
@@ -197,6 +198,7 @@ public class Rezervacija implements GenericObject {
     @Override
     public String getJoinValues() {
         return "JOIN automobil a ON (re.registracioniBroj=a.registracioniBroj)"
+                + " JOIN motor mot ON (mot.motorId=a.motorId)"
                 + " JOIN musterija mu ON (a.musterijaId=mu.musterijaId)"
                 + " JOIN model mo ON (a.modelId=mo.modelId AND a.markaId=mo.markaId)"
                 + " JOIN marka ma ON (mo.markaId=ma.markaId)"
@@ -291,6 +293,37 @@ public class Rezervacija implements GenericObject {
             objects.add(rezervacija);
         }
         return objects;
+    }
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Rezervacija
+     * i imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Rezervacija other = (Rezervacija) obj;
+        if (this.trajanjeServisa != other.trajanjeServisa) {
+            return false;
+        }
+//        if (!Objects.equals(this.pocetakServisa, other.pocetakServisa)) {
+//            return false;
+//        }
+        if (!Objects.equals(this.automobil, other.automobil)) {
+            return false;
+        }
+        return Objects.equals(this.radnik, other.radnik);
     }
 
 }

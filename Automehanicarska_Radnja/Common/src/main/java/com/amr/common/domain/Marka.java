@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja Marku automobila
@@ -102,7 +103,7 @@ public class Marka implements GenericObject { //dodati listu modela
      * @param nazivMarke Naziv marke automobila
      * @throws NullPointerException u slucaju da je unos null
      * @throws IllegalArgumentException u slucaju da je unos prazan
-     * 
+     *
      */
     public void setNazivMarke(String nazivMarke) throws NullPointerException, IllegalArgumentException {
         if (nazivMarke == null) {
@@ -206,6 +207,28 @@ public class Marka implements GenericObject { //dodati listu modela
             objects.add(marka);
         }
         return objects;
+    }
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Marka i
+     * imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Marka other = (Marka) obj;
+        return Objects.equals(this.nazivMarke, other.nazivMarke);
     }
 
 }

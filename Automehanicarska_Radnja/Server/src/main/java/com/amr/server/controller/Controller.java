@@ -483,6 +483,18 @@ public class Controller {
     }
 
     /**
+     * Metoda koja brise radnika
+     *
+     * @param radnik radnik kojeg brisemo
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
+     */
+    public void deleteRadnik(Radnik radnik) throws Exception {
+        AbstractSystemOperation deleteRadnik = new DeleteRadnik();
+        deleteRadnik.execute(radnik); //baca exception
+    }
+
+    /**
      * Metoda koja menja musteriju
      *
      * @param musterija musterija kojeg menjamo
@@ -597,4 +609,27 @@ public class Controller {
         return ((GetServisi) getServisi).getServisi();
     }
 
+    /**
+     * Metoda koja brise motor
+     *
+     * @param motor motor koji brisemo
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
+     */
+    public void deleteMotor(Motor motor) throws Exception {
+        AbstractSystemOperation deleteMotor = new DeleteMotor();
+        deleteMotor.execute(motor); //baca exception
+    }
+
+    /**
+     * Metoda koja brise servis
+     *
+     * @param servis servis koji brisemo
+     * @throws Exception ukoliko dodje do izuzetka pri izvrsenju sistemske
+     * operacije baca se greska
+     */
+    public void deleteServis(Servis servis) throws Exception {
+        AbstractSystemOperation deleteServis = new DeleteServis();
+        deleteServis.execute(servis); //baca exception
+    }
 }

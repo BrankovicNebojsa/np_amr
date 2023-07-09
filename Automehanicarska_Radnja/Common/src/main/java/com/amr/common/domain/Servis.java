@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja je zaduzena za beleske poslednjeg servisa automobila
@@ -237,7 +238,7 @@ public class Servis implements GenericObject {
 
     @Override
     public String getDeleteWhereCondition() {
-        return "registracioniBroj=" + this.getAutomobil().getRegistracioniBroj();
+        return "registracioniBroj='" + this.getAutomobil().getRegistracioniBroj() + "' AND radnikId=" + this.getRadnik().getRadnikId();
     }
 
     @Override
@@ -277,6 +278,40 @@ public class Servis implements GenericObject {
             objects.add(servis);
         }
         return objects;
+    }
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Rezervacija
+     * i imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Servis other = (Servis) obj;
+        if (this.kilometraza != other.kilometraza) {
+            return false;
+        }
+        if (!Objects.equals(this.opis, other.opis)) {
+            return false;
+        }
+        if (!Objects.equals(this.datumServisa, other.datumServisa)) {
+            return false;
+        }
+        if (!Objects.equals(this.automobil, other.automobil)) {
+            return false;
+        }
+        return Objects.equals(this.radnik, other.radnik);
     }
 
 }

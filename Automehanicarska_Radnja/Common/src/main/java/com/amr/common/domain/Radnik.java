@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja zaposlenog mehanicara u nasoj automehanicarskoj radnji
@@ -296,7 +297,7 @@ public class Radnik implements GenericObject {
 
     @Override
     public String getDeleteWhereCondition() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "radnikId=" + this.getRadnikId();
     }
 
     @Override
@@ -315,16 +316,38 @@ public class Radnik implements GenericObject {
         return objects;
     }
 
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Radnik i
+     * imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
     @Override
     public boolean equals(Object obj) {
-        if (this.getImeRadnika().equals(((Radnik) obj).getImeRadnika())
-                && this.getPrezimeRadnika().equals(((Radnik) obj).getImeRadnika())
-                && this.getKorisnickoIme().equals(((Radnik) obj).getKorisnickoIme())
-                && this.getSifra().equals(((Radnik) obj).getSifra())
-                && this.getRadnikId() == ((Radnik) obj).getRadnikId()) {
+        if (this == obj) {
             return true;
         }
-        return false;
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Radnik other = (Radnik) obj;
+        if (!Objects.equals(this.imeRadnika, other.imeRadnika)) {
+            return false;
+        }
+        if (!Objects.equals(this.prezimeRadnika, other.prezimeRadnika)) {
+            return false;
+        }
+        if (!Objects.equals(this.korisnickoIme, other.korisnickoIme)) {
+            return false;
+        }
+        if (!Objects.equals(this.sifra, other.sifra)) {
+            return false;
+        }
+        return this.strucnaSprema == other.strucnaSprema;
     }
 
 }

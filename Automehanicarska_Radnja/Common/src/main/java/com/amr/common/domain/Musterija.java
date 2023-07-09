@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja Vlasnika automobila i Musteriju automehanicarske
@@ -284,6 +285,37 @@ public class Musterija implements GenericObject {
             objects.add(musterija);
         }
         return objects;
+    }
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Musterija i
+     * imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Musterija other = (Musterija) obj;
+        if (!Objects.equals(this.imeMusterije, other.imeMusterije)) {
+            return false;
+        }
+        if (!Objects.equals(this.prezimeMusterije, other.prezimeMusterije)) {
+            return false;
+        }
+        if (!Objects.equals(this.mailMusterije, other.mailMusterije)) {
+            return false;
+        }
+        return Objects.equals(this.telefonMusterije, other.telefonMusterije);
     }
 
 }

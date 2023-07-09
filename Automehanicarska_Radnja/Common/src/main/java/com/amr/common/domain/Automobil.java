@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Klasa koja predstavlja Entitet Automobil i nasledjuje interfejs GenericObject
@@ -296,7 +297,8 @@ public class Automobil implements GenericObject {
     /**
      * Metoda koja postavlja Musteriju za instancu objekta klase Automobil
      *
-     * @param musterija Instanca klase Musterija koja predstavlja vlasnika automobila
+     * @param musterija Instanca klase Musterija koja predstavlja vlasnika
+     * automobila
      * @throws NullPointerException u slucaju da je unos null
      */
     public void setMusterija(Musterija musterija) throws NullPointerException {
@@ -362,15 +364,12 @@ public class Automobil implements GenericObject {
 
     @Override
     public String getUpdateSet() {
-//        java.sql.Date poslednjiServis1 = new java.sql.Date(this.getPoslednjiServis().getTime());
-//        return "poslednjiServis='" + poslednjiServis1 + "'";
-        return null;
+        return "brojMotora='" + this.getBrojMotora() + "'";
     }
 
     @Override
     public String getUpdateWhereCondition() {
-//        return "registracioniBroj='" + this.getRegistracioniBroj() + "'";
-        return null;
+        return "registracioniBroj='" + this.getRegistracioniBroj() + "'";
     }
 
     @Override
@@ -400,5 +399,51 @@ public class Automobil implements GenericObject {
         }
         return objects;
     }
-    
+
+    /**
+     * Metoda equals poredi 2 objekta i vraca true ako su oba klase Rezervacija
+     * i imaju sve iste atribute
+     *
+     * @param obj objekat s kojim se poredi instanca ove klase
+     * @return da li imaju iste atribute
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Automobil other = (Automobil) obj;
+        if (this.godiste != other.godiste) {
+            return false;
+        }
+        if (!Objects.equals(this.registracioniBroj, other.registracioniBroj)) {
+            return false;
+        }
+        if (!Objects.equals(this.brojMotora, other.brojMotora)) {
+            return false;
+        }
+        if (!Objects.equals(this.brojSasije, other.brojSasije)) {
+            return false;
+        }
+        if (this.boja != other.boja) {
+            return false;
+        }
+        if (this.menjac != other.menjac) {
+            return false;
+        }
+        if (!Objects.equals(this.motor, other.motor)) {
+            return false;
+        }
+        if (!Objects.equals(this.model, other.model)) {
+            return false;
+        }
+        return Objects.equals(this.musterija, other.musterija);
+    }
+
 }
